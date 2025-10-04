@@ -234,14 +234,19 @@ def extract_features_from_lightcurve(file_path: str) -> dict:
 # 6. Main Execution Block
 # =========================
 
-
-def predict(type: Literal['manual', 'csv', 'existing', 'raw'], inputs: dict) -> dict:
+models_tuple = None
+features_tuple = None
+def prepare():
+    global models_tuple, features_tuple
+    models_tuple = load_models()
+    features_tuple = load_features()
+    
+def predict(type: Literal['manual', 'raw'], inputs: dict) -> dict:
     """
     Main prediction router. Handles manual, raw light curve, and other input types.
     """
     # Load all models and feature lists once
-    models_tuple = load_models()
-    features_tuple = load_features()
+    global models_tuple, features_tuple
 
     if not all(models_tuple) or not all(features_tuple):
         logging.error("Prediction halted. Could not load all models or feature lists.")
