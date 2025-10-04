@@ -1,0 +1,16 @@
+--- Training Base Model: Kepler ---
+OOF AUC for Kepler: 0.9710
+
+--- Training Base Model: TESS ---
+OOF AUC for TESS: 0.8707
+
+--- Training Base Model: K2 ---
+OOF AUC for K2: 0.9866
+INFO:root:
+--- Training Meta-Learner: Logistic Regression ---
+
+#####################################################
+### STACKED ENSEMBLE FINAL PERFORMANCE ###
+Total Test Samples Evaluated: 4248
+Final Stacked ROC-AUC Score: 0.9511
+#####################################################
