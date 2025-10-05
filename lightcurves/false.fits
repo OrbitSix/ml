@@ -1,0 +1,1165 @@
+SIMPLE  =                    T / conforms to FITS standards                     BITPIX  =                    8 / array data type                                NAXIS   =                    0 / number of array dimensions                     EXTEND  =                    T / file contains extensions                       NEXTEND =                    2 / number of standard extensions                  EXTNAME = 'PRIMARY '           / name of extension                              EXTVER  =                    1 / extension version number (not format version)  ORIGIN  = 'NASA/Ames'          / institution responsible for creating this file DATE    = '2015-09-01'         / file creation date.                            CREATOR = '796181 FluxExporter2PipelineModule' / pipeline job and program used tPROCVER = 'svn+ssh://murzim/repo/soc/tags/release/9.3.22 r60269' / SW version   FILEVER = '6.1     '           / file format version                            TIMVERSN= 'OGIP/93-003'        / OGIP memo number for file format               TELESCOP= 'Kepler  '           / telescope                                      INSTRUME= 'Kepler Photometer'  / detector type                                  OBJECT  = 'KIC 9832379'        / string version of target id                    KEPLERID=              9832379 / unique Kepler target identifier                CHANNEL =                   62 / CCD channel                                    SKYGROUP=                   38 / roll-independent location of channel           MODULE  =                   18 / CCD module                                     OUTPUT  =                    2 / CCD output                                     QUARTER =                    1 / Observing quarter                              SEASON  =                    3 / mission season during which data was collected DATA_REL=                   25 / data release version number                    OBSMODE = 'long cadence'       / observing mode                                 MISSION = 'Kepler  '           / Mission name                                   TTABLEID=                   20 / target table id                                RADESYS = 'ICRS    '           / reference frame of celestial coordinates       RA_OBJ  =           292.388190 / [deg] right ascension                          DEC_OBJ =            46.615100 / [deg] declination                              EQUINOX =               2000.0 / equinox of celestial coordinate system         PMRA    =              -0.0060 / [arcsec/yr] RA proper motion                   PMDEC   =              -0.0100 / [arcsec/yr] Dec proper motion                  PMTOTAL =               0.0117 / [arcsec/yr] total proper motion                PARALLAX=                      / [arcsec] parallax                              GLON    =            78.816017 / [deg] galactic longitude                       GLAT    =            13.308158 / [deg] galactic latitude                        GMAG    =               16.354 / [mag] SDSS g band magnitude                    RMAG    =               15.667 / [mag] SDSS r band magnitude                    IMAG    =               15.438 / [mag] SDSS i band magnitude                    ZMAG    =               15.324 / [mag] SDSS z band magnitude                    D51MAG  =               16.172 / [mag] D51 magnitude,                           JMAG    =               14.279 / [mag] J band magnitude from 2MASS              HMAG    =               13.922 / [mag] H band magnitude from 2MASS              KMAG    =               13.887 / [mag] K band magnitude from 2MASS              KEPMAG  =               15.713 / [mag] Kepler magnitude (Kp)                    GRCOLOR =                0.687 / [mag] (g-r) color, SDSS bands                  JKCOLOR =                0.392 / [mag] (J-K) color, 2MASS bands                 GKCOLOR =                2.467 / [mag] (g-K) color, SDSS g - 2MASS K            TEFF    =                 5335 / [K] Effective temperature                      LOGG    =                4.613 / [cm/s2] log10 surface gravity                  FEH     =               -0.260 / [log10([Fe/H])]  metallicity                   EBMINUSV=                0.107 / [mag] E(B-V) reddening                         AV      =                0.332 / [mag] A_v extinction                           RADIUS  =                0.742 / [solar radii] stellar radius                   TMINDEX =            328856186 / unique 2MASS catalog ID                        SCPID   =                      / unique SCP processing ID                       CHECKSUM= '96DfE3Df93DfE3Df'   / HDU checksum updated 2015-09-01T15:29:12Z      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'BINTABLE'           / marks the beginning of a new HDU               BITPIX  =                    8 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                  100 / length of first array dimension                NAXIS2  =                 1639 / length of second array dimension               PCOUNT  =                    0 / group parameter count (not used)               GCOUNT  =                    1 / group count (not used)                         TFIELDS =                   20 / number of table fields                         TTYPE1  = 'TIME    '           / column title: data time stamps                 TFORM1  = 'D       '           / column format: 64-bit floating point           TUNIT1  = 'BJD - 2454833'      / column units: barycenter corrected JD          TDISP1  = 'D14.7   '           / column display format                          TTYPE2  = 'TIMECORR'           / column title: barycenter - timeslice correctionTFORM2  = 'E       '           / column format: 32-bit floating point           TUNIT2  = 'd       '           / column units: day                              TDISP2  = 'E13.6   '           / column display format                          TTYPE3  = 'CADENCENO'          / column title: unique cadence number            TFORM3  = 'J       '           / column format: signed 32-bit integer           TDISP3  = 'I10     '           / column display format                          TTYPE4  = 'SAP_FLUX'           / column title: aperture photometry flux         TFORM4  = 'E       '           / column format: 32-bit floating point           TUNIT4  = 'e-/s    '           / column units: electrons per second             TDISP4  = 'E14.7   '           / column display format                          TTYPE5  = 'SAP_FLUX_ERR'       / column title: aperture phot. flux error        TFORM5  = 'E       '           / column format: 32-bit floating point           TUNIT5  = 'e-/s    '           / column units: electrons per second (1-sigma)   TDISP5  = 'E14.7   '           / column display format                          TTYPE6  = 'SAP_BKG '           / column title: aperture phot. background flux   TFORM6  = 'E       '           / column format: 32-bit floating point           TUNIT6  = 'e-/s    '           / column units: electrons per second             TDISP6  = 'E14.7   '           / column display format                          TTYPE7  = 'SAP_BKG_ERR'        / column title: ap. phot. background flux error  TFORM7  = 'E       '           / column format: 32-bit floating point           TUNIT7  = 'e-/s    '           / column units: electrons per second (1-sigma)   TDISP7  = 'E14.7   '           / column display format                          TTYPE8  = 'PDCSAP_FLUX'        / column title: aperture phot. PDC flux          TFORM8  = 'E       '           / column format: 32-bit floating point           TUNIT8  = 'e-/s    '           / column units: electrons per second             TDISP8  = 'E14.7   '           / column display format                          TTYPE9  = 'PDCSAP_FLUX_ERR'    / column title: ap. phot. PDC flux error         TFORM9  = 'E       '           / column format: 32-bit floating point           TUNIT9  = 'e-/s    '           / column units: electrons per second (1-sigma)   TDISP9  = 'E14.7   '           / column display format                          TTYPE10 = 'SAP_QUALITY'        / column title: aperture photometry quality flag TFORM10 = 'J       '           / column format: signed 32-bit integer           TDISP10 = 'B16.16  '           / column display format                          TTYPE11 = 'PSF_CENTR1'         / column title: PSF-fitted column centroid       TFORM11 = 'D       '           / column format: 64-bit floating point           TUNIT11 = 'pixel   '           / column units: pixel                            TDISP11 = 'F10.5   '           / column display format                          TTYPE12 = 'PSF_CENTR1_ERR'     / column title: PSF-fitted column error          TFORM12 = 'E       '           / column format: 32-bit floating point           TUNIT12 = 'pixel   '           / column units: pixel (1-sigma)                  TDISP12 = 'E14.7   '           / column display format                          TTYPE13 = 'PSF_CENTR2'         / column title: PSF-fitted row centroid          TFORM13 = 'D       '           / column format: 64-bit floating point           TUNIT13 = 'pixel   '           / column units: pixel                            TDISP13 = 'F10.5   '           / column display format                          TTYPE14 = 'PSF_CENTR2_ERR'     / column title: PSF-fitted row error             TFORM14 = 'E       '           / column format: 32-bit floating point           TUNIT14 = 'pixel   '           / column units: pixel (1-sigma)                  TDISP14 = 'E14.7   '           / column display format                          TTYPE15 = 'MOM_CENTR1'         / column title: moment-derived column centroid   TFORM15 = 'D       '           / column format: 64-bit floating point           TUNIT15 = 'pixel   '           / column units: pixel                            TDISP15 = 'F10.5   '           / column display format                          TTYPE16 = 'MOM_CENTR1_ERR'     / column title: moment-derived column error      TFORM16 = 'E       '           / column format: 32-bit floating point           TUNIT16 = 'pixel   '           / column units: pixel (1-sigma)                  TDISP16 = 'E14.7   '           / column display format                          TTYPE17 = 'MOM_CENTR2'         / column title: moment-derived row centroid      TFORM17 = 'D       '           / column format: 64-bit floating point           TUNIT17 = 'pixel   '           / column units: pixel                            TDISP17 = 'F10.5   '           / column display format                          TTYPE18 = 'MOM_CENTR2_ERR'     / column title: moment-derived row error         TFORM18 = 'E       '           / column format: 32-bit floating point           TUNIT18 = 'pixel   '           / column units: pixel (1-sigma)                  TDISP18 = 'E14.7   '           / column display format                          TTYPE19 = 'POS_CORR1'          / column title: column position correction       TFORM19 = 'E       '           / column format: 32-bit floating point           TUNIT19 = 'pixels  '           / column units: pixel                            TDISP19 = 'E14.7   '           / column display format                          TTYPE20 = 'POS_CORR2'          / column title: row position correction          TFORM20 = 'E       '           / column format: 32-bit floating point           TUNIT20 = 'pixels  '           / column units: pixel                            TDISP20 = 'E14.7   '           / column display format                          INHERIT =                    T / inherit the primary header                     EXTNAME = 'LIGHTCURVE'         / name of extension                              EXTVER  =                    1 / extension version number (not format version)  TELESCOP= 'Kepler  '           / telescope                                      INSTRUME= 'Kepler Photometer'  / detector type                                  OBJECT  = 'KIC 9832379'        / string version of target id                    KEPLERID=              9832379 / unique Kepler target identifier                RADESYS = 'ICRS    '           / reference frame of celestial coordinates       RA_OBJ  =           292.388190 / [deg] right ascension                          DEC_OBJ =            46.615100 / [deg] declination                              EQUINOX =               2000.0 / equinox of celestial coordinate system         EXPOSURE=          30.83373043 / [d] time on source                             TIMEREF = 'SOLARSYSTEM'        / barycentric correction applied to times        TASSIGN = 'SPACECRAFT'         / where time is assigned                         TIMESYS = 'TDB     '           / time system is barycentric JD                  BJDREFI =              2454833 / integer part of BJD reference date             BJDREFF =           0.00000000 / fraction of the day in BJD reference date      TIMEUNIT= 'd       '           / time unit for TIME, TSTART and TSTOP           TELAPSE =          33.49181064 / [d] TSTOP - TSTART                             LIVETIME=          30.83373043 / [d] TELAPSE multiplied by DEADC                TSTART  =         131.50191328 / observation start time in BJD-BJDREF           TSTOP   =         164.99372393 / observation stop time in BJD-BJDREF            LC_START=       54964.01099382 / mid point of first cadence in MJD              LC_END  =       54997.48122492 / mid point of last cadence in MJD               DEADC   =           0.92063492 / deadtime correction                            TIMEPIXR=                  0.5 / bin time beginning=0 middle=0.5 end=1          TIERRELA=             5.78E-07 / [d] relative time error                        TIERABSO=                      / [d] absolute time error                        INT_TIME=       6.019802903270 / [s] photon accumulation time per frame         READTIME=       0.518948526144 / [s] readout time per frame                     FRAMETIM=       6.538751429414 / [s] frame time (INT_TIME + READTIME)           NUM_FRM =                  270 / number of frames per time stamp                TIMEDEL =     0.02043359821692 / [d] time resolution of data                    DATE-OBS= '2009-05-13T00:01:07.136Z' / TSTART as UTC calendar date              DATE-END= '2009-06-15T11:47:40.562Z' / TSTOP as UTC calendar date               BACKAPP =                    T / background is subtracted                       DEADAPP =                    T / deadtime applied                               VIGNAPP =                    T / vignetting or collimator correction applied    GAIN    =               101.68 / [electrons/count] channel gain                 READNOIS=           109.377176 / [electrons] read noise                         NREADOUT=                  270 / number of read per cadence                     TIMSLICE=                    4 / time-slice readout sequence section            MEANBLCK=                  698 / [count] FSW mean black level                   LCFXDOFF=               419400 / long cadence fixed offset                      SCFXDOFF=               219400 / short cadence fixed offset                     CDPP3_0 =    272.8410339355469 / [ppm] RMS CDPP on 3.0-hr time scales           CDPP6_0 =   226.19537353515625 / [ppm] RMS CDPP on 6.0-hr time scales           CDPP12_0=    202.0076446533203 / [ppm] RMS CDPP on 12.0-hr time scales          CROWDSAP=               1.0000 / Ratio of target flux to total flux in op. ap.  FLFRCSAP=               0.6262 / Frac. of target flux w/in the op. aperture     NSPSDDET=                    0 / Number of SPSDs detected                       NSPSDCOR=                    0 / Number of SPSDs corrected                      PDCVAR  =   0.8003738522529602 / Target variability                             PDCMETHD= 'regularMap'         / PDC algorithm used for target                  NUMBAND =                    1 / Number of scale bands                          FITTYPE1= 'prior   '           / Fit type used for band 1                       PR_GOOD1=   0.9972242712974548 / Prior goodness for band 1                      PR_WGHT1=    3.232348918914795 / Prior weight for band 1                        PDC_TOT =   0.9602072834968567 / PDC total goodness metric for target           PDC_TOTP=   31.132863998413086 / PDC_TOT percentile compared to mod/out         PDC_COR =   0.8711838126182556 / PDC correlation goodness metric for target     PDC_CORP=   27.414520263671875 / PDC_COR percentile compared to mod/out         PDC_VAR =   0.9991139769554138 / PDC variability goodness metric for target     PDC_VARP=   23.954051971435547 / PDC_VAR percentile compared to mod/out         PDC_NOI =   0.9766414165496826 / PDC noise goodness metric for target           PDC_NOIP=    57.25021743774414 / PDC_NOI percentile compared to mod/out         PDC_EPT =                      / PDC earth point goodness metric for target     PDC_EPTP=                      / PDC_EPT percentile compared to mod/out         CHECKSUM= 'ndCZpZBXndBXnZBX'   / HDU checksum updated 2015-09-01T15:29:12Z      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @`pc_e< :”úñ  QE’mn@!áúCœÅ>P¯Eìëc@€²     ø      À  ø      À  @TE­¹&2:I6•@{o]%{:,Ò<Cö¼4RJ@`q
+Å–C :•Ï  RE’5@!Ñ!C›Ò°>$°Eì“À@€ÇÓ    ø      À  ø      À  @TEÊ×S„:Hêú@{o[>[:<Cã?¼4Ğk@`q²+‘‹ :•.¬  SE’4@!ĞmC›ã>0ºEì–œ@€¦×    ø      À  ø      À  @TEÁøÖà:IS{@{o•ë•V:B3<Eø'¼7Fl@`rY‘W" :•H‰  TE’-@!ÇºC›é">ÓEìBX@€›Ğ    ø      À  ø      À  @TEË”™!:Ie@{o‹Ö·:T­<F|¼7†”@`s ÷RZ :•be  UE’-W@!ÓcCœ Á>\Eìˆƒ@€¦¿    ø      À  ø      À  @TE½+[:IP\@{o«JwB:@/<=H]¼6U9@`s¨]ƒB :•|A  VE’)˜@!ÏºC›õÖ>[Eì{@€¥Ç    ø      À  ø      À  @TE®Íq:IFB@{o4¼§À:1<=3“¼4@`tOÃHÊ :•–  WE’:é@!ÔC›Â
+>U¶Eì‘´@€Àt    ø      À  ø      À  @TEĞG[¯:I@ƒ@{oÆÊjÌ::½<<¼À¼3½}@`t÷)Cñ :•¯ø  XE’gó@!Ş‹C›×h>9¹EìÜø@€Ç´    ø      À  ø      À  @TEÉ£¤J«:IÕ@{oc?©œ:¤<:cš¼1s~@`utÉ :•ÉÓ  YE’Bù@!ÕØCœÕ>6ÎEìl@€Å7    ø      À  ø      À  @TE»~<G’:I)N@{oá1%À:,Z<:Ö‡¼2Ğ´@`vEõoğ :•ã®  ZE’C+@!×öCœX>ğƒEìŸ)@€Õ-    ø      À  ø      À  @TE©rC•:I\í@{o
+?ûô:B'<6›ö¼1I@`ví[5X :•ıˆ  [E’6a@!ÒWC›ù§>IğEìˆ%@€Ã·    ø      À  ø      À  @TE¼ š:IJ?@{oSà„:<m<:ŠÙ¼3¾@`w”Á0` :–a  \E’;“@!ÔC›èù>E÷Eì—»@€³    ø      À  ø      À  @TE±3:<§:I`b@{oûË8H:M<;r¼57k@`x<'a' :–1;  ]E’7z@!Ó¿C›û¹>BEì_@€¦7    ø      À  ø      À  @TE­¬;Ş:IKµ@{oÊIË:7<:T¼9,÷@`xã& :–K  ^E’H‘@!×ÂCœ>>œEì£l@€´h    ø      À  ø      À  @TE¸‰s5:Iy1@{o­>`D:Z*<<¶X¼6ã-@`yŠó!w :–dì  _E’Tü@!Ú¶C›ÙZ>ıMEìÂ@€¥    ø      À  ø      À  @TE²Z-ƒÂ:IN"@{o|;.°:=<<B?[¼:')@`z2YR. :–~Å  `E’2&@!Ò&C›ÛÈ>_=Eì„œ@€¥©    ø      À  ø      À  @TE®-½q—:IDê@{o=ÂJ:3c<>…ˆ¼;ä@`zÙ¿f :–˜œ  aE’7Œ@!ÓDC›Şö>m£Eìˆ÷@€¸    ø      À  ø      À  @TE±ÔM:I€P@{o#îÌ:\Ö<7Ñ)¼<ä@`{%^ :–²t  bE’:A@!Ô»Cœ+»>VÍEì¯@€™ß    ø      À  ø      À  @TE±‚' :I‡=@{oaîFÊ:dì<=|¼=ƒ¦@`|(‹E :–ÌK  cE’±@!É‹C›é >EìRñ@€{‡    ø      À  ø      À  @TE¬ö‘È°:IT‘@{o9Ë\:?<7Ø¼=WŸ@`|Ïñ- :–æ"  dE’I7@!ØİCœ‚>lEì¨Í@€µ8    ø      À  ø      À  @TEÛ+}‹:HÛÿ@{oS ?È:
+Ğ<8 {¼=ºÜ@`}wW :–ÿø  eE’?@!ÖC›ë‹>7UEìá@€¤ø    ø      À  ø      À  @TEµx:î:I5H@{onıTq:*Ê<8Éc¼5~K@`~¼ıÜ :—Î  fE’±@!ÉıC›ºL>rĞEìV@€¾}    ø      À  ø      À  @TE°—Q€M:Iuú@{omÄª	:Sˆ<7%ä¼;Ï­@`~Æ"ø´ :—3¤  gE’(p@!ÏğC›Ñ>_{Eìqü@€«j    ø      À  ø      À  @TE¬Íp:I^
+@{oo™V:AŠ<8};¼7>@`mˆó| :—My  hE’Mç@!Ø+C›Ê>„ÓEì¨Á@€¦¾    ø      À  ø      À  @TE­
+5\:I0 @{oÊ
+HÀ:ß<7¦½¼6@`€îî3 :—gM  iE’Sê@!ÚÕC›ÜM>CEì¸À@€°&    ø      À  ø      À  @TE¤z•ÄÜ:IF¢@{oF.:0…<:Š†¼:·î@`€¼T³K :—"  jE’Ms@!ØC›¦_>GEì©Ø@€ÃD    ø      À  ø      À  @TEI:Ih@{oÀ Ñ„:9I<8–¼4Ò/@`cºã³ :—šö  kE’2J@!ÒRC›ßV>KxEì†z@€ŸK    ø      À  ø      À  @TE¬œÃR:INÈ@{o¿GË:6<2¼9<£@`‚ ŞZ :—´É  lE’IÔ@!Ö·C›É.>dEì›~@€Ç    ø      À  ø      À  @TEÀÀ£é­:I@{oµú&¥:h<2ûd¼4oA@`‚²†£R :—Îœ  mE’I•@!×‹C›d>Œ«Eì¥ï@€º/    ø      À  ø      À  @TE{aóÚ:I]+@{ovMò::Ù<.¦¼5¯@`ƒYìú :—èo  nE’ø@!ÍªC›Ä>]Eìg@€¶Q    ø      À  ø      À  @TE½Œ<:I:í@{oé ´:3a<4äÓ¼8û‚@`„RÎQ :˜B  oE’B4@!Õ‚C›>åEì“@€½    ø      À  ø      À  @TE¤-ßeÎ:I|@{oµíå:Sõ<.xà¼4úÓ@`„¨¸“9 :˜  pE’9i@!ÓXC›£>[VEì‰!@€Í’    ø      À  ø      À  @TE ÂÙ :IN@{oVÖ&¶:6‚<2-¼7’Õ@`…PÁ :˜5å  qE’B@!ÌlC›¦Ñ>á›Eìa0@€¬™    ø      À  ø      À  @TE²“‚‚V:I>Ş@{oÕĞzÓ:3¸<4È/¼:İ|@`…÷„½ø :˜O¶  rE’,`@!Ï•C›ºD>FˆEìzx@€µ×    ø      À  ø      À  @TE´ÚÊù:I1ˆ@{oché¬:0<<ç¼=6ü@`†ê¸€ :˜i‡  sE’8Ü@!ÔWCœ#¥>AêEì†ğ@€»ã    ø      À  ø      À  @TE³yS]B:I3,@{oÔË8b:&Ó<7œ%¼:b@`‡FP}X :˜ƒX  tE’#M@!ÍÎC›§¥>^ıEìh;@€Àu    ø      À  ø      À  @TE”»w½ƒ:I†	@{oÀ†Ô:W&<3šT¼9Ç@`‡í¶wĞ :˜(  uE’$ @!Í C›ë>)Eìm%@€¡     ø      À  ø      À  @TEÍM\½:I	°@{ox´:¢<6YB¼<_@`ˆ•§ç :˜¶÷  vE’R•@!ÚC›ÒÀ>$½Eì¦"@€Ç&    ø      À  ø      À  @TE¤½ÊÃC:I:@{oM1»È:N<.KL¼4/Ø@`‰<‚lŸ :˜ĞÆ  wE’&@!ÍŠC›ä>S EìnŸ@€ À    ø      À  ø      À  @TE¬Ê([:Iu¡@{o6E-O:R·<5]ğ¼7…Í@`‰ãèg :˜ê•  xE’2@!Ğ~C›Î×>(ÁEìw—@€·—    ø      À  ø      À  @TE¢˜„öñ:IDê@{o@_:-—<-Ğ/¼4ó1@`Š‹N— :™d  yE’X@!Û%C›®->tMEì¸S@€Ïx    ø      À  ø      À  @TEÁ¯²:I @{oc Û:
+­<3z¼.W @`‹2´[Æ :™2  zE’a‡@!Ú¨C›¹Ó>E¬EìÃ@€×$    ø      À  ø      À  @TE§‰ÑâQ:I>Y@{o	*LŞ:(<0¹(¼,Ba@`‹ÚV :™7ÿ  {E’FÅ@!Ô¶C›³>>|"Eì”6@€¾†    ø      À  ø      À  @TE¨Æésâ:IHé@{o®œ:1<*w*¼2I¿@`Œ€Pe :™QÍ  |E’6¿@!ÑÂC›”s>+Eì…Ã@€¾t    ø      À  ø      À  @TE©’Dø]:IK=@{oÎE:1æ<-ºÙ¼6-™@`(æJ :™k™  }E’Dœ@!ÖCœ[>DEì‘@€·)    ø      À  ø      À  @TE²;áß
+:IX¢@{oƒã¤ò:E„<0/^¼5î½@`ĞLDä :™…f  ~E’7.@!ÑáC›¦O>òÛEì‚f@€—·    ø      À  ø      À  @TE«@³Q:I/\@{oZ¬ï‘:"·<,Ñ¹¼8¡¬@`w²? :™Ÿ2  E’B@!ÓäC›­H>9ÄEìÚ@€Ñ½    ø      À  ø      À  @TE±5qË:I;@{o½¬‹”:,V<)èä¼5.@`nô :™¸ı  €E’J@!Ö¤C›¶õ> Eì b@€ªÛ    ø      À  ø      À  @TE»ø.¿Ü:I@{o6l¶:€<-Œ<¼7 ø@`Æ~3l :™ÒÈ  E’3@!ÑHC›¼X>ÌzEì}D@€¶O    ø      À  ø      À  @TE¯L{¢ò:I^r@{oâ}Y:Gô<.ÛÉ¼:#Ë@`mä-“ :™ì“  ‚E’Q±@!Ù.C›ï>£Eì§(@€»î    ø      À  ø      À  @TE­Á:Å:I*ƒ@{oú4Ë:W<+@è¼9n‘@`‘Iò :š^  ƒE’@!ÊeC›“>S‰Eì[3@€œ    ø      À  ø      À  @TE®|ù::Ii
+@{o	õ/@:G…<2	Ü¼;Ğ@`‘¼°!Ò :š (  „E’N@!×\C›Ú0>?»Eìñ@€Î×    ø      À  ø      À  @TE¦Í¬á:I1…@{oFŞ2d:$!<-/å¼8ls@`’dÚ :š9ñ  …E’++@!Ï}C›´>şüEìi˜@€ªŸ    ø      À  ø      À  @TE¡½×na:I\Œ@{o22¨Ì:Bf</¶•¼79@`“{à2 :šSº  †E’WÍ@!ÙšC›‘&>8Eìµ@€¯8    ø      À  ø      À  @TE¤Ò®un:Iv@{oeá|o:
+0<19n¼:¥'@`“²âê :šmƒ  ‡E’AŠ@!ÑáC›e1>Eì‰@€ÂV    ø      À  ø      À  @TE§æƒÂ:I_2@{oúõºÇ:B6<)ÛL¼3QÎ@`”ZH	á :š‡K  ˆE’M@!×)C›†H>PJEìš@€²‚    ø      À  ø      À  @TEªÈµvq:I1º@{o
+zÛ:m<'z[¼-¸q@`•®Ù :š¡  ‰E’8³@!ĞoC›S5>ñ&Eìtç@€Ñg    ø      À  ø      À  @TE­a¡Â:IFÑ@{oè_Ö:0`<%±ö¼1«Ğ@`•©È! :šºÛ  ŠE’>Î@!Ô
+C›º.>QµEìŠ0@€¢‡    ø      À  ø      À  @TE²*=œ:IG@{oª©:5Å<)î¼9^@`–Py÷¸ :šÔ¢  ‹E’)b@!Í¼C›š>dEìlW@€¢¥    ø      À  ø      À  @TE†/Å˜:I¥*@{nÿUğ±¼:c<.à™¼7m¼@`–÷ßñ :šîh  ŒE’'Œ@!ÍIC›¹Ë>û#Eì^@€¥É    ø      À  ø      À  @TE¨'–Ó :I^É@{o ²Ò:?Ô<.¡9¼7]”@`—ŸEµ¸ :›.  E’F@!ÒöC›8Ù>U¨Eì™@€­    ø      À  ø      À  @TE»–.f4:I%„@{o	=M%ø:¼<1èä¼:ğë@`˜F«å? :›!ô  E‘ÿ{@!ÃC›Šq>!YEì"Ê@€œ:    ø      À  ø      À  @TE­âµ¸Õ:Irã@{o¡rhv:UX<0ÖC¼8´@`˜îß :›;º  E’g'@!Ü C›´w>>
+EìÑ¸@€ÂÁ    ø      À  ø      À  @TE¿…³:I*@{o‚ü(:%<8ì¼=@`™•w£/ :›U  E’0:@!ÎC›/£>Z|Eìp$@€®
+    ø      À  ø      À  @TE¥šx¾:I_<@{oÜ9ÿÜ:Eä<7>¼A£¼@`š<İœæ :›oC  ‘E’A‚@!Ó&C›°‡>)*Eìó@€³¦    ø      À  ø      À  @TE©³Bhv:IDû@{o#áê:7Œ<5‘j¼@n¶@`šäCÌN :›‰  ’E’B>@!Û6Cá>,uEìšÛ@€©»    ø      À  ø      À  @TE«&ğÎ¯:I¥@{ovJ0:
+ß<:*¼Aüm@`›‹©V :›¢Ë  “E’:j@!ÓC›c;>L Eì€¢@€¹#    ø      À  ø      À  @TE”iAÒ:Iod@{oõG:DŸ<5ÿ¼@ç@`œ3‰ı :›¼  ”E’2+@!ÍÔC›uÕ>;Eì{>@€…    ø      À  ø      À  @TE¢V¶%Æ:I0œ@{oÁx6*:"Â<;L¹¼EÛÜ@`œÚu¹U :›ÖQ  •E’FS@!Õ¤C›{=>?ŒEì–@€¶Æ    ø      À  ø      À  @TE¶'t:Hê0@{nÿ–gşì:\<<Ìá¼BS­@`Û}M :›ğ  –E’5[@!Ğ+C›±6>
+šEì‚ë@€´ò    ø      À  ø      À  @TE½"÷:I9:@{oÕà×:3Q<<§¼>Ù#@`)Avä :œ	Ö  —E’.Z@!Î„C›By>1Eìk¤@€½ğ    ø      À  ø      À  @TEœªê]ê:Ij @{o Ûù£‹:H“<9XŞ¼<v/@`Ğ§pl :œ#—  ˜E’9Ï@!ÒœC›‹·>PvEì|[@€¾Á    ø      À  ø      À  @TE™·ê:Ip{@{oROÒÓ:Cû<4¨ª¼;ı·@`ŸxŸ¤ :œ=X  ™E’LQ@!×:C›­B>[Eì¢@€È    ø      À  ø      À  @TE£Î»°:I^@{oË Â:?]<7˜½¼>tÜ@` sc{ :œW  šE’,@!ÇÄC›Çè>AcEì,ç@€¨.    ø      À  ø      À  @TE°–&õ:I±õ@{o6SÆ>:‚?<4…¼:´…@` ÆÙ] :œpÚ  ›E’@÷@!ÕC›²>^Eì„0@€â.    ø      À  ø      À  @TE«Œø¤1:I‘\@{o¿y:iƒ</Z6¼4ÉÜ@`¡n?Vk :œŠ™  œE’9Å@!Ò;C›²%>!±Eìz@€Ëæ    ø      À  ø      À  @TE¯ºfÿ#:IO¶@{oÅ?s:?<4­˜¼9Q€@`¢¥Oâ :œ¤Y  E’g¥@!Ü›C›·Õ>tEìÃ‹@€êN    ø      À  ø      À  @TE²qÕë":Ij@{o%©@b:Ö<2Á¼1-@`¢½IJ :œ¾  E’Q@!ØC›€>"Eì \@€ãh    ø      À  ø      À  @TE›dm£½:IS•@{o(™Î:4<-?â¼.Œ@`£dqB¢ :œ×Ö  ŸE’V^@!ÚKC›¼q>cÑEìœ@€êo    ø      À  ø      À  @TE­Uâ²:IPĞ@{oŸ‹­$:;8</ R¼.¼@`¤×<	 :œñ•   E’cI@!ÜC›År>%Eì¾Ç@€à    ø      À  ø      À  @TE¼ú Û:IAı@{oÜ½õ)::	<4›o¼)hI@`¤³=5Q :R  ¡E’)ı@!Î¬C›·I>
+EìX%@€Şm    ø      À  ø      À  @TEµì¼õÍ:Ib@{o6¯/:I’<,Ät¼,Á¯@`¥Z£.© :%  ¢E’k¨@!Ş­C›Á«>TÒEìÃä@€â    ø      À  ø      À  @TE”ê>»:Igc@{oĞ9®:4U<%¼0ğ\@`¦	'ğ :>Í  £E’6˜@!Ñ	C›g>/ Eìjü@€×°    ø      À  ø      À  @TEı€>:I @{o,æ{â:k4<+ã‹¼-lâ@`¦©oVØ :X‰  ¤E’k»@!İÖC›…˜>‚:EìÂÀ@€í9    ø      À  ø      À  @TEÏØPœÆ:HÁ@{o$MpÎ:è¡<3'¼-	@`§PÕ` :rE  ¥E’JA@!ÕÛC›´‚>"iEìö@€äÒ    ø      À  ø      À  @TE“›'Ü:IO@{ovÑ8:(Ë<,J¬¼*:@`§ø;— :Œ  ¦E’b5@!ÚİC›‹§>ÿEì´I@€äù    ø      À  ø      À  @TEµ6´Q]:IMv@{oV!Å:6{<0b³¼'‰0@`¨Ÿ¡¿ :¥¼  §E’DŠ@!ÒC›j°>b;Eì,@€ßé    ø      À  ø      À  @TE¦B¹:IHâ@{o
+,ªê:,%</¹¼+ÊT@`©Gç :¿w  ¨E’hß@!ÛÔC››;>â	Eì¹E@€é¹    ø      À  ø      À  @TE´¹û*:I@{oKjß4:™<1¼Î¼)¬@`©îlşş :Ù1  ©E’[ @!Ù§C›®>¾Eì¦õ@€éy    ø      À  ø      À  @TE¥t8#:IAÖ@{o3f:+o<*o¼+|â@`ª•ÒÂf :òë  ªE’Z@!×ûC›s7>«Eì¥¸@€ß    ø      À  ø      À  @TEÄ®{À±:I?@{oÉvfÙ:Ã<'bw¼(&W@`«=8ñ :¤  «E’XM@!Ø/C›±ø>KaEì“ù@€óg    ø      À  ø      À  @TE‡}(Jc:I@{oîÑğ.:E<&¼Î+@`«äê% :&]  ¬E’h3@!Û¹C›[•> Eì·ã@€Ôï    ø      À  ø      À  @TEÓFĞ[:IX]@{o
+ÅP¬:*<)j-¼¦Œ@`¬Œã- :@  ­E’y*@!ßáC›hP>ìEìÍ@€ù%    ø      À  ø      À  @TE¬ù°öØ:I.¹@{o9Eè:“<,« ¼äç@`­3jÜ% :YÎ  ®E’i|@!ŞC›|>FñEìºÕ@€î°    ø      À  ø      À  @TEŸ”d:IB¬@{o	=Ï6&:&¶<1e¼Ñ‘@`­ÚĞÕ :s…  ¯E’Ô@!ä4C›²>SEìÔ@€ü.    ø      À  ø      À  @TE£ÓÜ$Ì:I5ÿ@{o†=Ï{:(ş<+¼¼Şä@`®‚6Íô :<  °E’F2@!ÕgC›Ü}>úcEìyØ@€İ    ø      À  ø      À  @TE–†ë+.:I}O@{oİÑ¤@:MÆ<.ˆÔ¼"?¯@`¯)œ‘, :¦ó  ±E’b@!çÓC›¢!>öEìøf@€ğÅ    ø      À  ø      À  @TEŸ%kÑÖ:Ih@{oWáZ:·</X>¼í@`¯Ñ¿Ã :Àª  ²E’]Ú@!ÚC›‰a>3Eì¢y@€è8    ø      À  ø      À  @TE§„(ñ:IÒ@{o±`ùf:
+<.‹è¼"@¯@`°xh¸‹ :Ú_  ³E’hn@!İC›·w> ¦Eì¯@€àÎ    ø      À  ø      À  @TE£¢éR•:Hşu@{oôEÕ¥:ù4<)].¼!>I@`±Î{³ :ô  ´E’L@!äjC›`µ>åiEìÔ@€êé    ø      À  ø      À  @TE™ÅÄŒ³:IVé@{o
++ç2:0<) Ş¼àR@`±Ç4ª* :ŸÊ  µE’=²@!ÓC›ÈU>õ·Eìp·@€Ü°    ø      À  ø      À  @TE°Ïœúß:I’@{oIl8n:c8</£à¼"êÛ@`²nš¢â :Ÿ'~  ¶E’@‹@!Ó!C›²´>2EìvÜ@€ëo    ø      À  ø      À  @TE™k°ÖÂ:I\‡@{o‹Q¯::4Ó<0­¼JÍ@`³ eê :ŸA2  ·E’Qt@!×IC›‘è>HEìƒÀ@€Ùå    ø      À  ø      À  @TE¥ 5J:It^@{o
+bTéâ:G³<.Ï¼²Õ@`³½f^¡ :ŸZæ  ¸E’j¼@!İÀC›¤{>(ÒEì¯@€ôµ    ø      À  ø      À  @TE§3P;&:Ie@{o  æî:
+5<*¡¿¼<è@`´dÌŒù :Ÿt™  ¹E’xğ@!á¦C›Š©>ızEìÁà@€ù    ø      À  ø      À  @TEóµ˜Ó:IK¹@{o`"q:,Õ<)‡Ä¼ à@`µ2…  :ŸL  ºE’pc@!Ş¹C›vÜ>XZEì¼Ï@€ğú    ø      À  ø      À  @TE•)'Ø4:Ii*@{o5öú::B<*,¼#©@`µ³˜Hˆ :Ÿ§ş  »E’]ú@!ÙC›_9>ø:Eì˜Ï@€ôŞ    ø      À  ø      À  @TEŸxø:I/.@{o
+ÂÈe:g<*®P¼´!@`¶ZşvĞ :ŸÁ°  ¼E’=@!Ğ§C›Q‡>ÑEì_ÿ@€á¿    ø      À  ø      À  @TE«úRa:I]¬@{o
+{ñÏ:?<(/‹¼ô@`·doh :ŸÛb  ½E’aà@!Ú—C›O­>öJEìŸ@€ö    ø      À  ø      À  @TEªhu÷ò:Ip€@{o¶ Ç4:H <&HK¼n@`·©Ê2/ :Ÿõ  ¾E’b7@!ÛŞC›t'>98Eì˜$@€ül    ø      À  ø      À  @TEª½	®ó:I&@{oN|§Ø:N<'¼t<@`¸Q0*· : Ã  ¿E’/@!ášC›Fı> ‡EìÏM@€ü|    ø      À  ø      À  @TE»=e†|:I@{o$û8:ş<%0¼L@`¸ø–XŞ : (s  ÀE’TÍ@!Ø5C›¢>ıdEìu.@€ûí    ø      À  ø      À  @TE”  ¤4:Ii@{o
+È#Ğ:6Ë<8©¼ì÷@`¹Ÿü¦ : B#  ÁE’ƒ•@!å+C›Z¼>o"EìÉc@Ö    ø      À  ø      À  @TE³‡m'º:I
+@{o
+ïŒ§:ş<"Ë¼èN@`ºGb : [Ò  ÂE’]á@!Ø`C›H?>êEìŒ]@€óÅ    ø      À  ø      À  @TE”¤Šå:Iü@{o	'CÓY:
+<á¼SÆ@`ºîÈf : u€  ÃE’w0@!àC›ŠÙ>ò3Eì¶[@ d    ø      À  ø      À  @TE’ˆÎg´:I]E@{o‹g8ı:-)<#¾¼î2@`»–.Í : /  ÄE’_C@!Ú3C›tñ>ï Eìq@     ø      À  ø      À  @TE—ª…m:ITÊ@{o€pŒ–:,¡<"¼³Â@`¼=“ı : ¨Ü  ÅE’Rn@!×‚C›7•>S~Eìv @€ñª    ø      À  ø      À  @TEªImãÿ:IIÂ@{o	Ğœñ:-0<$Cx¼c©@`¼äùõm : ÂŠ  ÆE’~=@!áPC›kN>Â}EìÂñ@€ÿ¥    ø      À  ø      À  @TE¤ğgLb:HşĞ@{oœ2j:û2<#A¼a9@`½Œ_í´ : Ü7  ÇE’Œi@!æ
+C›Rº>5ÛEìØ#@    ø      À  ø      À  @TE“€4ÌX:IK‰@{osÓ®:#š<%G¼’@`¾3Ååì : õã  ÈE’s*@!ŞÏC›_¾> ÆEì­@u    ø      À  ø      À  @TEœ†Ù¯˜:IKÃ@{o¹Ÿ:,h<!Ó·¼tx@`¾Û+Ş$ :¡  ÉE’¢@!é›C›DB>à*EìõJ@Z    ø      À  ø      À  @TE¢¶ÇÏ:HŞ‰@{o	Ô'øK:á¤<&H¼~ @`¿‚‘ › :¡):  ÊE’k@!åfC›B>OˆEìÏ`@€ş¿    ø      À  ø      À  @TE®¨0i:I2™@{oú#ÿ²:Z<!˜ş¼wĞ@`À)÷Îs :¡Bå  ËE’oI@!ŞgCšÙV>+ÓEì©@€úX    ø      À  ø      À  @TE¶Àö%:INÈ@{o
+¤¬¢:3U<$éY¼¦ú@`ÀÑ]Æ› :¡\  ÌE’˜Ö@!çCšı{>òEìåV@    ø      À  ø      À  @TE«Ñ1€":Ig@{orßı:ş;<$‹ı¼Ç8@`ÁxÃ‰ :¡v:  ÍE’¦F@!ı¾CšÊû>9ÁEìôö@   €ø      À  ø      À  @TE¥==‰®:Hÿƒ@{o
+. ô:üG<#–q¼@ï@`Â )¶Ê :¡ä  ÎE’Œô@!è[C›ÁÆ>iOEìÊ+@    ø      À  ø      À  @TE¦äÃê6:I?L@{o:%Äæ:$¾<´æ¼fM@`ÂÇ®Ò :¡©  ÏE’m­@!ÜµCšò>.ŠEì•À@€øÙ    ø      À  ø      À  @TE}şø5:IL!@{o	ìÏH:*x<m­¼*ˆ@`Ãnõq :¡Ã5  ĞE’x@!ß?Cšâ>=¸Eì±@¾    ø      À  ø      À  @TE°ïü4p:I‰@{oÂá::S<"Ö€¼ƒ@`Ä[i! :¡ÜŞ  ÑE’_¦@!ØÿCšñÁ>&Eì~I@€ø“    ø      À  ø      À  @TEŠ–¨üQ:I‘Y@{ojÛ&::QÓ<!¼l¼Ÿ@`Ä½Á–¹ :¡ö…  ÒE’u@!ßCšìA>5ÂEì£µ@*    ø      À  ø      À  @TE©í}õõ:I!—@{o/µÑ:î<"o²¼U@`Åe'° :¢-  ÓE’„‚@!à’CšÑµ>,HEì¼`@<    ø      À  ø      À  @TEšƒpU
+:I[@{o
+2E„U:ÿn<$S4¼—2@`ÆPè :¢)Ô  ÔE’¹@!àÀCšø>BnEì·÷@€è²    ø      À  ø      À  @TE¥±–é:I?æ@{o
+µ?¡#:%Z<!ŞT¼}í@`Æ³ó~p :¢Cz  ÕE’|o@!á`C›&ô>8Eì±U@€ëñ    ø      À  ø      À  @TE”DRò=:I†§@{o	ôà“":R<!à¼8@`Ç[YvG :¢]   ÖE’–«@!å]Cš¤u>eêEìÏc@€ùE    ø      À  ø      À  @TE˜²ÔÌ‰:IXW@{o	õ¾œÂ:1°<!Õ'¼W3@`È¿8_ :¢vÅ  ×E’‰{@!ãC›;)> QEìÁO@€ı¡    ø      À  ø      À  @TE–®è%0:I.á@{ojğ­–:<$ÎV¼gC@`Èª%0' :¢j  ØE’‡Ê@!á+CšÖ»>ÕEì¶@€ø    ø      À  ø      À  @TE 5`\:ISÆ@{o²2:,ö<#×|¼ÇÈ@`ÉQ‹] :¢ª  ÙE’•E@!çC›
+÷>%hEìÔ#@    ø      À  ø      À  @TEÂ-`RÂ:Hç@{o
+v¸S:õ+<#)û¼¹à@`Éøñ¦ :¢Ã³  ÚE’…n@!à†Cšú>şÚEì·–@€÷    ø      À  ø      À  @TEˆã ö:I=î@{oV	ì:ş<!Ïå¼¦L@`Ê WN :¢İV  ÛE’‡Ã@!â”C›)Å>.nEì®à@R    ø      À  ø      À  @TE•ìŠV:IC´@{o^£’R:$<§y¼ãy@`ËG½D¥ :¢öù  ÜE’ s@!é/C›×>mEìİ}@g    ø      À  ø      À  @TE¤>¼Ÿ :I>û@{o^r;è: #<#Î”¼¢@`Ëï# :£œ  İE’¥!@!èäCšË’>˜EìÛy@€ğ@    ø      À  ø      À  @TE˜ÏZ.\:ICã@{o5rä:’<‘¼˜*@`Ì–ˆş5 :£*>  ŞÀ  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @`Í=îõ¼ :£Cß  ßE’’ë@!ä‘CšÖé>úEì¿Õ@Ñ    ø      À  ø      À  @TE³{ã3È:I.+@{oXõ&:y<ê¼$@`ÍåTíT :£]  àE’‰›@!âÇCšä¬>nEì´º@€ø    ø      À  ø      À  @TE‹˜;ü$:IKß@{o
+1´9Œ:y<[A¼ò†@`ÎŒºäÌ :£w!  áE’‰@!ãCšş>ôkEì¶+@K    ø      À  ø      À  @TE”âH:IX
+@{oÒCw:'ò<Kw¼ba@`Ï4 ÜS :£Â  âE’mk@!ÜC›Ó>!˜Eì‰Û@’    ø      À  ø      À  @TEëİ ’:If@{o¸²0:7Ê<!M¼ßa@`ÏÛ‡	k :£ªa  ãE’£@!è£Cš´:>ıEìæ@
+¿    ø      À  ø      À  @TE ¦7:IW@{o¹Ô@:ü—<%ÇR¼C@`Ğ‚ìË# :£Ä   äE’w@!İÉCš¦>FÏEì˜Ã@ë    ø      À  ø      À  @TE =:5—:IVm@{o	‘ğ®:5…<*M\¼#Ô@`Ñ*RÂŠ :£İŸ  åE’–@!æõC›'j>dlEìÉ^@€öÈ    ø      À  ø      À  @TE¾İ¿:;:I6@{on~&R:‡<1¨¿¼<ü@`ÑÑ¸„B :£÷>  æE’Ÿ@!åõCš•>@5EìÕØ@~    ø      À  ø      À  @TE§2ëe®:I/m@{o`2Mé:I<3Ô¼"€@`Òy±: :¤Û  çE’™4@!æ¬C›(> &EìØ(@€ó¶    ø      À  ø      À  @TE²iøÿà:I5œ@{o%.İ:+Û<:m¼#ã@`Ó „¨‘ :¤*y  èE’@!ãÄCšÙx>(¬EìÌ @€÷¥    ø      À  ø      À  @TE·ò|:I'	@{o	Y~€ò:"¹<;´Ê¼%ã@`ÓÇêj :¤D  éE’h@!Ù…C›!€>U Eì‚é@€ûG    ø      À  ø      À  @TE±.$¥\:I @{o ğÀ:â<1¼,yU@`ÔoPaa :¤]²  êE’ª1@!éŠCš¾f>DûEììM@€ÿÉ    ø      À  ø      À  @TEÉó»j:H»ñ@{o<öW:á$<18T¼)‚?@`Õ¶H :¤wN  ëE’|^@!ß1Cšâœ>¾øEì1@€ôÏ    ø      À  ø      À  @TE§p&ƒ:IEÌ@{o	ñç	:+\<,ß¼)Mp@`Õ¾…p :¤é  ìE’vÇ@!İÄCšÜ±>8xEì"@€ñè    ø      À  ø      À  @TE¸Ù}°ì:I$Á@{o	+KAr:]<3Ş™¼,bö@`Öe‚|˜ :¤ª„  íE’¯@!ìŠC›G>ø;Eìë|@
+ü    ø      À  ø      À  @TE¤VÍM:Hël@{o
+M
+1m:å)<&ü~¼(pŞ@`×ès¯ :¤Ä  îE’‹=@!â®C›ë>ûˆEì®ä@€ø÷    ø      À  ø      À  @TEìûÃ:IR_@{o^o–:7k<&¼&+‚@`×´NjÇ :¤İ¸  ïE’•í@!äÁCšÁb>,ÔEì·@1    ø      À  ø      À  @TE¯>¢Zæ:I(@{oW”{Ö:2<&#’¼ L@`Ø[´,/ :¤÷R  ğE’¶w@!ìœCšÕ›>«
+Eìáë@`    ø      À  ø      À  @TE¬P¼Ú:Hß©@{o	¿bŒ:ê7< Ûù¼,@`Ù#6 :¥ë  ñE’t@!Ü{Cšé¶>¶Eì¦@€úl    ø      À  ø      À  @TEú¸„â:IS@{o
+{H-®:-c<& 5¼(.@`Ùª€OŞ :¥*ƒ  òE’¶)@!ïdCšÎj>ÿLEìâN@Š    ø      À  ø      À  @TE¯õ‹¥H:I¼@{o
+ŒÁ˜L:Ü<$š¼Ñ@`ÚQæFÖ :¥D  óE’pº@!ÛÖCš×œ>bEìq„@7    ø      À  ø      À  @TEŒfé|:IVb@{oVWW‡:%<•¼×b@`ÚùL :¥]³  ôE’’·@!ãhCšÀZ>xEì¢Ğ@ı    ø      À  ø      À  @TE£{mÙ:IH@{oc·’:	{<"N¼¢J@`Û ²4µ :¥wJ  õE’~@!â|Cš¿Õ>9—Eì‹k@€ş     ø      À  ø      À  @TE¡_•äÆ:Ilœ@{oÛ<È:;‚<$V]¼¿’@`ÜH+ :¥à  öE’˜b@!ç2Cšå>/ÛEì°á@˜    ø      À  ø      À  @TE£},r:I+é@{o	4m:è<%â¼w+@`Üï~"d :¥ªv  ÷E’G@!æïC›y>(~Eì—õ@[    ø      À  ø      À  @TE’úÀ¡á:IkÍ@{o^-V@:4<à¼=@`İ–ããŒ :¥Ä  øE’µÂ@!í/Cš¥>REìÛu@ô    ø      À  ø      À  @TE¦¢}ŞÁ:I2y@{o	çÕéÄ:|< Å³¼“&@`Ş>J :¥İ¡  ùE’¢k@!èCšÜ>æ·Eì°{@€ÿ|    ø      À  ø      À  @TEªn#Œ:I@{ohè|:ü'<ª¼	úW@`Şå°» :¥÷5  úE’@!áC› M>íEì…W@G    ø      À  ø      À  @TE"
+\:I´.@{o¸'³:d<%(¼
+2¿@`ßÇÃ :¦É  ûE’s5@!Ü–CšöÆ>?Eìn¹@€éÏ    ø      À  ø      À  @TE ¬‰Ó:IP @{ow”@:&×<"1¼“Ù@`à4{ô+ :¦*]  üE’Å@!ñ+CšÑO>öEìğ@€üf    ø      À  ø      À  @TE¯¹4ö3:Hé"@{oˆ‰Aş:æ¡<'h¼Ó_@`àÛáêÒ :¦Cğ  ıE’~‰@!ßWCšë)>h'Eì}à@€ï     ø      À  ø      À  @TE©gA™:I#b@{oº¢¥î:ş<äf¼—ß@`áƒG«º :¦]‚  şE’Á@!ïCš—º>AMEìŞ@	*    ø      À  ø      À  @TEœ˜ïÕ:I—@{oÔŒÀ|:ù<ø¼*Ø@`â*­¢R :¦w  ÿE’ƒ°@!á>CšÛ >,ÿEìƒµ@Ë    ø      À  ø      À  @TE„^u1:Idü@{oÎ>D:(Ö<\¼è¢@`âÒÎ™ :¦¦   E’ƒñ@!ßùCšÊŞ>G´Eì^@    ø      À  ø      À  @TEz:8nD:Iœf@{oÚ¿‰.:N§<YO¼¾£@`ãyyq :¦ª7  E’¡£@!åÇCš±>ş»Eì¶G@Ø    ø      À  ø      À  @TE“8h§é:II@{oßw–:Q<e¼ @`ä ß…ù :¦ÃÈ  E’Ó¿@!óØCš¹J>?mEìş@O    ø      À  ø      À  @TE˜Ò>*:Iµ@{o
+•WV:ÿ_<oô¼
+Ï:@`äÈE²  :¦İX  E’v@!ŞCšAÆ>‚MEìpo@Š    ø      À  ø      À  @TE‡³Åát:Ioé@{oÿÊ“‘:3‹<‹”¼Û@`åo«¨ˆ :¦öç  E’«½@!é)Cš§3>
+~EìÂ3@    ø      À  ø      À  @TEŠ*$°:I<{@{os.×E:²<Mw¼5A@`æi@ :§v  E’‹}@!àáCš®¿>UwEìˆd@     ø      À  ø      À  @TE…Â6e:IK#@{oyüœ¼:T<K%¼ÖS@`æ¾w_§ :§*  E’‘¤@!ãICš—Ø>åEì›Ÿ@¯    ø      À  ø      À  @TEs¤®:IŒ„@{oXÅM>::{<ûÉ¼óQ@`çeİ‹¯ :§C“  E’—ü@!ãnCš‘~>(,EìŸ%@€Şi    ø      À  ø      À  @TE¾Û¬÷:IFH@{o«4ì:–<6R¼
+D@`èCLG :§]   E’p@!â`Cšq_>^!EìŠb@    ø      À  ø      À  @TEŠy|¥4:IOø@{oUŠÔz:­<©]¼+h@`è´©B :§v­  	E’‹ø@!à;Cš4J>E#Eìƒó@€ı4    ø      À  ø      À  @TE£²`vó:I ğ@{oÑlÄ:
+O<ê¼ZÄ@`é\& :§:  
+E’Å@!å´Cš †>¸Eì i@€ô	    ø      À  ø      À  @TEœ+I²Y:I@{oLO‡Z:<	Ó/¼ E©@`êu/ :§©Æ  E’¡Õ@!èqCš—>FEì¯,@
+´    ø      À  ø      À  @TEºokô:Ih®@{ofÊ¯:.2<ñ¼+@`êªÛ%5 :§ÃQ  E’šî@!åCšÀ>J²Eì@	t    ø      À  ø      À  @TEÍ˜:Ib	@{oû0ì:/+<Pc¼èC@`ëR@å­ :§ÜÜ  E’ÄR@!ïŞCš””>&èEìİÚ@s    ø      À  ø      À  @TE™0ØÈ:I.O@{o*¡­:¾<	‚Ù¼‡A@`ëù§… :§ög  E’ài@!÷TCš‡ï>#úEí@ H    ø      À  ø      À  @TE§Šùÿ:H¹“@{o
+
+"&:ÊÅ<gÿ¼¨Ø@`ì¡œ :¨ñ  E’“#@!ãICš¬>ı¯EìÔ@€à[    ø      À  ø      À  @TEàjô:IX\@{o©.b:-•<É¼ [§@`íHrı¤ :¨)z  E’’o@!ãkCš€d>h6Eìd@    ø      À  ø      À  @TE‡¾Ô[à:I'Q@{o
+0å´:«<	©¼Œ@`íïØ½ü :¨C  E’¢¹@!çCš•Ø>àEì¦=@€øë    ø      À  ø      À  @TEşjfŞ:IhO@{o6’ö:*©<å´¼Á@`î—>é³ :¨\Œ  E’¾8@!ï„Cš³¸>(ÁEìÒà@€şU    ø      À  ø      À  @TE§úÏ¶:I20@{o YŒŸ:Ô<»ÿ¥G@`ï>¤ß› :¨v  E’•ò@!â«CšUÅ><’Eì‹@	'    ø      À  ø      À  @TE“¼|;!:I8ù@{oü*Ü:»<Ş¼	ª@`ïæ
+Ÿã :¨›  E’“A@!ãCš`h>=úEì‘w@€ùQ    ø      À  ø      À  @TE¥œH’:I3ö@{oOt£:Ø<a ¼w@`ğpËz :¨©"  E’Ò`@!ôˆCš¶>3Eìî:@€ıŒ    ø      À  ø      À  @TE¢~Áíâ:HûP@{oƒÁñC:í¹<½‚¼{@`ñ4ÖÁR :¨Â¨  E’ºæ@!ìøCš¢.>&’EìË’@+    ø      À  ø      À  @TE¥)Â:I- @{oesÒ:Ç<9ü¼›@`ñÜ<z :¨Ü.  E’“•@!ãCšƒ‘>\LEì9@Õ    ø      À  ø      À  @TE’gNö:I*@{o>7İT:,<šÙ¼
+½÷@`òƒ¢wB :¨õ³  E’Ô@!óşCšb>>ŠıEìà¢@,    ø      À  ø      À  @TEvkv_ã:IZ€@{oÙ³¸:<6…¼ @`ó+¢¹ :©8  E’œ@!æƒCšF×>WNEì+@ »    ø      À  ø      À  @TE®èm`:I‰º@{oÇŠf~:<"<åV¼6ğ@`óÒnbÁ :©(¼  E’¥u@!æCšÓ> ƒEì$@€ñş    ø      À  ø      À  @TEp´ÕÊ:I.°@{o
+ĞÖæ:u<‰°¼†d@`ôyÔXx :©B@  E’ÁÖ@!ï„CšgĞ>EEìÓn@X    ø      À  ø      À  @TEš¸­™8:IQ@{o
+ÑĞìU:&„<ü¼c[@`õ!:ƒà :©[Ä  E’¦Î@!é!CšXÀ>—Eì¢ª@€ã\    ø      À  ø      À  @TE‡øî::IIÒ@{o	ví¯:Õ<À6»şm@`õÈ yx :©uF  E’Çò@!ñ:Cš¤Å>0UEìÓU@h    ø      À  ø      À  @TE} hìB:IF\@{oœß-ˆ:Ï<nN¼œº@`öp9p :©É  E’¯Ç@!é¼Cš;?>jEì«”@€ù    ø      À  ø      À  @TEŠPfxÍ:Hüã@{o|İÓ:æ<õ¯¼æ@`÷l.÷ :©¨J  E’º+@!íqCš[i>ù+Eì¼;@€Ûh    ø      À  ø      À  @TE®fT²:IWi@{oqMåœ: J<
+Ï—¼*%@`÷¾ÒZ? :©ÁÌ   E’ªÑ@!éECššx>]eEì§ï@€şŸ    ø      À  ø      À  @TEøš¤:I=˜@{oU&î
+:¡<i¼ £+@`øf8 :©ÛL  !E’™o@!äÿCš²>ÍEìŠf@€é    ø      À  ø      À  @TE‚.ÜE:IWw@{o±ëÀU:Ñ<S®¼ Ôö@`ù~ :©ôÌ  "E’µe@!ëÉCšW¼>5‘Eì»á@€åÏ    ø      À  ø      À  @TE}1Ğ>:I<P@{o
+ËÖer:<
+9¼ ¾@`ùµ:¦ :ªL  #E’Ûq@"-„Cšy­>,´Eìğ¬@2   €ø      À  ø      À  @TE³:w¯:Ioƒ@{o/·‡:Í´<
+ÍB»ıÆÅ@`ú\iú^ :ª'Ë  $E’•o@!áõCšVú>:=Eìß@+    ø      À  ø      À  @TEƒ½s®“:IZö@{o-¾ñ€:"V<	É¼ÛÑ@`ûÏïÅ :ªAJ  %E’¥œ@!æBCš>DÀEì ³@€ûN    ø      À  ø      À  @TE~CÏÊÚ:IFÃ@{oSŞ­¾:¦<ÒR¼R@`û«5å :ªZÈ  &E’Ú5@!ö²CšVç>ªPEìíÏ@†    ø      À  ø      À  @TEs4n¯:INY@{o@6j:À<LJ¼,¢@`üR›Úd :ªtE  'E’´Œ@!ëıCš`ÿ>ŸEì¼|@
+
+    ø      À  ø      À  @TE–À2kš:I#Ë@{o¸Ûšè:›<å¼“î@`üúÏ¬ :ªÂ  (E’ÁÀ@!ï†Cšs¢>ö9EìÈÎ@€û°    ø      À  ø      À  @TE†ƒ%4:I6t@{oañi:< lS¼ Ù7@`ı¡gÄô :ª§?  )E’¥ò@!çCšĞ>$üEì˜É@€ïv    ø      À  ø      À  @TEkïp:I@{o
+µÎB:Û*;ÿš®¼İ@`şHÍ„l :ªÀº  *E’Í@!ğçCšNi>GEìÒb@€úC    ø      À  ø      À  @TELï:I!K@{oÍoûL:ù(;úÉ+»şÊ“@`şğ3¯S :ªÚ6  +E’´Å@!êCš[é>ÑúEì¬R@€û    ø      À  ø      À  @TEp»3í:Iõ@{ohÓ‡Ö:ã½;öÈl¼³N@`ÿ—™¤{ :ªó±  ,E’´[@!ë5CšZÔ>ñòEì®¤@€ê0    ø      À  ø      À  @TEuğn:IQ˜@{o˜¢N…:Ô;ü‡Ó¼`)@a >ÿcã :«+  -E’¢œ@!æ‰Cš+2>4Eì@    ø      À  ø      À  @TE”«kwÄ:I;)@{oWjJP:'< tŸ¼ä7@a æeª :«&¥  .E’–@!â³C™ã >>Eì~l@€ï•    ø      À  ø      À  @TEÃ)¶è:I(@{o	ÙÄV:û;ÿ'r¼d;@aËƒ² :«@  /E’º¬@!í&Cš4><ÅEì©@$    ø      À  ø      À  @TE˜¨†:Hñ#@{o'#/:ãR;ÿıÈ¼“&@a51C
+ :«Y—  0E’¾7@!íĞCšYª>$ÚEì´½@x    ø      À  ø      À  @TE‰@w¸K:I9K@{o…æ@:`<·$»üù@aÜ—8 :«s  1E’ĞJ@!òCš2›>ÅEEìÎ@     ø      À  ø      À  @TEHv¼:HÒö@{o‡CpY:Ñ<ø»û!}@aƒıb© :«Œ‡  2E’£@!åÁCšó>12Eìˆİ@	:    ø      À  ø      À  @TEq·İ‚:I(Ì@{o_)T:ùu< dI»ü‹Å@a+cW :«¥ş  3E’Àô@!ïCš?>Eì¿à@ö    ø      À  ø      À  @TEmC!^:I/@{oÕ'š:ü0<k¼™@aÒÉÈ :«¿u  4E’¼Ë@!ì•CšFy>õCEì´’@€õ…    ø      À  ø      À  @TE’Ò¼B:Iã@{o:ön<^Ó¼
+3u@az/AP :«Øë  5E’é×@!øCšb/>İPEìüv@F    ø      À  ø      À  @TEdÍR‚:Hù@{oøP¿W:çÂ<DM¼¼V@a!•6 :«ò`  6E’è¤@!ø'Cšˆy>$Eìóx@    ø      À  ø      À  @TEŸĞF:H££@{oŒÀÏö:®<á¼‚@aÈúõ/ :¬Õ  7E’´p@!ê%Cš;y>LEì«Ú@‹    ø      À  ø      À  @TEÂíx:I³@{o`Hc:õ§<½{¼ÿJ@ap`é÷ :¬%J  8E’­â@!é÷Cšs>ûEìN@    ø      À  ø      À  @TEÆ´“:I-{@{o
+Q%0:
+<r{¼¬Å@aÇ^ :¬>¾  9E’Ë @!òrCšB¥>ïEìÑ¿@    ø      À  ø      À  @TE¦4Uäô:Hõ®@{ogÈÿ\:ğ’<BA¼@a¿,ÓV :¬X1  :E’°’@!é[Cš)>7¥Eì«¥@    ø      À  ø      À  @TE—JµL:I9@{o˜%&<:e<•¼µM@a	f’Çş :¬q¤  ;E’Ò†@!ñåCš:>åEìØ@s    ø      À  ø      À  @TE©ÖÑ::Hèª@{o½}u[:è'<"¼ˆ´@a
+øòF :¬‹  <E’¾·@!îCš‡>@4Eì¿«@ A    ø      À  ø      À  @TEªYLL:Hßh@{o¥·œ:ç*<÷Ì¼ß?@a
+µ^±- :¬¤ˆ  =E’¾j@!ëÕC™ÑR>WÊEì³²@G    ø      À  ø      À  @TE¡ËsŒS:Hõq@{o^ÌÇÈ:ë•<Î‡¼lz@a\Ä¥µ :¬½ù  >E’­ @!çœCš-a>SEì¡•@‡    ø      À  ø      À  @TE—L:I>’@{o
+ş49:©<aÆ¼2Y@a*š= :¬×j  ?E’Ç@!íÒC™İN>;mEì»Ò@®    ø      À  ø      À  @TE’ (:Hş{@{o
+Ìtò:ïë<Å³¼²É@a«´ :¬ğÚ  @E’İ@!ôèCšAf>;˜Eìës@9    ø      À  ø      À  @TE¡B–:Hü¨@{o	"Ò:ñ©<›ã¼¨!@aRöƒ :­
+I  AE’Ìì@!òzCšS|>>/EìÇÎ@ø    ø      À  ø      À  @TE­Ì8¡¦:H@{oï¨Ï¾:´î<eÙ¼½W@aú\w„ :­#¸  BE’Íƒ@!ğOCšM˜>îÙEì¼L@€ú    ø      À  ø      À  @TEs¾‚_:I”@{oÂ~X:ë»<
+Ò´¼9 @a¡Â¡› :­='  CE’Û€@!ôÒCš…>ÓªEìÙT@C    ø      À  ø      À  @TE¥,3!:HÊT@{oîœü:Ìõ<F/¼©û@aI(`C :­V•  DE’Æ%@!îC™¼Ÿ>BoEì­M@ ú    ø      À  ø      À  @TEtqñ¯„:I$³@{oÊÉœ,:óŞ;ôƒW¼@ağT‹ :­p  EE’±p@!é+C™õï>í£Eì“‘@€æÈ    ø      À  ø      À  @TE†§b:IU&@{orcd: ”;ú}Â¼Ğ@@a—ôHÒ :­‰o  FE’»@!êpCš¥>ã1Eì —@€şJ    ø      À  ø      À  @TE€¦“¿Â:Idú@{o&ÛŞ:!ä;ölg»û},@a?Z=
+ :­¢Û  GE’¾Œ@!êÃC™üó>&ïEì§´@[    ø      À  ø      À  @TE‹¯sJ::I6‘@{oÄÉH":ã<_8»û~J@aæÀ1B :­¼G  HE’¶S@!êGC™û>k5Eì3@€ım    ø      À  ø      À  @TE¡0®CÁ:I)×@{o7£Ú:Q;÷Xû»ûÕÌ@a&%i :­Õ²  IE’Áş@!ì«CšÛ>iEìŸç@€û„    ø      À  ø      À  @TE†änŠe:Iğ@{oÂæi:õr;õæ»ø@a5Œ‘ :­ï  JE’¸ @!é6C™Ä¥>'Eì˜Ä@±    ø      À  ø      À  @TE……iÇ:I*k@{o”#µÏ:şå;øï0»ş¢å@aÜò© :®‡  KE’á@!ô2C™è>)@EìÒï@ˆ    ø      À  ø      À  @TE‰Ö;ü:I#@{o¡O¡°:ù¯;ü/Œ»ûNË@a„XÀ :®!ñ  LE’Ñ@!îqC™ñq>Eì¾Ç@€ó­    ø      À  ø      À  @TEŒu™ğ:I,@{o^—Ï4:÷< qŸ¼ ¸ğ@a+½õÈ :®;Z  ME’ @!ájC™êo>=èEìh@€ı„    ø      À  ø      À  @TEhšÁ®:I *@{oaı³Ö:ûk;úu»ûRÃ@aÓ#éÀ :®TÂ  NE’ß@!óÛC™¢¤>EìÎ™@•    ø      À  ø      À  @TE™,G_:I@{oV¬Ğ…:ñX;ı\x»÷|~@az‰İ· :®n*  OE’ÖJ@!ñ×C™Û&>_TEì¾'@    ø      À  ø      À  @TE‘gk‘:HĞ5@{oS¢½Ù:Ç±<ä&»ú`Q@a!ïÑŸ :®‡‘  PE’Ì2@!îxC™Àü>ãEì®‚@ù    ø      À  ø      À  @TE)‹¬ú:I
+Õ@{oá‰):ê< wë»÷nê@aÉU× :® ø  QE’»´@!éÌC™ >,ÿEìŸQ@€ñ    ø      À  ø      À  @TEzìD…2:I/x@{o§×ƒÚ:ÿU< Ùå»ı¦ä@ap»¹^ :®º^  RE’°ô@!é[C™ÎÏ>Eìƒs@
+I    ø      À  ø      À  @TEy1ß†I:I]‹@{o%ZG):I;ø;»úî\@a!­6 :®ÓÄ  SE’¦„@!åC™œ{>å0Eì{Ô@€ğ]    ø      À  ø      À  @TEúĞ‚h:I„@{oXTÖÌ:÷< û»ûH#@a¿‡kN :®í)  TE’ÛŞ@!ò(C™›~>9õEìÑy@”    ø      À  ø      À  @TE–àBõt:Iû@{o-t²R:òÊ<&”»ş8"@afí”µ :¯  UE’ÕÃ@!ïC™¤ª>#rEìÂr@
+ê    ø      À  ø      À  @TE‘×4¯ :Hî @{o»E¥S:ÚË<V»õD5@aSˆm :¯ñ  VE’Ñ@!ñC™È£> Eì¶G@×    ø      À  ø      À  @TE_•-Ì:IB@{oæ¥À“:ï;ş9»ëºd@aµ¹|$ :¯9U  WE’İ@!ò
+C™À->ã¶EìÆÎ@€û¥    ø      À  ø      À  @TE‰Ä’4:I5â@{o½)U²:	;ÿa§»ñì6@a]: :¯R·  XE’ø/@!úÓC™Ï›>Ò‚Eìö¬@	¨    ø      À  ø      À  @TE€“iG:I5ó@{o ÿ`„:ú<ò»ó•®@a…cd :¯l  YE’Õ0@!ñóC™á>ú@Eì½@     ø      À  ø      À  @TE‰R`)
+:I(Ù@{ov±	:Ê< €,»êV§@a«ëVì :¯…{  ZE’·ó@!êAC™¿¬>Eì˜°@]    ø      À  ø      À  @TE‡ÇàÈ:IU»@{o–¾%¼: Ö<*¼ (^@aSQÃ :¯Ü  [E’ôä@!ù9C™‘”>äUEìğ@9    ø      À  ø      À  @TE±ø:H›œ@{oH‰Z:³š;ş@L»ô¸ƒ@aú·=û :¯¸=  \E’Ø2@!ğÖC™\>;ÔEìÆŠ@	`    ø      À  ø      À  @TEˆZ1g:HïÈ@{o†ÏN:ÔM<ªN»ş`¯@a¢1r :¯Ñ  ]E’ÒV@!ïüC™«®>'‚Eì¯-@¸    ø      À  ø      À  @TE€n©‡m:I9š@{oc~<:*;ù&‚»îv;@a I‚ï: :¯êı  ^E’Ø@!ñ‡C™¡	>+Eìº'@_    ø      À  ø      À  @TE†G¶ı*:I-6@{ooä¨j:ıî;öÍ»ów~@a ğèâ’ :°[  _E’ÃĞ@!í]C™¿>üEEì¡]@©    ø      À  ø      À  @TEod‘ :Ib@{oıfK‰:W;ù?‚»öàª@a!˜Oª :°º  `E’îÛ@!öC™ƒà>EìßE@+    ø      À  ø      À  @TE¨&#t:INW@{o¦*7::ñ;öÑC»ñù@a"?´ÉQ :°7  aE’¾?@!íC™˜Z>ğ Eìœ!@    ø      À  ø      À  @TEúo‘=:I!@{oÎÒ}: ¹<“Ø»ï¯©@a"ç¼™ :°Pu  bE’İ1@!ó7C™œµ>kEìÅ‹@€ò¿    ø      À  ø      À  @TEˆŒ¤u:I#Û@{oÄÓ.:ıV;üëæ»íÄ1@a#€å€ :°iÑ  cE’ü7@!ú`C™y™>ùEìü¬@'    ø      À  ø      À  @TE‰Bì“`:Iô@{oü$)O:òs;ş(»ş'Ä@a$5æ£ :°ƒ-  dE’è]@!÷C™`˜>WcEìÑ³@ã    ø      À  ø      À  @TE€QbòZ:HãÔ@{o~üî:Éœ;ı j»ğmÛ@a$İL–@ :°œ‰  eE’é@!õ_C™}÷>´EìÈH@‹    ø      À  ø      À  @TEk/²ğÃ:I_™@{oB»€J:;î0V»İNN@a%„²‰h :°µä  fE’¼ÿ@!ëUC™£`>æuEìŠş@	^    ø      À  ø      À  @TE•e«:Hü¡@{oS\6:ï;ø9à»éÆ±@a&,²/ :°Ï>  gE’Ö^@!ñïC™¼i>(Eì¬~@    ø      À  ø      À  @TE‰Hİı:I3«@{oTc¢:ô;éíR»äˆ‹@a&Ó~o— :°è˜  hE’şÇ@!ûÖC™–¾>)ŒEì÷8@     ø      À  ø      À  @TE‚8:I
+–@{oh¶}`:èZ;ç;$»ŞÆ@a'zäbŸ :±ñ  iE’Ë±@!îÍC™Qê>pEì%@     ø      À  ø      À  @TEmœ¨Ò,:IP@{oEçÜ–:;ö"W»ãßÈ@a("Jö :±J  jE’Æœ@!î C™«Â>œEì \@€ï!    ø      À  ø      À  @TE¸@Kr:I6/@{oÛE:ë<[Á»ç@¤@a(É°H :±4¢  kE’óy@!úLC™®>ÜÙEìån@¤    ø      À  ø      À  @TEé…:I<‹@{o–»´˜:u< Ïœ»àn¿@a)q;† :±Mù  lE’ÜR@!ôC™ o>ü¶Eì¶@    ø      À  ø      À  @TExdã:I8*@{oøıÄU:şK;ôÇ¯»İ¨@a*{ø½ :±gP  mE’âø@!õ[C™€Õ>f©Eìº@    ø      À  ø      À  @TEu¹éïÛ:I+¡@{o!wS:÷#;ìê´»âÍê@a*¿â!E :±€¦  nE’í@!øC™Şš>6OEìÄ@(„    ø      À  ø      À  @TEƒÍuÀ:H»@{o}FÑ:©A;èª»»İe€@a+gH :±™ü  oE’óò@!ù²C™Ë„>,íEìÖQ@`    ø      À  ø      À  @TEŠ 1<:HËÊ@{o%Ğ(:·+;éàW»á@a,®ä :±³Q  pÀ  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @a,¶Ãü :±Ì¦  qE’ÕÂ@!ñ™C™ê¬>&Eì¥K@ö    ø      À  ø      À  @TEÚî›$:I^@{o]z³:ñb;âä²»Óã±@a-]yìd :±åú  rE’óH@!÷cC™µš> EìÑô@e    ø      À  ø      À  @TE|Ù¥:IIŒ@{o”,K:Á;ì0…»ÙùÚ@a.ßß :±ÿM  sE’Õí@!ï¼C™Œ(>C3Eì¨7@U    ø      À  ø      À  @TEzÜlñâ:IPb@{oùãët:2;êù»Ó!@a.¬Eœ :²   tE’óñ@!öuC™–[>%ÉEìàt@€íP    ø      À  ø      À  @TE­BÂ:IQW@{oeÛå:"<ˆ(»×œô@a/S«ÄK :²1ò  uE“<@!û÷C™‹²>KEìäÜ@ Ö    ø      À  ø      À  @TE‚æ›j:I1A@{oí/>J:;òL£»È>ˆ@a/û¶â :²KD  vE’×@!ğzC™£3>0Eì¢Ş@€şù    ø      À  ø      À  @TEc²Ëá:IpÓ@{oÁlä:÷;í‰»Íúí@a0¢wsº :²d•  wE’ş—@!ú¢C™œ>—Eìİ©@    ø      À  ø      À  @TEt@©Ö1:I5Ğ@{oˆàÛ:ÿ;óŒÓ»×tÀ@a1Iİf2 :²}å  xE’ûŸ@!ù—C™€Q>REìß…@1    ø      À  ø      À  @TE„ N<Ä:IW“@{oRÊ¸:µ<²—»Øf/@a1ñCY :²—5  yE“z@!ùŠC™ñ>E/Eìá@    ø      À  ø      À  @TEv%±WÄ:IKD@{oG`M :Ÿ;ø$2»ÙGŸ@a2˜©K :²°„  zE“	½@!ü°C™ZÔ>çEìö @$    ø      À  ø      À  @TE”ÃÂ:Ip@{oÀ§Jü:ä;ï3‰»Ö«5@a3@=y :²ÉÓ  {E’ík@!õEC™µ÷>wEìÃ­@}    ø      À  ø      À  @TEy‘Ã³V:I¡@{o	ùÇJ:ìY;è¢!»ÒCÚ@a3çue€ :²ã!  |E’ÑK@!íáC™2>ùEì–W@€ß£    ø      À  ø      À  @TE‚N¹¾:I”&@{on!r-:D¥;ğDÜ»ÓÌ@a4ÛWØ :²üo  }E’èê@!óœC™²;>0æEìÁ@(    ø      À  ø      À  @TEu<D:IAL@{o `Ø	:º;ùĞ»ÚŠ@a56Ap :³¼  ~E“*§@"ˆC™‚S>\Eí#Ã@*   €ø      À  ø      À  @TE|Fšo:HÜŠ@{oÓÇ:Ò˜;ù…»ÍÀ›@a5İ§§ :³/  E’óÉ@!÷C™d>>UEìÊ@l    ø      À  ø      À  @TE˜½8:H¯0@{oBC#:¸;ıÔs»Ó|¼@a6…. :³HT  €E“*œ@"@C™N1>w¶Eí @i    ø      À  ø      À  @TE—Ò’ÚH:HÌÛ@{o£©ã:Æ;õô¥»Ñ3±@a7,rë :³aŸ  E’ùæ@!÷{C™“É>¸EìÓ“@”    ø      À  ø      À  @TEL¬çQ:Hû¤@{o
+é*:æï;úÃ|»Õ@a7ÓØİ. :³zê  ‚E’á]@!òÄC™“º>FØEìª¦@    ø      À  ø      À  @TEŒ•Ï±:I7´@{oÑL>?:
+D<›»×¬V@a8{?ö :³”4  ƒE’Úß@!ğdC™YÈ> :Eì@@€ù!    ø      À  ø      À  @TEqïbŞ:I}Ì@{o¥Mfi:+<;ı_ç»Ëuó@a9"¤ÁN :³­}  „E“ü@"C™Ev>ÌğEík@¦    ø      À  ø      À  @TE‹Ùí¶ê:Hê@{oæÇ€:Ó<ÿº»Ø/q@a9Ê
+³U :³ÆÆ  …E’Û¨@!ñWC™Z¹>ê²Eìš@€ò¥    ø      À  ø      À  @TE–íl:I
+4@{oGİâ:íí;öõ|»Ú…@a:qpo :³à  †E’åN@!ñ?C™
+~>€Eìµu@€ı_    ø      À  ø      À  @TE)×Jv:I'[@{oH¦í:ùr<›#»â!Ğ@a;Ö—E :³ùV  ‡E’áT@!òdC™U8>áEì¦´@€ı;    ø      À  ø      À  @TEwĞ:Ii@{oµ¼:èŒ<UÍ»ß/i@a;À<‰, :´  ˆE’Òı@!ïÉC™b~>(úEì•@    ø      À  ø      À  @TE‹ø@0:I v@{o¬nYâ:úÃ<bÀ»èHc@a<g¢{ :´+ã  ‰E’»¼@!çÊC™E>õEìk\@]    ø      À  ø      À  @TEx`­!û:Il/@{oB] :$Ó< Që»ç+ç@a=7, :´E)  ŠE’ìB@!õÉC™=}>í†Eì¹¨@ü    ø      À  ø      À  @TEyĞşè¥:I@{oìeëæ:ÚŒ<Z»ë 7@a=¶n^£ :´^n  ‹E’ä×@!ñpC™]×>ãEì¥@€ôv    ø      À  ø      À  @TEšá¯£:IÓ@{o•Ëi:÷ <ª~»åvÈ@a>]ÔPk :´w³  ŒE“	O@!û¼C™,ï>SøEìİ7@Î    ø      À  ø      À  @TE…Ñ6:HÍ9@{oıjİ:»^<mğ»èX®@a?:s :´÷  E’òË@!õyC™` >™Eì¿—@V    ø      À  ø      À  @TE˜É>ŸÛ:HØD@{oÈX7ù:ÎÈ<ê»ía@a?¬ 3Ú :´ª;  E“{@!ı=C™;â>
+¶Eìè•@Y    ø      À  ø      À  @TE»}’ô:HŒ@{oúí-Ì:­§<§»ğù½@a@T%‚ :´Ã~  E’ó@!ù C™y‰>é&Eì¿ì@µ    ø      À  ø      À  @TE2?88:Hıœ@{o{EÎ,:äN<s>»ï*Œ@a@ûkáj :´ÜÀ  E“0ü@"ìC™Pl>ÿ·Eí$@õ    ø      À  ø      À  @TE}ëâ:H¹z@{oá>,:²<
+Ëª»àÖ÷@aA¢ÑÒò :´ö  ‘E“M@!ş C™#>%šEìÖQ@%*    ø      À  ø      À  @TE í,ef:I)@{oaĞ"¬:Õ<,F»ä¹‹@aBJ7ú) :µB  ’E“Ê@!ü—C˜é>"PEìá*@Ê    ø      À  ø      À  @TE #v:Hòt@{oİOÁô:Û?<8ı»êÌ²@aBñë± :µ(ƒ  “E“‚@!şXC™‰>ñÖEìì@Ä    ø      À  ø      À  @TE‰;Ñ:HÎ¸@{ou)½[:ÁÖ<#ó»ëŠ@aC™§x :µAÃ  ”E’í²@!÷C™Uş>Â7Eì¸s@€ä    ø      À  ø      À  @TE‰ÑÛS:I#P@{oÙßå¬:÷C<7á»âk¥@aD@iÎ :µ[  •E’ß@!òC™9>†Eì–ß@€ûH    ø      À  ø      À  @TE€mü(.:I3@{o\¶®:;<Ğ»Ù•—@aDçÏ¿ø :µtA  –E“#v@"ûC™3ö>Eí´@    ø      À  ø      À  @TE’ü³Y&:HÌÊ@{oàŠ9:Âä<˜Ë»Ï^@aE5{Ÿ :µ  —E’èC@!ô¶C™&Z>ùÂEìŸP@€òÒ    ø      À  ø      À  @TE“ö<F:I#R@{o9ÄF:ı±<Ì»ÍçÉ@aF6›lç :µ¦¼  ˜E’÷@!÷úC™7Õ>úíEì¶{@‹    ø      À  ø      À  @TE‡NÔ:IÃ@{oÇ%P°:ğ;ğ1a»Åì#@aFŞ“ß :µ¿ù  ™E“ç@!şcC˜¿Ç>wEìÔš@p    ø      À  ø      À  @TE‹NÀ:HÙ@{o‘Œ½´:Çz;ğLV»¾Œc@aG…g… :µÙ5  šE“9@!ùvC˜ß>?;EìÄg@a    ø      À  ø      À  @TE‹¢mb2:IM@{oSq™æ:öà;ùïA»ÃÛø@aH,Í@ :µòq  ›E“Ô@" ©C™e>÷Eìê5@€öî    ø      À  ø      À  @TEyÕ	£¼:I-b@{ov_¢:ó%;÷9»¿Ú¤@aHÔ3gv :¶¬  œE“b@!ûC™Â> Eì¾@€ô    ø      À  ø      À  @TE[·e{:I2@{oÈú|Q:ï¯;öF»¿ôc@aI{™X :¶$æ  E“J@" >C™!›>)´Eìä2@f    ø      À  ø      À  @TEy–Mµ:Hã£@{o5:¾Y;ãÿ»´£a@aJ"ÿõ :¶>   E“À@" ?C˜ëº>ä»Eìèv@    ø      À  ø      À  @TE=§)…:HÚÚ@{o=LÎò:¿+;åÏ›»¶Ek@aJÊeı :¶WY  ŸE“¹@!ùÎC™#ë>ÖEìÃ3@€ìğ    ø      À  ø      À  @TEgOo©ß:ILÖ@{oıÔ¿‘:ş;éÊø»´ Ê@aKqË+¤ :¶p‘   E’ó•@!ôÙC˜ı»>êäEìX@€â    ø      À  ø      À  @TEaæ£õà:I ©@{o­×3:à¼;ç)"»°›K@aL1œ :¶‰É  ¡E“@!ıŒC˜êû>+Eìà¡@ú    ø      À  ø      À  @TEuĞ¨Hÿ:Hæ<@{oN¡G¤:Å;õEC»¹©‰@aLÀ–×ä :¶£  ¢E’û÷@!ùXC™!ƒ>@ÜEì­M@ƒ    ø      À  ø      À  @TE^Vµ^Ú:I…ã@{oÖ’PA:#û;æ‰§»´’j@aMgüşk :¶¼7  £E“)f@"~C˜Õ>,Eìñ<@l    ø      À  ø      À  @TE„Ç>Ÿ(:H¹í@{osÂÕ#:­á;Ø‰l»«Na@aNbïC :¶Õm  ¤E’òª@!ó0C˜å«>÷Eì\@€ç“    ø      À  ø      À  @TEsÚÖÇ:I07@{oŒ{$g:öı;ÛMÆ»¸³Í@aN¶Èªk :¶î£  ¥E“%I@" kC˜÷>ºEìëÙ@·    ø      À  ø      À  @TErbÁğı:I¢@{oyÏäP:ØÀ;á‰»¸&@aO^.›2 :·Ø  ¦E“#o@"OC˜í£>/ğEìí‹@F    ø      À  ø      À  @TEu
+~X:IBŞ@{o<¶
+:”;åT"»¿9€@aP”Áš :·!  §E“7e@"åC™%l>×HEíò@€ñ«    ø      À  ø      À  @TED]Ş‘:HğÕ@{oÑÆ7¼:Ø{;äí»»²°@aP¬ú|¢ :·:@  ¨E“Ì@!ø·C˜Ù›>Eì¸„@r    ø      À  ø      À  @TE'ã—:I@Y@{oÚiøR:¦;ããJ»»BÈ@aQT`m9 :·Sr  ©E“A@!ÿC˜Ü>>*wEìÒí@U    ø      À  ø      À  @TE‚6•F:I õ@{o–ºÑ:Ûé;ÕJ:»°ò@aQûÆ]á :·l¥  ªE’ôø@!õ|C˜í>'©Eì™Ë@€üm    ø      À  ø      À  @TEfz¯Rb:IK;@{oÛ·o¼:D;æ#ê»³ôÏ@aR£,Ny :·…×  «E“@!ÿC˜¨ñ>öbEìà½@    ø      À  ø      À  @TE1Ö¥÷:I#c@{ontT:îã;ğö4»¸<×@aSJ’?  :·Ÿ  ¬E“Š@!şqC˜ñS>4GEìØ¯@}    ø      À  ø      À  @TEzørZÜ:Hüõ@{oBt:ÔQ;åıb»¼v@aSñø/x :·¸8  ­E“9?@"­C™>¨Eí´@
+Ş    ø      À  ø      À  @TEj•°^:I">@{oq[Â:ã;æ°¼»´P|@aT™^ğ :·Ñh  ®E“;@!÷ËC™Ë>OEì¯@ˆ    ø      À  ø      À  @TEƒ#çšˆ:I8é@{o‰ŠÈ1: `;İİ»¯pi@aU@ÄW :·ê—  ¯E“&@!ÿÛC™>Eìá­@€ş    ø      À  ø      À  @TErüÜj:IÜ@{oQ]á:Øé;ës»µç“@aUè* ¿ :¸Æ  °E“+@!ù‡C˜Ç*>õæEì±ã@€ók    ø      À  ø      À  @TE~fbËÔ:I~@{o·¶+!:áÀ;àj¸»¶ú—@aV»g :¸ô  ±E“ ƒ@!şÈC™:{>ë Eìã¹@Q    ø      À  ø      À  @TE¿
+€:Hêk@{oÙ'€Ä:×‹;ïH†»¹}ƒ@aW6õá^ :¸6!  ²E’ÿò@!÷ÈC˜ú’>±$Eì§@    ø      À  ø      À  @TEvòÓê:I€µ@{o™°D:,w;çS»ªËG@aWŞ[Ñ¦ :¸ON  ³E“<º@"ËC˜÷¬>/Eí÷@Y    ø      À  ø      À  @TE„9¥®H:Hÿa@{oA[†@:ÕÏ;ßÿğ»¯$¬@aX…ÁŒ. :¸hz  ´E“R­@"kC˜È>!»Eí'@i    ø      À  ø      À  @TEn1Zğœ:I #@{oSÂJi:åÍ;ÛÄi»©˜˜@aY-'² :¸¦  µE“3€@"C˜Ü.>CàEìí¨@5    ø      À  ø      À  @TEpı†­:HõI@{oPñ6:Ë;ÎX¾»¥€½@aYÔ¢= :¸šÑ  ¶E“5@!úºC™&w>PåEì§¼@ ƒ    ø      À  ø      À  @TEg J˜_:IMZ@{o¼Ş`:ˆ;Òòj»§a@aZ{ó\¥ :¸³û  ·E“Cï@"
+ZC˜£R>j
+Eí»@H    ø      À  ø      À  @TEiï}kr:HıÇ@{oNÕğš:Ë½;Õ's»­ğ@a[#YL¼ :¸Í%  ¸E“:!@"[C˜Ì×>
+ËEìúd@ˆ    ø      À  ø      À  @TE‰ı0	€:I!7@{oš–º[:ô;ÜÉR»©®¾@a[Ê¿rt :¸æN  ¹E“C@!ı”C˜é€>âšEìªÊ@<    ø      À  ø      À  @TEwÏD¤5:IPò@{oÏmvF:â;Íş»£‚Õ@a\r%bl :¸ÿv  ºE“#^@"C˜äû>_EìÕ}@Ì    ø      À  ø      À  @TE“íª„m:HÈ@{o|êş :µÄ;Í‡»«Fœ@a]‹´ :¹  »E“>5@"ãC˜îX>)Eìÿ@€ûö    ø      À  ø      À  @TE~ş‰ğ:H•Á@{oÚ8ÍÈ:Œ‘;Öw&»­­œ@a]ÀñBK :¹1Å  ¼E“8	@"C˜à}>áEìñq@"0    ø      À  ø      À  @TE‰'jĞ:HãÄ@{o¼~mÉ:Ë%;Ğ;»©_ù@a^hW2# :¹Jë  ½E“1@"êC˜Ï&>øsEìêX@Ì    ø      À  ø      À  @TEz©:HÒ@{oÎØÖ:¯Q;Ñ‡N»­0ø@a_¼ìJ :¹d  ¾E“Ã@!şkC˜«B>ëáEì·è@Ÿ    ø      À  ø      À  @TEjAµfœ:I @{oõ‚{:ßş;ÅLé»­î@a_·"Ü :¹}6  ¿E“ó@!ü0C˜ÜD>éWEì¯¬@€ü    ø      À  ø      À  @TE]B,2:IHk@{oM9ş:ö ;Íp!»®õ\@a`^‰Š :¹–[  ÀE“)ş@"gC˜¢>»cEìÕÔ@õ    ø      À  ø      À  @TEmããİ:I¨@{oÇı b:Ôà;É„»ª@aaî»’ :¹¯  ÁE“s@!ù^C™+Ó>ë”EìŸÙ@L    ø      À  ø      À  @TEi¨1:I,Ñ@{oçD˜~:ğÎ;ĞMç»´Eø@aa­T«9 :¹È¢  ÂE’ì¸@!õxC™ñ>½Eìw;@‚    ø      À  ø      À  @TEx{
+·:I2å@{oxqº÷:õ†;ÇÉ`»³	L@abTºĞ‘ :¹áÅ  ÃE“7@@"‡C˜âI>ïvEììÊ@s    ø      À  ø      À  @TEbL¤ÿ:Háó@{oD­OZ:®p;Á>´»ªğí@abü Šx :¹úç  ÄE“w@!ûğC˜¯Q>Ò«Eì´ã@&K    ø      À  ø      À  @TE]oşšø:HÕ`@{oº±>Ê:©Z;ÅE»¶9Ì@ac£†z  :º  ÅE’ı÷@!ùmC˜ 1>ŒEì<@
+    ø      À  ø      À  @TEz÷ãÔ:I@{o¿k]:ân;ÉˆU»¶§¾@adJìiˆ :º-)  ÆE“@!ş¥C˜D>tEì¼B@â    ø      À  ø      À  @TEe7µ»¨:HàG@{o_ûÖ1:´;É¤Õ»³i @adòRY  :ºFI  ÇE’õy@!÷3C˜©_>‰Eì©@    ø      À  ø      À  @TEmrı¦:I±@{o*ÿÛF:á[;ÌÄ»¯Ûñ@ae™¸Hg :º_h  ÈE“@!üC˜ÏW>GEì´@    ø      À  ø      À  @TEiÔCx¡:IG@{oçV¤:ÔÁ;Ç°Å»¹‘@afA7Ï :ºx‡  ÉE“4×@"C˜c(>ü}Eìå@¦    ø      À  ø      À  @TE{y}²ª:H¼@{o>}¬:¤Ò;Æãv»³Oª@afèƒñw :º‘¥  ÊE“¤@!ûyC˜Z >WùEì§©@Í    ø      À  ø      À  @TEu^Ø¡:Hüš@{o¿Öy:Ó:;Çøé»¸³–@agê~ :ºªÃ  ËE“@!üÑC˜Ç³>ïEìªÖ@    ø      À  ø      À  @TEuÅæ a:HéI@{oı7L3:Ã;È9û»«ÿd@ah7PÆ :ºÃà  ÌE“
+d@!û4C˜>óqEì¢@'Ë    ø      À  ø      À  @TE=Z6(":I(›@{ozÓ:Ï¸;Äˆ§»¶o@ahŞµ¿N :ºÜü  ÍE“z@!şiC˜£Å>YEì²k@ë    ø      À  ø      À  @TESàQB:I*^@{o9½b:İp;ÇÚÇ»¶‡)@ai†ä5 :ºö  ÎE“$ğ@"9C˜Şk>ÒkEìÄf@<    ø      À  ø      À  @TEf"f{:Hôƒ@{o±7ë¬:Å/;Âéw»­µé@aj-Ó] :»3  ÏE’ıq@!ùC˜™À> ˆEì‰µ@€ı    ø      À  ø      À  @TEm´Ç£r:I0Â@{o¡–:ğN;¼‰›»¶d°@ajÔçÂt :»(M  ĞE“×@!ù¡C˜Ÿr>ûEì— @    ø      À  ø      À  @TERùBàô:I @{o™":Ö>;½8I»­0¡@ak|M{Ü :»Ag  ÑE“ Ó@!ÿâC˜RM>GEìÀ¸@x    ø      À  ø      À  @TEW=™ :I!¨@{o3ô2Ò:ÛÒ;ºÃ-»­üÆ@al#³ ” :»Z€  ÒE“5@!şVC˜h^>ÕEì¤§@Õ    ø      À  ø      À  @TEgÄ‘¡0:HÔK@{oP¶ö:®Ğ;´b6»®Çç@alËŒ :»s˜  ÓE“ç@!ı‡C˜c->$
+EìŸ@F    ø      À  ø      À  @TEQª’:I9Ö@{oîü:å1;¶™»´™ì@amrHÓ :»Œ°  ÔE’ÿİ@!ø"C˜¬à>Å˜Eì„@    ø      À  ø      À  @TE^ è:I'Ü@{o›|:çQ;»Lë»½(Ó@anåmk :»¥Ç  ÕE“@!ıèC˜¨F>â;Eì§œ@|    ø      À  ø      À  @TE‚UšŸ¤:I#q@{o?oÆŒ:ğ;¾Õ8»»V=@anÁK\B :»¾İ  ÖE’ıÿ@!øC˜‡¢>$EìT@
+©    ø      À  ø      À  @TEeÚxç:I,4@{oÒzÙÜ:è;½¯x»´&¬@aoh±j :»×ó  ×E“ê@" TC˜W‡>LEì°Æ@€ú4    ø      À  ø      À  @TEcÀGO':IY@{o1ö:Ì­;±Î»¨i@ap2 :»ñ  ØE“h@!ıëC˜šÿ>ïUEì®@t    ø      À  ø      À  @TEZ74ğŸ:I @{oE¨h:Æ+;¹3»¸ş­@ap·}(ª :¼
+  ÙE“®@!ş@C˜KÂ>b‚Eì¡é@j    ø      À  ø      À  @TE‡Èópğ:I˜@{o÷°…Æ:ãÛ;»8»·‰ï@aq^âá¡ :¼#0  ÚE’ş@!ø…C˜¢R>KŸEì…—@€ÿ£    ø      À  ø      À  @TEi c],:I<ÿ@{oÖ0à:ùz;Áî;»Äª@arHĞY :¼<D  ÛE“;@!ûZC˜+¨>NEì–.@­    ø      À  ø      À  @TEmãYİ*:HûŠ@{oÆ‘•%:Ït;Ç,»Ä@ar­®ô  :¼UV  ÜE“Õ@" ôC˜¶É>3Eì¸‰@€ê    ø      À  ø      À  @TEaLñİE:Hò¤@{oZf®:»
+;Ï
+°»Ê>A@asU­ˆ :¼nh  İE“Š@!ıŠC˜zÜ>ˆEìªœ@M    ø      À  ø      À  @TEbÉDQÖ:I:í@{o9R:ô*;ÒşÒ»Õ=x@asüzœ :¼‡y  ŞE’ğá@!õ C˜oU>ëVEìoĞ@€ÿl    ø      À  ø      À  @TEuix:Hõã@{oe}P&:Ğ;Ñ»ÏÊì@at£àŠ˜ :¼ Š  ßE“y@!ÿ°C˜a>G±Eì¬ƒ@€ş¯    ø      À  ø      À  @TE†ˆ<:HÕ:@{oñBâ:Å²;Ñ‡|»Ş-Ã@auKF®¿ :¼¹š  àE’û@!õVC˜!>+4Eì~@€İ•    ø      À  ø      À  @TEg	õ`}:I)L@{oDÿb:é!;ÎŒ~»à@auò¬gw :¼Ò©  áE“ Ù@!şC˜qû>1äEì¿¡@€ìü    ø      À  ø      À  @TEÀÇ:HÍ•@{o‹‘‡:Ç`;Ëq»ãul@avšUÏ :¼ë·  âE“M@!ö~C˜0/>ÂEìŠ@€ì@    ø      À  ø      À  @TEQ“B:I‹@{oN«¦:áv;Ï/5»à¾6@awAxD& :½Å  ãE“¥@!ùàC˜në>±Eì¨è@€ËÚ    ø      À  ø      À  @TEk1™î:Id@{o{î:Ş~;Ñ·»ãnâ@awèŞ2n :½Ò  äE“
+ˆ@!÷,C˜oi>Eì“-@€üy    ø      À  ø      À  @TEe?/´ä:I
+¶@{oµµe:ØŠ;ÌÂV»Ø}ş@axD ¶ :½6ß  åE“8I@"–C˜\>ø¦Eìßs@ß    ø      À  ø      À  @TEoóÑ:HÍZ@{o™jš:²ğ;ÑŒ÷»Úøi@ay7ªí :½Oë  æE“®@!úC˜„Z>ÆEì£V@€Ê6    ø      À  ø      À  @TETp|rí:IH@{o^Y:Õ;È¢h»Úä@ayßı :½hö  çE“*@!ùoC˜N¡>ŸEìÅ@€À    ø      À  ø      À  @TEJÃwA±:IjÌ@{o4,ôò:;¸«»ØÂ@az†uë= :½‚  èE“<Ó@"C˜m>GEìŞ»@€éÖ    ø      À  ø      À  @TES[U‡ÿ:I	ƒ@{oWD¸±:Î;³ºñ»Êvï@a{-ÛÙT :½›  éE“4|@"C˜~Ê>äƒEìÉÆ@€ù&    ø      À  ø      À  @TEjy¤¹:H÷r@{o…èp:Á6;± ¹»¿œÒ@a{ÕAÇ\ :½´  êE“Gİ@"C˜”ó>ş"Eìîl@€ê§    ø      À  ø      À  @TE\ETÌ:H¶ü@{oMó3<:šz;§‰v»¿SÙ@a||§µd :½Í  ëE“%‚@!ş¬C˜‚>õEì¯'@	    ø      À  ø      À  @TEw
+{ğ:Hä @{oÌ×.:½0;¥3j»³÷º@a}$£[ :½æ%  ìE“H(@"ñC˜g‡>LEìí¹@Ü    ø      À  ø      À  @TEw2Ùô:H¸@{o“N¦ş:Ÿÿ;¬lß»µá@a}Ës‘C :½ÿ,  íE“#Y@!ü‡C˜^¹>÷Eì­ˆ@€ø    ø      À  ø      À  @TE]v3¤}:I+M@{oLæÓ+:ãÈ;¬6»ºôc@a~rÙ´Ú :¾3  îE“3Ë@"½C˜R°>EìÈZ@€åx    ø      À  ø      À  @TEwr’›:HèŒ@{o¢^':Ä;Ÿ®à»±J«@a?lò :¾18  ïE“5Ç@"C˜>2ÖEìÊ²@€ú    ø      À  ø      À  @TEU=Ò:Hô@{o5KØÚ:ÁÓ;¤²7»½CX@aÁ¥ZÊ :¾J>  ğE“![@!ıĞC˜->*Eì§a@€îÍ    ø      À  ø      À  @TEoæ J*:Iè@{oé_.:Ó¤;£ø¢»¯âš@a€iÒ :¾cB  ñE“$>@!ş)C˜_©>ÿqEì±R@p    ø      À  ø      À  @TE‘eO`ò:Ia@{of~õº:æ»;®#É»³Z'@aq69 :¾|F  òE“Aj@"ºC—şØ>‰Eì×·@å    ø      À  ø      À  @TER¹"hÖ:I?7@{o#Q~ì:éá;ªåó»­±•@a·×#á :¾•I  óE“Z@!ü-C˜l)>&•Eì¢z@€ò‡    ø      À  ø      À  @TEkıgè:I’@{o³vân:Ğ‹;¤ğ#»¯¨F@a‚_=ˆ :¾®L  ôE“ù@!ù¦C˜UQ>¥Eì…ê@|    ø      À  ø      À  @TE^}ì::I/º@{oV¾Df:ë;§ı»¾@aƒ¢ÿ  :¾ÇN  õE“-.@"÷C˜F¿>>Eì½ò@.    ø      À  ø      À  @TEStB[ :I¿@{o¤+òâ:ÀÈ;{»·Ng@aƒ®ì¨ :¾àO  öE“,ô@" MC˜…d>ÆUEì¶|@o    ø      À  ø      À  @TEw„>:I6©@{oô^ıc:ı,;›~¥»¬ĞÈ@a„UnÚ0 :¾ùP  ÷E’ûû@!ô•C˜=¿>ñ¨EìjÜ@€à?    ø      À  ø      À  @TEY·ô:IOG@{oÏ‘9¶: ¿;Ëù»¹ó@a„üÔ‘÷ :¿P  øE“(X@" »C˜X·>şEì®@    ø      À  ø      À  @TEkJŸMÁ:Hğh@{o@Ïá:À-;¤¶ì»²º@a…¤:µ :¿+O  ùE“@!÷“C—ÿM>ùüEìv@€Ş¿    ø      À  ø      À  @TEVâÁŸ†:I/—@{o(]\N:é;i[»ÁÑÄ@a†K ¢v :¿DN  úE“%G@" ²C˜i#>¥Eì«Ø@€í¾    ø      À  ø      À  @TEfIÌ´š:HöÁ@{oéSª
+:ÆÓ;£ô>»·Yo@a†óZ :¿]K  ûE“1Ø@"ØC˜j`> jEì¹}@Æ    ø      À  ø      À  @TEoô{Ù:I£@{o+vŠ—:Ú¤;ªè=»ºW‹@a‡šl} :¿vI  üE“O@!úŠC˜c+>$EìŠù@€úÜ    ø      À  ø      À  @TEMLŸ™:Ià@{o09;:Ô	;—!»«›@aˆAÒjN :¿E  ıE“½@!ûC˜=d>P¬Eìˆa@€ıx    ø      À  ø      À  @TEma"Ñ£:Hı¥@{oUˆE3:Ïê;©gõ»¹@aˆé8!Õ :¿¨A  şE“)š@"–C˜‚i>úTEì±Ó@"    ø      À  ø      À  @TEP‘T¾:ID¹@{oÿÏ|$:íÁ;¡ß»°@a‰ı :¿Á<  ÿE“+@"EC˜b>ã”Eì¨F@€Öæ    ø      À  ø      À  @TED.%:I„@{oÑ’*:É;›r(»±…¶@aŠ81Ô :¿Ú7   E“N¡@"ÀC˜‡>SEìêç@	á    ø      À  ø      À  @TElv«:Hï¹@{o>™b:Éé;ª‰„»²ŸÒ@aŠßié, :¿ó0  E“I@"
+>C˜ô>BUEìÛ±@®    ø      À  ø      À  @TEul^h’:Hé«@{oĞ…¤ö:À„;®5»±ë@a‹†ÏÖ4 :À)  À  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @aŒ.5Ã< :À%"  E“ @!ú÷C˜vm>DOEìò@€ùN    ø      À  ø      À  @TE]3óy‘:I=ì@{oŒw8:ï=;²aì»¯«µ@aŒÕ›åã :À>  E“)M@"bC˜"><Eì­e@§    ø      À  ø      À  @TEeÙ¦û‚:Hùq@{oûFø¾:Å;°ç»¨®¹@a} :ÀW  E“I@"	3C˜<½>;ƒEìáö@W    ø      À  ø      À  @TEc{ïsÒ:HóÔ@{o›±!#:¿¾; µß»²l&@a$g‰ó :Àp  E“^b@"eC˜Ã>ı9Eìô¯@    ø      À  ø      À  @TEh”#$:HÂ‹@{o6pğ :œ;¢"Ï»ª3@aËÍ¬z :Àˆı  E“X@!ÿ°C˜E¾>à-Eì‘1@ ¬    ø      À  ø      À  @TEJÆş®2:I9G@{oòù‡â:êª;¦‹»¯›Ö@as3c’ :À¡ò  E“|…@"éC˜
+ä>æˆEí]@ä    ø      À  ø      À  @TEijL<§:HÅÇ@{oP×µ:¡ ;
+»¨õ´@a™PJ :Àºæ  	E“;2@"tC˜!'>æ£EìÀİ@!    ø      À  ø      À  @TE_óÏ:I-W@{oõÿÑ:æ;­n»§3B@aÁÿQ :ÀÓÚ  
+E“<ƒ@"ÉC˜/8>î÷EìÀ@
+Ğ    ø      À  ø      À  @TEJ°·:HôĞ@{o·ÑÂ¬:³Ô;¯±E»¢]v@a‘ie)© :ÀìÍ  E“@!şçC˜1ç>$°Eì“n@1    ø      À  ø      À  @TEnİò:Hù>@{oJyŞö:ÈÆ;¬"x»¢É$@a’ËA :Á¿  E“q@!ûŒC˜g¸>nEìuV@!ç    ø      À  ø      À  @TERo¼¨:Ib@{o]ÀnÀ:¼;¦Ò&»¨~A@a’¸1Ø :Á±  E“&@" 9C˜-…>ë9Eì˜*@€ıp    ø      À  ø      À  @TEUXÌ»K:HØ@{oÛ“åË:£`;}¦»ªSÕ@a“_–ï` :Á7¢  E“R€@"
+ìC˜Y	>ÒÍEìâ„@€òx    ø      À  ø      À  @TER8íI³:H»g@{oÃ“¨‚:—>;“[ò»¬.+@a”üÛØ :ÁP’  E“©@!øÜC—è">øEìi!@€´Æ    ø      À  ø      À  @TELä1Ä8:HÿC@{oŸ)_:¾ø;‡fh»¯´Ğ@a”®bÈ? :Ái  E“@7@"¥C˜M>/.Eì¾u@€Ş*    ø      À  ø      À  @TEs|£NÀ:HÒr@{oİS¿ô:§é;‘LÜ»ª²@a•UÈ~÷ :Á‚p  E“:p@"·C˜+9>úEì¯”@	    ø      À  ø      À  @TEcã¸|3:H÷Î@{o½ÛĞ÷:ÁĞ;•(»¡¸@a•ı. ÿ :Á›^  E“)Œ@" ÀC˜â>¸Eì›b@€ëã    ø      À  ø      À  @TEXØ[0U:HÇ@@{o¼B€–:›t;”­£»­¯+@a–¤”V :Á´L  E“E‡@"ÀC—¿D>0¬EìÂ3@p    ø      À  ø      À  @TEiŒ5ë:I9@{oÁíOÁ:Èx;•=U»§f5@a—KúCŞ :ÁÍ8  E“#2@" %C˜Fì>,ŸEìÕ@€ßâ    ø      À  ø      À  @TEKÅüµ :I8@{oQ“¾é:Î»;™´»®ºé@a—ó`eÆ :Áæ$  E“&Í@!şüC˜/±>éEì‘h@€üø    ø      À  ø      À  @TEz&“‘:I á@{oÖÅÎŸ:ÏC;–«»§¦¶@a˜šÆQı :Áÿ  E“.G@"OC˜Ç>ÂEì™×@Ê    ø      À  ø      À  @TENÏqşJ:I"l@{o@¾ç8:Ñ®;˜­"»¥Á<@a™B,e :Âú  E“K)@"…C˜‰>ûEìÌ0@Ş    ø      À  ø      À  @TEQJ×Â6:Hæ¤@{o%sã~:®‚;›ê»­ní@a™é‘ô} :Â0ä  E“&@" 'C˜,->½Eì„Ö@€à    ø      À  ø      À  @TEYÉ¸‚:Hü‘@{oÃÆ;Ø:¿-;‹Ê~»©ş¼@ašøD :ÂIÎ  E“G;@"jC—Û7> uEì»%@€éP    ø      À  ø      À  @TE0lká”:I5à@{o]2:Ñ„;‹ˆ»¦âj@a›8^< :Âb¶  E“D×@"İC˜’>"úEì¬G@
+b    ø      À  ø      À  @TE]PÒ:Hí–@{oè–I:¶;™İ´»bÅ@a›ßÃ¸„ :Â{  E“[˜@",C—Şş>’Eìİ×@.    ø      À  ø      À  @TEZŠ[l„:I ?@{oBÍÕ:Äœ;¡½»“Å@aœ‡)¤k :Â”…  E“Fá@"“C—‚n>-oEì²À@ı    ø      À  ø      À  @TEhp€Ãƒ:HÕÉ@{o¤>Ó:¨Ã;£sı»•Ù¦@a.Æ :Â­l  E“,µ@" |C—ğ	>ÖôEìÍ@ƒ    ø      À  ø      À  @TEWa³ê:Iã@{oNs^:Ê`;£ká»‘Œ†@aÕõ|+ :ÂÆR  E“V@"{C—ò¿>şEìÊE@*P    ø      À  ø      À  @TE[h’û:H©_@{oC.|â:†Ü;šñ»‡e@a}[gò :Âß7  E“N]@"	1C—İ>ïEìÁˆ@ Q    ø      À  ø      À  @TEe/Å":Hå£@{oH®(a:»6;£uŠ»’t@aŸ$Á‰Z :Âø   E“HQ@"´C—øš>ú›Eì·"@5    ø      À  ø      À  @TEn§äÛ0:HÏŠ@{oCd…Í:«}; [X»İ@aŸÌ'?b :Ãÿ  !E“Bá@"ÛC˜
+§>%REì©.@"â    ø      À  ø      À  @TEch·Óî:I6·@{o]®:ë;œäI»‹Ta@a s+	 :Ã)â  "E“{İ@"‰C˜_>¼Eí@)    ø      À  ø      À  @TEX$	dr:I M@{oBÂ§:Ìw;˜‚)»Ô@a¡ó¡ :ÃBÄ  #E“MÆ@"êC—ïò>½Eì±4@´    ø      À  ø      À  @TEDšx,::I=@{ow :Èo;“ñ	»”ù@@a¡ÂY9 :Ã[¦  $E“E@!øâC—ûò>è@Eì[ @D    ø      À  ø      À  @TEbĞ†C˜:I5û@{oÅ²F¸:äñ;e€»Š=@a¢i¾í° :Ãt†  %E“š°@"qC—é>4ÅEí(m@G    ø      À  ø      À  @TEo8Õ±™:H»}@{oÈ‰Î:½i;†w¿»…Øâ@a£$Ù( :Ãf  &E“Mq@"¯C—çA>ñ‚Eì³Ö@À    ø      À  ø      À  @TEQùb
+Ê:I$™@{oÔ„Eæ:Óè;……ò»
+s@a£¸ŠÄ  :Ã¦F  'E“kÀ@"SC˜¿>àEìÜZ@ø    ø      À  ø      À  @TEf­ñÛ[:Hí)@{oOcÛ:³L;››¿»‰—{@a¤_ğ° :Ã¿%  (E“DP@"hC—÷e>õEì¥Q@ u    ø      À  ø      À  @TEN· Ö:IZe@{o·&(‘:øf; gS»‡ôz@a¥V›_ :ÃØ  )E“OÃ@"ÿC—İ.> ôEì³T@0    ø      À  ø      À  @TERìI:I 7@{o°!ûÏ:ÖÉ;—™»‰:@a¥®¼P÷ :Ãğà  *E“f@"ëC—Â€>é˜EìÓ@-Ì    ø      À  ø      À  @TEH½9Ç/:I"¸@{oí¦âĞ:Ğõ;\ë»‡K@a¦V"qî :Ä	½  +E“h@"OC—î£>óUEìÓˆ@š    ø      À  ø      À  @TE?¤Õ\Ö:I)@{opæÅ:Ì’;‡ş»ˆÆM@a¦ıˆ]& :Ä"™  ,E“Vr@"
+C˜ù>ÀEì³ï@ñ    ø      À  ø      À  @TEN’şõM:IG @{oÀ2ç:ìj;—)˜»{¼@a§¤î :Ä;t  -E“ml@"ÿC—©->1EìÚ¿@8    ø      À  ø      À  @TE]\‹;ø:HÒ}@{oÑ©JJ:¦z;’ğO»–M@a¨LT3e :ÄTN  .E“y\@"ŸC—áX>ÎrEìè!@é    ø      À  ø      À  @TEWJüíw:Hêş@{ojÙ=j:² ;‘ş»›Dš@a¨óº} :Äm(  /E“Š@"®C—á¨>WEíÅ@(©    ø      À  ø      À  @TE_‚K:HÎu@{oë·Ë¡:¨é;ªz»˜ƒ@a©›ÓÕ :Ä†  0E“ZQ@"•C—ßë>å,EìÁ@26    ø      À  ø      À  @TE[9°èk:I-@{o İ:ÑJ;±ğ#»šÉ@aªB…¾Ì :ÄÙ  1E“^w@"¦C—Ø®>A&EìÏN@B    ø      À  ø      À  @TEjÆ–âŞ:HòU@{oã&S:Ã,;³$»¡WX@aªéëßt :Ä·±  2E“xŞ@"C—Ú >'ÃEìğ¸@,«    ø      À  ø      À  @TEM£š¹Ş:HÄC@{oùEæÇ:”X;§À…»“~_@a«‘QÊ\ :ÄĞˆ  3E“v§@">C—«“> ñEìóh@/Ä    ø      À  ø      À  @TE[|:Hé2@{oeÿ¬S:¶0;²i»›¢‘@a¬8·ƒ :Äé^  4E“4÷@"vC—¶p>*Eì‚•@#`    ø      À  ø      À  @TEPñ”{:I-æ@{oV4çı:áË;®Èú»ƒ%@a¬àj[ :Å4  5E“iÔ@">C—ó™>è*EìÔo@7ü    ø      À  ø      À  @TEYU®â:HÓ@{oÎ¾xB:£;«HO»šÇ@a­‡ƒŠÃ :Å  6E“c¥@"øC—«á>W1EìÉ@.ê    ø      À  ø      À  @TERİ_:Iš@{oèa`u:Ær;·Ùt»˜Ó‰@a®.éuz :Å3Ü  7E“cf@"~C—Û(>5»Eì¼b@+ù    ø      À  ø      À  @TEKßø3:I' @{oå]9Š:Ø8;©oİ»’l@a®ÖO*‚ :ÅL°  8E“c@"åC—µ*>Ö©EìÆ‘@•    ø      À  ø      À  @TEp•lã:HÒ•@{oğ}Q	:°@;¯Œİ»˜4@a¯}µJÊ :Åe‚  9E“m¢@"ãC—åÿ>ñ EìÉ†@Ó    ø      À  ø      À  @TEK.û¼H:I/@{o½š:¾2; °»¡@a°%5a :Å~T  :E“zò@"nC—Æ>^Eìê]@.â    ø      À  ø      À  @TES¸{Ñ:Hƒ @{oU¾:m^;Ÿ„N»Ò@a°Ì€ê9 :Å—%  ;E“†²@"BC—Å">Ğ×Eìñû@<+    ø      À  ø      À  @TEPÏÔe]:HÉ@{oÑJ¦a:”ö;“¥ª»ß@a±sæÔÁ :Å¯ö  <E“is@"1C—åĞ>G€EìÄ:@3    ø      À  ø      À  @TEPqƒ:Hıš@{o«‘:¶;Ãi»u}@a²L¿8 :ÅÈÆ  =E“›}@"C—é¢>J»Eí\@=Õ    ø      À  ø      À  @TEO$Å÷:Hù»@{oGßÆ:±ó;’v»bæà@a²Â²ßP :Åá•  >E“@"'C—fg> BEìáÕ@;§    ø      À  ø      À  @TE_ƒ€rÆ:Hø”@{o¹#ğ:·»;•º†»TO˜@a³j“ø :Åúc  ?E“c@"³C—µ3>nEì³@@ è    ø      À  ø      À  @TER4 Â:I'Û@{o™ğâ:Ôâ;‘Á‰»JWi@a´~³ï :Æ0  @E“a@"nC—½>ìAEì«Ò@õ    ø      À  ø      À  @TE@²¦§á:I*W@{oàÄ&*:ÌÓ;‡_
+»Ih@a´¸ä7 :Æ+ı  AE“Ÿ’@"FC— p>„ÀEín@3â    ø      À  ø      À  @TE]¡Iˆ":HÜB@{o×€Èc:¤§;”ºD»OÔ¾@aµ`JR¿ :ÆDÉ  BE“’ı@"ìC—Åw>XEìòC@4£    ø      À  ø      À  @TE[3
+:H×h@{o¼vX: ±;{n!»@> @a¶°<ö :Æ]•  CE“†@"TC—ŒT>YsEìÙ@-§    ø      À  ø      À  @TENZş-Z:H÷n@{o“wa’:­Ç;€b»D @a¶¯\¾ :Æv_  DE“­“@"·C—~x>EàEí¯@9_    ø      À  ø      À  @TEHzĞnb:Hş@{oı#vÆ:´;l\{»<¼~@a·V|& :Æ)  EE“€a@"JC—‹}>÷¾EìÛZ@'Ú    ø      À  ø      À  @TE@dãT:HÚ´@{o"¨ :šŞ;yy»MEÜ@a·ıáû= :Æ§ó  FE“=@".C—…D>F?EìåÓ@/ò    ø      À  ø      À  @TEHšOî:Hø%@{oø‡>î:±R;xKm»D'@a¸¥Hå :ÆÀ»  GE“k@"”C—Ú>$Eì¸¨@7ß    ø      À  ø      À  @TEfÌèH:I<@{oŒé„:¿/;€ç»Gäğ@a¹L­Ï- :ÆÙƒ  HE“}ç@"†C—_>#EìÒ2@0    ø      À  ø      À  @TEc£/²:HŞ@{o£‹ª¨:§û;‚ûæ»O”Œ@a¹ô¹ :ÆòJ  IE“jˆ@"3C—°Z>iEì³³@)«    ø      À  ø      À  @TEV5ÁøT:Hú\@{o’
+Ä<:³­;µ»Kˆ@aº›y¢ì :Ç  JE“£Ó@"¼C—d­>¬Eíí@‚    ø      À  ø      À  @TE8æ4¨:I@{o–ÔQ:½¼;€¼H»Mñ@a»BßŒÄ :Ç#Ö  KE“¢é@"JC—t$>DQEí`@3v    ø      À  ø      À  @TENÊyd:IA@{oteáî:Ì®;tı¸»9çã@a»êEv{ :Ç<š  LE“‚3@"OC—¬>ÅÌEìÕß@,"    ø      À  ø      À  @TE\-Ê„Z:Hõó@{o64\Ó:°;†òX»5ëÏ@a¼‘«`C :ÇU_  ME“š@"!C—È¥>Æ	EìõM@3?    ø      À  ø      À  @TE>¬à:IÕ@{où¡«¢:¯ñ;€“†»,ıû@a½9› :Çn"  NE“mÍ@"	C—ÉK>pEì¯±@2#    ø      À  ø      À  @TER6c':I	Ù@{oÚ†Dû:¿;wär»Eº>@a½àw3’ :Ç†å  OE“—Ò@"_C—_ô>şfEìäÊ@3æ    ø      À  ø      À  @TEBM’:IV@{o2òô¢:³;_M»/® @a¾‡İ :ÇŸ¦  PE“ì@"«C—‹z>ÌdEìøo@*    ø      À  ø      À  @TEaÕ­áÎ:HÄ3@{oÌ÷Ú<:•›;x¦»)/ö@a¿/BÑ :Ç¸h  QE“²J@"_C—9>Eí¦@2m    ø      À  ø      À  @TEE}®íx:HÖ‘@{oåQRö:“+;uÓ•»v¤@a¿Ö¨ğ) :ÇÑ(  RE“¨š@"JC—‰v>ıEí!@9…    ø      À  ø      À  @TEQ•Ë±Ì:HèÛ@{ooÿ:¨;uÿ‘»6|˜@aÀ~Ù¡ :Çéè  SE“&@"úC—tâ>(´EìÔë@!á    ø      À  ø      À  @TEXÇo›:I¤@{o Hâ:¾Ú;tS»€@aÁ%tY :È§  TE“¡Ô@"İC—²Æ>Â7EìúÑ@    ø      À  ø      À  @TEpW¢:Hõ¨@{o»N±:»…;v¤±»Â@aÁÌÚv° :Èe  UE“¬6@"»C—¨ú>Ù„EíÅ@'    ø      À  ø      À  @TEOOã£:HÔc@{ob]:™2;^oô»)ÇZ@aÂt@•¨ :È4"  VE““Ä@"ûC—¹£>˜EìŞï@3Â    ø      À  ø      À  @TEQ»ºG“:H‹@{o(öÍB1:f;kï»$©[@aÃ¦~ğ :ÈLß  WE“‰­@"êC—ª£>;EìÎ@I    ø      À  ø      À  @TEB¸(·:I
+µ@{o(ä:·º;oİÕ»\Æ@aÃÃ2x :Èe›  XE“¦Á@"êC—o¨>ëÀEìùÁ@;E    ø      À  ø      À  @TEAS÷Ü¬:HÂ`@{o ÆÆa:‡–;uWÿ»%_Á@aÄjrQO :È~V  YE“‘`@"ÚC—©,>ËŒEìÛ;@/    ø      À  ø      À  @TE4Ô°šÕ:I(Ö@{o}fI:Âı;cä®»Oˆ@aÅØ:w :È—  ZE“ ½@"†C—Á,>Eìç¬@Ê    ø      À  ø      À  @TEMº:Håg@{o ¢fj:¦;eRv»-@aÅ¹=íÎ :È¯Ê  [E“šk@"1C—^æ>ãEìã–@$$    ø      À  ø      À  @TEM¿R«—:Hğ]@{o^:Ï`:¤°;Z½»Î—@aÆ`£Öæ :ÈÈ„  \E“’u@"ŒC—Ÿ¹>÷¹EìÑ@9    ø      À  ø      À  @TE@×ƒ>:HÂÕ@{o ¶)]:†M;_İ»ø[@aÇ	õ :Èá<  ]E“¹|@"%?C—©è>øºEí/@6e    ø      À  ø      À  @TE^"«ÕÁ:H	@{o)ÜÌ:u;d”¨»0µ@aÇ¯o¨Æ :Èùó  ^E“¯j@""C—:ú>öEìû<@³    ø      À  ø      À  @TE?‰{Ï:Hº+@{o }a-ú:‚ï;`«(»fª@aÈVÕ‘­ :Éª  _E“Š@"ùC—„*>¸TEìÃ³@-V    ø      À  ø      À  @TEM™_¢:I@{o(a¡<:Ã);}Ú_»”Ë@aÈş;°5 :É+`  `E“@"•C—>¼ÃEì³?@9    ø      À  ø      À  @TEBÀƒ®¤:I/õ@{o";ª…:Îş;k­¡»‘é@aÉ¥¡cL :ÉD  aE“±´@" C—~>bPEí S@0K    ø      À  ø      À  @TEI44eI:H†§@{o"mÇÀ:`z;_p¢»Ò@aÊML :É\Ê  bE“q@"¥C—bÕ>çÓEìât@7p    ø      À  ø      À  @TERÜëh¾:HáÏ@{oş²ÀÎ:Ÿ0;nÛÅ»õ;@aÊôm4Ì :Éu~  cE“².@"!pC—~(>ÛzEìş@)¬    ø      À  ø      À  @TEEï=â:H×§@{oJ}@:•Œ;YğÎ»p^@aË›ÓS# :É1  dE“½ƒ@""C—®>Eí|@P    ø      À  ø      À  @TEa@d&<:H{I@{o"(PŸ:c@;kÍÙ» µ@aÌC9 :É¦ã  eE“É.@"%LC—<	>Eí!Ğ@-    ø      À  ø      À  @TEC4èê:HÂ«@{o9å…t:‡¦;bTÑºé@@aÌêî£ :É¿•  fE“Ÿá@"‘C—„>ûEìåó@.    ø      À  ø      À  @TExR	qğ:H†@{o!
+… :v”;d™4»dÙ@aÍ’Ú :ÉØF  gE“Á÷@""ìC—]>ï=Eí@Eƒ    ø      À  ø      À  @TE<ı°˜A:HØë@{o!QüÜ:‰Æ;U¨•»d@aÎ9j¿¢ :Éğö  hE“§š@"C—L>’Eìï@‰    ø      À  ø      À  @TESZ7Öº:I;@{oŞNˆˆ:µ‡;hí7» @aÎàĞ¨
+ :Ê	¥  iE“º@""ìC—I°>VEí ²@7o    ø      À  ø      À  @TEHÑ+":Hß#@{o‡‹vM:œz;TĞô»Ä0@aÏˆ6Z² :Ê"S  jE“˜x@"ÄC—'a>Ú\EìÒå@&y    ø      À  ø      À  @TE6ô=ƒ:I9@{oSAÎ:Ø€;a£ù»
+q~@aĞ/œx¹ :Ê;  kE“ºö@" kC—Ø>é Eí]@4«    ø      À  ø      À  @TEZ‡„±	:H¦@{o"Ät¬:vc;Y#•»	â@aĞ×a :ÊS®  lE“°­@"ˆC—>äPEìöê@4    ø      À  ø      À  @TE>Vö:Hğâ@{o!qã•B:¡Ê;a
+I»	ñ@aÑ~hI8 :ÊlZ  mE“ +@"	C—'V>sEì×®@a    ø      À  ø      À  @TEW¡z:I{@{oNŞo/:À;XšÎ»Éö@aÒ%ÍûÀ :Ê…  nE“¸©@" C—'Ë>‘Eìÿ	@E¹    ø      À  ø      À  @TEU<ÃŒx:HğÛ@{où‹Š6:²‹;TŞ”»Ğ@aÒÍ4˜ :Ê±  oE“Ëå@"%&C–õ\>ÚEíÀ@+Õ    ø      À  ø      À  @TEL×œl:HÊ*@{oßÌ¨:Œ¯;]*»Ğş@aÓtš° :Ê¶[  pE“Üî@")aC—‡>ùEí1±@.5    ø      À  ø      À  @TE\Örl:H†@{op–|:j×;R«¦ºø$Ğ@aÔÿ´ :ÊÏ  qE“‡t@"´C—Kk>æEì«÷@#`    ø      À  ø      À  @TEZbj:Iú@{oàB†:Ã;\ÀF»Ss@aÔÃeÑ¿ :Êç­  rE“ŸÜ@"ÚC—Dˆ>7EìÌZ@'÷    ø      À  ø      À  @TEDŸ(¯.:HÜ@{o"™$%/:–µ;@¼»)Ä@aÕjË¹¦ :Ë T  sE“ È@",C—&>í¹EìÔM@9µ    ø      À  ø      À  @TEUz	v:IÖ@{o¦ Ú:ÄÙ;D®*»-@aÖ1kŞ :Ëû  tE“·Á@"=C—4S>RäEìîV@2    ø      À  ø      À  @TE7§·î:Iz@{oVè—¦:¬;/øy»©Y@aÖ¹—SÆ :Ë1¢  uE“­B@"­C—%Ê>ÿlEìæ@2"    ø      À  ø      À  @TEFsY:I ¨@{otRğJ:Äu;?;^»d@a×`ıq> :ËJG  vE“¾G@" àC–æ>>ÒEì÷¯@B    ø      À  ø      À  @TE?sî:HÜE@{o¿.€á:–Ÿ;<¥lºùŠÄ@aØc#U :Ëbì  wE“¶z@"ˆC–ìh>G Eìği@#"    ø      À  ø      À  @TE"`İ”·:Hë³@{o İû½ö:‘“;?/É»;[@aØ¯É :Ë{  xE“Ï–@"$UC—2[>QEí‚@)ª    ø      À  ø      À  @TEZİªö:HÃ	@{o!MËÌ:B;A+”»É@aÙW/(d :Ë”3  yE“¯w@"¼C–øS>ŒEìŞ§@8ª    ø      À  ø      À  @TE@ek®:HØ@{o&Íb:;6‚»Bë@aÙş”ÚL :Ë¬Õ  zE“¡'@"C— >@EìÆ¬@#›    ø      À  ø      À  @TE/®µéH:IEµ@{o”–„:Õß;*k»®@aÚ¥úÁä :ËÅw  {E“¨­@"ÃC—\j>wEìÓİ@0Ô    ø      À  ø      À  @TE?Ãµ½ˆ:Hïz@{o#Èo¨Y: í;8‚,»Z@aÛM`©l :ËŞ  |E“Ã@""sC—ø>@wEíF@3x    ø      À  ø      À  @TEKÆ\ÿ–:HªÀ@{oıëÜ:{;>`"»M@aÛôÆÆ“ :Ëö¸  }E“–*@"*C—)T>ÖEì¼˜@1    ø      À  ø      À  @TEH§0›:I	@{o²wãÊ:Å";=o'»`_@aÜœ,xK :ÌW  ~E“®T@"§C—>8eEìê@=    ø      À  ø      À  @TESÅ‚w:Hº"@{o‡:‰Ÿ;>êB»†@aİC’_³ :Ì'ö  E“Ò.@"'zC—0>%ÙEí¢@;ö    ø      À  ø      À  @TE<şá:I
+Ú@{oÜÍÄ=:±¤;5g» D•@aİêø|º :Ì@”  €E“§µ@"tC—ƒ>3pEìØĞ@.é    ø      À  ø      À  @TE8
+‘è:I!o@{o»±ú:ÄŞ;:TA»!ft@aŞ’^.R :ÌY1  E“ÔÎ@"'
+C—9\>b–Eí@9Ø    ø      À  ø      À  @TEGPup\:HéJ@{oG«F:¢±;OÍ»:}@aß9ÄŠ :ÌqÍ  ‚E“²@"ËC—G¿>4¹Eìàq@4Z    ø      À  ø      À  @TEA¬JÖ:Iœ@{o sò:²;Of~»@ô‹@aßá)Ç :ÌŠi  ƒE“¯ì@"‡C—‰>ìEìÑ¼@7›    ø      À  ø      À  @TE;÷r¬:I:c@{oğ•ÙI:ÕÜ;^l»JÆğ@aàˆãÙ :Ì£  „E“È=@"#ãC—Ê>2¦Eìı@     ø      À  ø      À  @TEG°W>:Hò‚@{okÜè:¨`;^Jñ»jWÇ@aá/õÊñ :Ì»  …E“¿7@"#dC—[>0¶Eìçá@<    ø      À  ø      À  @TEIÁâ(ä:Iì@{oßëKä:¸q;R©Œ»X×@aá×[±ø :ÌÔ6  †E“Ôö@"'ÕC—K¬>GíEí@6í    ø      À  ø      À  @TEiÄ”±¸:H‘n@{oÎ¾:y;tC»c×²@aâ~Á™  :ÌìÏ  ‡E“Ä@"$ÑC—ç>>JEìö@:    ø      À  ø      À  @TEWVz¥:HÏ@{o|¬ö˜:›÷;w	°»[3z@aã&'ø :Íg  ˆE“¿O@"#·C—UÒ>;EìíÙ@!Ê    ø      À  ø      À  @TEDæwÈƒ:I i@{oy:²;dl¯»Så@aãÍfß :Íş  ‰E“°k@"CC–ûò>;İEìŞ@€ü[    ø      À  ø      À  @TEdõ¶ì:H’¹@{o Àv
+:w’;t©»[À¨@aätóM· :Í6”  ŠE“¹É@"#C—‘…>t#EìæH@5ç    ø      À  ø      À  @TEP¨w¸¹:H·d@{o+*°‘:…|;X6N»[©Â@aåY4~ :ÍO)  ‹E“”–@"®C—UÌ>IEì±¬@€ú@    ø      À  ø      À  @TEEÌÈ¹Ô:IÍ@{o¿‘|>:ÂU;e®»Tg'@aåÃ¿F :Íg¾  ŒE“¦ò@"ëC—¦M>kEìÁÛ@    ø      À  ø      À  @TEMAö¡:I7@{oÛCmœ:·;WÈ»3Ò$@aæk$Ì> :Í€Q  E“†´@"C—~>6Eì•T@*    ø      À  ø      À  @TERÌ‰)d:HÍİ@{o–_\4:˜/;Ul+»=R@açŠ²æ :Í˜ä  E“¾ò@"$C—+â>™Eìá?@R    ø      À  ø      À  @TE;×J•:HÚ_@{o"³ª†:Šl;,\»ºV@aç¹ğÏ- :Í±v  E“Ï~@"(­C—1>Eí\@M    ø      À  ø      À  @TEN.`‹:H™ß@{oLTn:oº;)²Å»Ùœ@aèaVµÅ :ÍÊ  E“°N@"šC—>>@²EìÇ9@-j    ø      À  ø      À  @TE'ˆääˆ:HÜˆ@{o!—ÖMp:ŠT;$’ªºÜò^@aé¼œL :Íâ™  ‘E“Án@"#êC—Læ>,EìêI@/    ø      À  ø      À  @TE=d²ı:HºÛ@{o ±ª:|;@£½»qš@aé°"‚´ :Íû(  ’E“Ë’@"&¬C—I•>2±Eìò	@/û    ø      À  ø      À  @TE7<ó8:H®,@{o#åĞ:ƒÛ;(íºånı@aêWˆi, :Î¸  “E“Ûi@",³C—-C>@lEí@    ø      À  ø      À  @TE'3ïŠV:HØÍ@{o#gîş:€ü;-0¼ºÎW€@aêşîO„ :Î,F  ”À  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @aë¦T + :ÎDÔ  •E“¶¹@""vC—W$>HÀEìÏ@2Ù    ø      À  ø      À  @TEG\Úš:HØ@{oåƒ™:”¬;^´ºáàM@aìMº :Î]`  –E“Æâ@"&C—kv>ÛüEìê<@C¤    ø      À  ø      À  @TEJqÍR:H¡C@{oV(ÏÊ:pO;ßEºåµ@aìõ J :Îuì  —E“Ù@"*CC–Ú®>.ĞEíÎ@:K    ø      À  ø      À  @TEwä¡Ş“:H!@{o#z›X<:'B;Üºå @aíœ…²Â :Îw  ˜E“¶N@"!C—Ç>ßEìÎ@:     ø      À  ø      À  @TE?à_•ô:H³ã@{o!êëOM:s²;Ğîºøº@aîCëÎš :Î§  ™E“Ù@"**C—=O>ÖxEìü6@&G    ø      À  ø      À  @TE=ßc¨:H³›@{o"Ä:u;¶ºßÄÊ@aîëQ´² :Î¿Œ  šE“ºê@""_C—=a>ügEìÖ@%¹    ø      À  ø      À  @TE'J”úÚ:H¨N@{o=iF:g€;# » ¿·@aï’·dù :ÎØ  ›E“¬×@"ƒC–áb>ôGEì¸@2]    ø      À  ø      À  @TEF.=^O:Hç@{o cj
+:K;7h»º0@ağ:Jñ :Îğœ  œE“™(@"ÿC—6A>á|Eì¥­@5    ø      À  ø      À  @TE89Înf:HÙˆ@{o!Î‰|:†;½»w@ağáƒf˜ :Ï	$  E“§k@"CC–ë—>ÑFEì³@*ı    ø      À  ø      À  @TEEVÒ¦:HÈ@{o!!ò:Š;ã»ú7@añˆéLp :Ï!ª  E“½	@"!_C—(Ä>QFEìÚ@+    ø      À  ø      À  @TE=Ï1ÎÎ:Hg¿@{o#z£§:Aj;O»$ü@aò0Nü˜ :Ï:0  ŸE“¡@"C—š>sEì¨Š@0g    ø      À  ø      À  @TEHqHø§:HàÖ@{oßã1Q:—;" Ã»‡@aò×µ :ÏRµ   E“°å@"LC— H>ÎŞEì¾-@'Ú    ø      À  ø      À  @TE)Ø4,:HùJ@{o#K(':œÀ;ˆá»ò@aóıÇ :Ïk9  ¡E“Ä.@"#LC—8†>şÚEìİ{@<y    ø      À  ø      À  @TE1pû£s:Hñ·@{o#k$:›;™:ºëª£@aô&€­¿ :Ïƒ¼  ¢E“µá@"kC–Õï>éÃEìÅß@$Š    ø      À  ø      À  @TE?N´„:H¦@{oUä`:t¼;Ø"ºğ/›@aôÍæ“g :Ïœ?  £E“Ô“@"&-C–é;>§=Eìúô@9­    ø      À  ø      À  @TEIaô[:H¤•@{oåmÿÒ:z5;2ºÿ}\@aõuL®® :Ï´Á  ¤E“¼1@"!~C–é>ÆEìÎæ@8h    ø      À  ø      À  @TE)3.×q:Hãb@{o!Ñl
+:ˆø;œºæ¢@aö²^v :ÏÍA  ¥E“À¾@"!ŒC—Z>ÚèEìØh@4U    ø      À  ø      À  @TE .FtŠ:I!@{ohPXK:µ';¹ôºù™.@aöÄCş :ÏåÂ  ¦E“ÜØ@"(¬C—Ñ>ÆèEí e@S2    ø      À  ø      À  @TE=@V6:H‘Ü@{o!ğ¦õ:^l;ÚŸ»¹™@a÷k~)e :ÏşA  §E“±ò@"ÌC–ç‡>ÔEìÁ
+@/†    ø      À  ø      À  @TEAPJÿø:HĞ@{o^èæ÷:’ß;"$÷»Hn@aøäÍ :ĞÀ  ¨E“çB@"*´C–M>Eí	¬@87    ø      À  ø      À  @TE@™ÓN:I/@{oCš¿ˆ:¼“;$õºû	h@aøºIô :Ğ/=  ©E“ù”@"-C–×\>şìEí. @@Ì    ø      À  ø      À  @TED¶#À:HÃÓ@{o³XF¾:‡°;´ì»
+Şô@aùa¯Ù\ :ĞGº  ªE”„@"6*C— x>§EíV^@Dn    ø      À  ø      À  @TEEqÍœm:H‹o@{o"\âáª:a;³^ºö´@aú	¾” :Ğ`6  «E“¨ã@"“C–Ó×>ô|Eì¬m@*    ø      À  ø      À  @TE:„ËcÒ:I<ğ@{oV×):Ô;0Nº÷õ@aú°{£Ì :Ğx²  ¬E“ËÕ@"#.C—&ø>ÒØEìÚ·@‘    ø      À  ø      À  @TEÌ;B:Hà@@{o!v [‚:„K:ûÌBºìê®@aûWáˆã :Ğ‘,  ­E“ÜÓ@"'C–¶õ>â¼Eìû?@A    ø      À  ø      À  @TE9F¶Â:HÉ@{o!v¹é:ƒÓ;
+î»	MÊ@aûÿG8K :Ğ©¦  ®E“¢Ê@"üC–Ü>à)Eì›¸@    ø      À  ø      À  @TE5¡—aê:Hø/@{oÑTµ:¦¢;)-»oh@aü¦­S :ĞÂ  ¯E“à’@"&cC—z>ğğEìúq@0¤    ø      À  ø      À  @TE5ÜŞ@:Hã@{o ¥R>Ô:Õ;®MºÎï@aıN7ú :ĞÚ—  °E“ıP@"/=C—	>Ò•Eí'É@CH    ø      À  ø      À  @TEOMğø·:HÓN@{o%–œãÿ:‹;;éÁºÓJj@aıõxçB :Ğó  ±E“é|@")}C–ÊA>á:Eìÿæ@Jı    ø      À  ø      À  @TE5Ê€†9:HÛè@{o$‡b:’î;ÛCºİÃn@aşœßÊ :Ñ…  ²E“¾™@"-C–Íò>î8EìÃÕ@4    ø      À  ø      À  @TE7N):Hùƒ@{o"ğgÃ¬:£”;ö[»û¨@aÿDDæ¡ :Ñ#û  ³E“öÄ@",ğC–±T>ÅEíô@;4    ø      À  ø      À  @TE@4í:HŸÂ@{o!D\G":mR;¦hºÇZ@aÿëª•¹ :Ñ<p  ´E“×@"$'C–óœ>¼šEìêR@3Š    ø      À  ø      À  @TE7{?…!:Hë`@{o!¯½°Š:™;õ ºéœ@b “zq :ÑTä  µE”»@"2¯C–Ø=>×Eí.'@@f    ø      À  ø      À  @TE+™uŸ:HÁÔ@{o$ŠHGõ:tú;FåºÛ±@b:v”Ø :ÑmX  ¶E“æŸ@")GC–ªØ>ÿ?Eìÿ|@;    ø      À  ø      À  @TE=“›F:HÊ@{o ÿv2:†¶:êâûºãbµ@báÜyp :Ñ…Ê  ·E“Ù@")…C—|>ßÑEìáG@:j    ø      À  ø      À  @TE6åk)„:Ir@{o¸îşV:¾:õš
+ºÑ¢¬@b‰B(X :Ñ<  ¸E“ç˜@"-<C–ÿ`>ëlEìûa@8l    ø      À  ø      À  @TEAg±˜:HÁ@{o!¶£e:€T;¤ùºÔÎ‰@b0¨B :Ñ¶­  ¹E“û­@"/“C–¯>ŞEíË@>×    ø      À  ø      À  @TEk)[:Hº?@{oŸ1åf:s:÷ÿyºÏÍ:@bØ' :ÑÏ  ºE“àƒ@"*üC–ü0>PEìê'@90    ø      À  ø      À  @TE-ËüL:Ik@{o"ƒ:¨K;	'ºĞj@bsÕ¿ :ÑçŒ  »E“×>@"'FC–­§>ø¥EìÔñ@8°    ø      À  ø      À  @TE1 VÊ¨:H¶ê@{o#×BŞ:v:Ù“5º¸€ó@b&Ùº& :Ñÿû  ¼E“âm@"*šC–¿Ş>1Eìê
+@$    ø      À  ø      À  @TE$³yô:HáA@{o_™v:…Œ:ë^SºÌ§@bÎ?Ô. :Òi  ½E“ĞÜ@"&4C—Ù>ãEìËÒ@*Ÿ    ø      À  ø      À  @TE<G¨à¿:Iú@{o‡6:ºŸ:éJ
+ºÕÅ@bu¥‚Æ :Ò0Ö  ¾E“¯y@"QC–éØ>ıtEì•é@    ø      À  ø      À  @TEA[.ÇÙ:HÆY@{o!>º²:€Š:ó`º—E@bfı :ÒIB  ¿E“íÕ@"-DC––å>âÌEìùD@=²    ø      À  ø      À  @TE&}”:Há.@{o%‡Ê¦È:Œy:éµÚºÆh@bÄq€Õ :Òa­  ÀE“ß†@"+JC—V>ÜVEìŞ%@(X    ø      À  ø      À  @TEHˆsÕ:H¬×@{o!Å:uÇ; ĞWºĞ×@bk×/M :Òz  ÁE“än@",mC–Át>ÏEìæ¬@5î    ø      À  ø      À  @TEZŒ¥æï:HŒÔ@{o!oZ~:o´; ñ£ºŸe@b	=T :Ò’  ÂE“íÅ@"-~C—ò>òâEìì^@1,    ø      À  ø      À  @TE7.?ù:Háv@{o!5¬:E;]mº¾_¸@b	º¢÷\ :Òªê  ÃE“Úª@")gC–Ü>-AEìÔj@J—    ø      À  ø      À  @TEA\²”:HÌ@{oŸ~e>:‹¦;†iºÑrs@b
+bÛT :ÒÃR  ÄE“µD@"¹C–¤·>%¾Eì_@*™    ø      À  ø      À  @TEAÿE•:H¶¯@{o"*,k:wà:Ø¨Ìº®m@b	n¿; :ÒÛ¹  ÅE“Ò*@"*"C–ÀS>0EìÄœ@(×    ø      À  ø      À  @TE=½ÈV¨:Hïz@{o#ŒS©Ì: F:Ó¶^ºÂK@b°Ô£# :Òô   ÆE“Ğ@"(nC–§ >N±Eì¸@Bd    ø      À  ø      À  @TE#1!:I2@{o!ûvï:©•:Ş'°ºÈ[R@bX:Q; :Ó…  ÇE”@@"3«C–¢>¿EíŒ@G7    ø      À  ø      À  @TE+T¤:HŠŒ@{o!P¢w:NF:¹¡º‘ñ@bÿ j² :Ó$ê  ÈE“Ü‘@")öC–Â>®EìÌ@5"    ø      À  ø      À  @TE$à/S:I–@{o /à":³:àL}º^K!@b§Nj :Ó=N  ÉE”EJ@"D[C–§s>öÏEíy¯@C¦    ø      À  ø      À  @TE?|d·:H:Í@{o &Ğğ:%Û:êåİº_È@bNküb :ÓU±  ÊE“Öì@"&íC–«'>.àEì½®@1¥    ø      À  ø      À  @TEEÉo™&:H²4@{o!xB‚:y6:ğT ºŒ@bõÒ¹ :Ón  ËE“ïè@",zC–€×>ñEìî@IR    ø      À  ø      À  @TENUÜÓË:H™@{o%e$ë¢:g°:ü>ºÎ…Š@b7ùA :Ó†u  ÌE”cF@"ÜPC–°¬>}Eí˜}@º   €ø      À  ø      À  @TE@™šŞ:Hz¸@{o#f§%¤:<©:²_7º[º)@bD§ :ÓÖ  ÍE“ë²@"-ÈC–˜6>0±Eìİ.@AÕ    ø      À  ø      À  @TE,”2æ~:HÊk@{o%,â4Ë:uë:ÄHºnËä@bìŠ :Ó·6  ÎE“úk@"0ÏC–‚y>úEìö£@+ê    ø      À  ø      À  @TE)õÙ²:H°}@{o!0HM:mu:îµºpô@b“i£¨ :ÓÏ•  ÏE“ôõ@"/ C–ª7>ñÒEìì@-—    ø      À  ø      À  @TE7ˆ"JP:H»m@{o$WĞğ:qG:Ó‡ºše@b:Ï‡  :Óçó  ĞE”d@"4ÊC–ËP>ÍçEí@1[    ø      À  ø      À  @TE0+ø,:H© @{o&Kº:aÖ:×Şşº2ç…@bâ54˜ :Ô P  ÑE”0@">…C–Å>5EíFõ@<[    ø      À  ø      À  @TEN§Hú:HL@{o$C`:9:şˆ“º,	·@b‰›M :Ô­  ÒE“ø_@".êC–/ô>#Eìò‹@"•    ø      À  ø      À  @TED™$Éa:Hxs@{o(\í€e:=€:ü°pºo d@b10Ç :Ô1	  ÓE”<@"3âC–¾V>9&Eí µ@>4    ø      À  ø      À  @TEXÂü`:H]@{o!!ï4:e¤;ÓeºUH@bØfŞ> :ÔId  ÔE“Ú‡@")¢C–€e>ô×EìÂ8@9K    ø      À  ø      À  @TE?
+B,H:HÀ@{o$MÈÜº:x¾;‰³ºš'-@bÌÁV :Ôa¾  ÕE”(@"<LC—	>×Eí/¸@L¼    ø      À  ø      À  @TEBÉ~¦:H©4@{oÍm
+:li:ıóº’ïF@b'2Ú :Ôz  ÖE”-P@">êC–“¹>#ÖEí?ì@SÆ    ø      À  ø      À  @TE0FõÉÙ:H©¨@{o·~Ç;:h;Yº¨@bÎ˜‡e :Ô’p  ×E”@"8C–ª>±Eí!Õ@B]    ø      À  ø      À  @TE*—©î:H…Ù@{o àz™Á:JÊ:øó¥º®Ë@buşjM :ÔªÇ  ØE“è­@"+šC–ÙQ>ÃEìÖÊ@?È    ø      À  ø      À  @TE<14I:H©º@{o%Ÿ8:oÉ;JOº|( @bd‚å :ÔÃ  ÙE”Ş@"3kC–µ>ñEí)@8Æ    ø      À  ø      À  @TE,]°”:HÔ×@{o œ±p@:‡&;d&º·P@bÄÊ0 :ÔÛt  ÚE“âÄ@"(’C–î>à£EìÍÑ@3ü    ø      À  ø      À  @TEA²cğ:H¨÷@{o ©ÄU:pª;3™IºÛ·ç@bl0Ô :ÔóÉ  ÛE“í«@"+“C–…›>©EìÙv@%Ï    ø      À  ø      À  @TE;õ(ü‚:Hİ›@{o!ş=qn:m;9-jº†nÆ@b•õŒ :Õ  ÜE”â@"3üC–í™>ÔEí~@?Ï    ø      À  ø      À  @TEUğèr´:H†3@{o$ò@”Ü:\C;/gìºˆm@bºüó :Õ$q  İE”	@"1ŞC–µµ>ÏEíÜ@E    ø      À  ø      À  @TE=¨Äî:Hï÷@{o$$ÅoQ:œÙ;2Dºœó@bbaºë :Õ<Ä  ŞE“÷?@"-×C–o>REìæö@?a    ø      À  ø      À  @TEô+Á…:HúÆ@{o&¶›:šİ; «EºĞå@b	Çs :ÕU  ßE” €@"1ÖC–Çñ>ƒEìî	@0×    ø      À  ø      À  @TE%} ®:I.±@{o "u
+:¿L;$†Äº}¯X@b±-ú :Õmf  àE”)@":)C–¸+>ØEí)'@IÁ    ø      À  ø      À  @TE,şNÇŠ:HÛU@{o!=Ğº`:„Ú;5Òº2;@bX“br :Õ…¶  áE” @"33C–±÷>òEìş¬@D€    ø      À  ø      À  @TE&®n’Ÿ:I	F@{o$’±0:¡„:êëƒ¹ø9Å@bÿùDê :Õ  âE“ò@"+ZC–¨¨>şõEìÏ¶@>    ø      À  ø      À  @TE²?Æc:IÉ@{o'g® ÿ:Ÿ§:âjğ¹æ@b§_'A :Õ¶T  ãE”0@"1C–{â>ÛàEìó@,Ë    ø      À  ø      À  @TE+<j—_:HŞn@{o'’È©n:¿:º-p¸ß0Ë@bNÅ?I :ÕÎ¢  äE”ª@"4‹C–‹>-oEír@<ù    ø      À  ø      À  @TE|£x®:I¨@{o$]RÕ˜:”2:_Y9‹^@bö*ëá :Õæï  åE”ø@"0KC–fy>íƒEìş9@;S    ø      À  ø      À  @TEKªÌ:H˜d@{oX[€ş:jw:–õ½¸è@b Î :Õÿ;  æE”D@"1ƒC–‚&>ôEEìò‘@3     ø      À  ø      À  @TEè]ô::Ië@{o%Û<+Ö:ª :ƒsŒ·ÕS@b!Dö°@ :Ö†  çE“üŠ@"-äC–}c>DEìŞ2@2ô    ø      À  ø      À  @TE1&Y:Hø=@{o&9™»¸:œk:¥.º8 ¤@b!ì\’X :Ö/Ğ  èE”"ö@"8>C–›>TEí@0¾    ø      À  ø      À  @TE.8Ùõt:H¢Ü@{o!@õØ?:f\:¦Å(¸€¹à@b"“Âto :ÖH  éE“ı]@"/½C–µ^>ŞtEìŞ@‹    ø      À  ø      À  @TE;Û/,ò:Höd@{o%TÂÒ:œg:¬‡{8%Ş‚@b#;(Vg :Ö`b  êE”5¸@"<kC–d’>
+Eí(µ@v    ø      À  ø      À  @TE)‚”':H¯.@{o)ƒ'U’:^:u‘@9ïÁ@b#ân :Öxª  ëE”Q>@"AÄC–H…>ÎEíZz@7Ø    ø      À  ø      À  @TE.+aÈ:H_@{o&ö!Â:Z1:]ø*9÷6@b$‰ôF :Öñ  ìE”U~@"E,C–¥4>7EíZ$@D·    ø      À  ø      À  @TE?` ~½:Hª@{o&û!Oæ:_ :–¶²9“gØ@b%1Yü :Ö©7  íE”$@"2C–6Â>H“Eìæ@4ı    ø      À  ø      À  @TE$;©¶Ş:I
+Ç@{o%÷}y:Ÿ®:©E ¹w@b%Ø¿¨F :ÖÁ}  îE”"Ü@"72C–…V>Ş˜Eí@AO    ø      À  ø      À  @TE,>q:HÑÅ@{o(Ÿi|:|\:–iş7îˆ>@b&€%¿­ :ÖÙÁ  ïE”4™@"<IC–BN><OEí*)@.Ø    ø      À  ø      À  @TE(óğT:HØ/@{o*6Wx:|Ò:b*Å9‚/ğ@b''‹¡e :Öò  ğE”/¥@"<*C–© >ò×Eí=@+§    ø      À  ø      À  @TEBwº:H‹B@{o&[üÀ6:U:Aâ:CK@b'ÎñMM :×
+G  ñE”%©@"80C–N¶>âEí|@$C    ø      À  ø      À  @TE*¬Üki:H©‰@{o&QR:^N:nZ:hë@b(vWd” :×"‰  òE”ğ@"3ZC–7?>!Eìçö@4Ê    ø      À  ø      À  @TE.d±˜:HÜé@{o$Škç>:„:–z9·PÇ@b)½F :×:Ê  óE”5%@"<GC–U>)Eí!‘@a    ø      À  ø      À  @TE09Å':H™ @{o&(Ü,:WE:Š:::#Y@b)Å#'” :×S
+  ôE”ù@"7ÁC–+>0~Eìı>@    ø      À  ø      À  @TEV^Á¨:H²ø@{o'Ff:Yn:­\U9áˆy@b*lˆÓ\ :×kJ  õE”G@"CCC– >ğjEí>@@4ğ    ø      À  ø      À  @TE3ïŸ ::H†ú@{o&äÏt:HÄ:¢ûU:ÎŸ@b+îêc :×ƒˆ  öE”"ˆ@"9C–A>@"Eí·@:ß    ø      À  ø      À  @TE*~v]ş:H×…@{o%å9·_:xU:šô’9¶ø@b+»TË» :×›Æ  ÷E”;@"7pC–VĞ>"ŠEìó~@.    ø      À  ø      À  @TE0µÇ?
+:Hwè@{o,PK:A:zÚ:?R@b,bºwR :×´  øE”;@"?¿C–<j>åÖEí(C@(±    ø      À  ø      À  @TE"ùN¹¼:HŠí@{o)ßV½:F»:c»Z:B[O@b-
+ : :×Ì?  ùE”9C@">üC–I>E¯EíU@=    ø      À  ø      À  @TE)¶Gä:HÅ¤@{o'”ı|,:pí:¥11:ÒÎ@b-±†ob :×äz  úE”Oå@"CBC–ZØ>âËEíCW@+¦    ø      À  ø      À  @TE4°é:H3@{o&“`Õ®:Oğ:vZ:6v@b.XìÊ :×ü´  ûE”Cí@"@C–‘>&Eí,b@%C    ø      À  ø      À  @TE04N»,:H7@{o$¼ŒK:ì:´3:1Sµ@b/ Qûá :Øî  üE”3ú@">äC–0>7WEíu@&ä    ø      À  ø      À  @TE!J‡³–:HŞ°@{o$œƒ4:xÜ:0p:7Î@b/§¸‰ :Ø-&  ıE”$2@"9×C–1>%SEìù@(˜    ø      À  ø      À  @TE/‹–Ó:Hİv@{o'äãú˜:ƒJ:æ¨:ú@b0O½Ğ :ØE^  şE”+L@";fC–I@>ÜEíì@5p    ø      À  ø      À  @TEqÀœ:HÇË@{o%ŸT1:j:•wK:Ìx@b0öƒ¸ :Ø]•  ÿE”2X@"<–C–.+>VEíÙ@+    ø      À  ø      À  @TE%wBÿr:HÊ@{o%øŸÌ:t‚:‡:$:QñZ@b1é :ØuË   E”L2@"C@C–?«>6êEí<^@?&    ø      À  ø      À  @TE%¹Î:HV_@{o"Ë¿:&ó:Rs(:kí’@b2EO– :Ø   E”:v@">‚C–1G>/•Eí>@|    ø      À  ø      À  @TE&2‹ N:H’5@{o*ñ¨ G:I :AÊ5:›ú@b2ìµA :Ø¦4  E”€@"7}C–7>#Eìè‡@)    ø      À  ø      À  @TE1ı§zB:HÈÜ@{o'»÷F™:vb:j‡Ç:Jã¹@b3”!Ç :Ø¾h  E”h@"9›C–q(>÷îEìâ«@;
+    ø      À  ø      À  @TE4ñ©tj:HÄ9@{o)[éÀŠ:u :+UÒ: n@b4;8 :ØÖš  E”B@"@*C–ü>gEí"Ì@*ß    ø      À  ø      À  @TE4*¤É:Hš@{o%Ÿ‹¦4:T0:aPì:ƒ@b4âæâö :ØîÌ  E”Kß@"CC–Q‡>ô1Eí1_@5»    ø      À  ø      À  @TE'úIL¥:HÎ@{o&¡§G:nd:4Zğ:Š3@b5ŠLÃ~ :Ùı  E”M@"@åC•ÊÙ>ÊôEí1¾@&>    ø      À  ø      À  @TE:¨	!c:H§T@{o,iÈˆ:b˜:=š:SD¼@b61²nF :Ù-  E”9¦@"=ùC–5”>Ó¾Eís@1²    ø      À  ø      À  @TE1uN:HæÜ@{o)`gT°:~s:”_B:j¿@b6Ù„] :Ù7\  E”#r@"8…C–Có>îEìîu@0	    ø      À  ø      À  @TE@s':HÊ§@{o(Îvá·:€©:¡­ 9¹xf@b7€~dµ :ÙOŠ  	E”·@"5¬C–İ>ñEìé‰@å    ø      À  ø      À  @TE£÷zV:I	j@{o("÷¸~:–?:ïõ9Ñ~ô@b8'äE :Ùg¸  
+E”?i@"=nC–;>Ñ“Eí<@8Î    ø      À  ø      À  @TE5¸~?:HÂj@{o)Qñ–:tä:²Á9B@@b8ÏJ%D :Ùä  E”%,@"6İC–Ú>İÂEìö^@Aµ    ø      À  ø      À  @TEBi¥<:H¶·@{o%Ç¬
+4:o·:¥^×8ê¥•@b9v°| :Ù˜  E”A@"4FC–Ô>lEìÖ«@;†    ø      À  ø      À  @TE~M:I+@{o'˜õ»P: :‹ë=9¢B@b:å¤ :Ù°;  E”Wp@"C{C–>¯»EíAd@W^    ø      À  ø      À  @TE Ö_Ü:Hh@{o%é»Íx:QÈ:ÓÜ8|l@b:Å{ :ÙÈe  E”ex@"EùC•ß®>¥EíLÛ@>Ù    ø      À  ø      À  @TEß!¤:Hˆæ@{o&}ûÓ:C#:xZ:!â@b;lá¥Ã :Ùà  E”A@"<—C–AS>İIEí@H”    ø      À  ø      À  @TE)|.¾Œ:HÇ©@{o(
+M_.:nø:˜99”õ@b<G…º :Ùø¶  E”SÓ@"AoC–Á>¿Eí2‹@N[    ø      À  ø      À  @TE^ºå+:HR@{o#­_L:8j:„'½9ß@b<»­0 :ÚŞ  E”G@"@C–GÏ>ãyEí#J@D    ø      À  ø      À  @TELãÌ$Á:Hµ‚@{o%—&ën:uu:‰E¨9g–õ@b=cEŠ :Ú)  E”l`@"G¨C–,„>ÑTEíWş@Vñ    ø      À  ø      À  @TE7`wÍ‚:H«)@{o%õ¢(:^ç:„T/9¶îÅ@b>
+y%b :ÚA*  E”=y@";C•¿ô>ÚÂEíí@Eé    ø      À  ø      À  @TE|ºşµ:H¶†@{o'WU­:_ù:€g­:/ŠW@b>±ŞÏy :ÚYO  E”0@"9ÑC•üœ>bEìñ@1m    ø      À  ø      À  @TE*2Û:I –@{o%±ã¸:‘×:Pr9êd@b?YD¯1 :Úqs  E”<‚@"> C–%%>{Eí;@RT    ø      À  ø      À  @TEB´Tù:HÍ„@{o%ZY^Ä::6+O: 2Å@b@ ªÄˆ :Ú‰–  E”p$@"H½C•Õé>ï„EíXı@Q–    ø      À  ø      À  @TE)Bú«:H§Ò@{o#œ	v:^:9Ìï9È½@b@¨¤  :Ú¡¸  E”9´@";€C•ò™>ØEíÜ@QÈ    ø      À  ø      À  @TE.úoV¿:Hæf@{o'h½u:ˆÆ9ãš:#Nı@bAOvMø :Ú¹Ù  E“ú@".ôC–>Ò±Eìš±@O    ø      À  ø      À  @TE.'LÅ¢:Hç
+@{o#•n:‹·:C”z8Zİş@bAöÜc0 :ÚÑú  E”%o@"5ÅC•úq>ù?Eìå@<%    ø      À  ø      À  @TE8BÅ	:HÀ:@{o%¼¶ˆ:w­:qÆ99K*@bBBB— :Úê  E”_Ó@"EbC–¥>EíA@Ft    ø      À  ø      À  @TE3~0™7:H¼û@{o%áqÙ:lœ:_›Ô9ı‡@bCE§ìO :Û8  E”LA@"?C– 5>  Eí¿@A*    ø      À  ø      À  @TE7­Æ+?:H®ª@{o'Ñn¾l:ht:b*¢9àf@bCíË§ :ÛV  E”A,@"<ÛC•· >ñ/Eí0@Cœ    ø      À  ø      À  @TE'“ÂĞF:H¾Ì@{o%ÙHq:p¿:‹’“9Å%@bD”sà :Û2s  E”$@"5ëC•ê>éFEìÙ@(&    ø      À  ø      À  @TEBw|':H¥„@{o$o}Ü:iË:ê<:+öã@bE;ÙŠ& :ÛJ  E”'£@"72C•Ï±>cEìá@U    ø      À  ø      À  @TE(²A:IÂ@{o*Ê,k:¢Ë9æŸn9½Ù@bEã?iN :Ûbª  E”/@"8ËC–@>ùeEìéÚ@b¾    ø      À  ø      À  @TE:B‰:HyÇ@{oñ_õ:Là:!19€Zá@bFŠ¥He :ÛzÄ   E”Á@"4ºC•š>EìË-@JP    ø      À  ø      À  @TE$VÎNÈ:I/@{o%æüKö:¸Ò9û%|9y‚@bG2'} :Û’Ş  !E”3¾@"8ğC•Á>íAEìëK@L—    ø      À  ø      À  @TEÜçi:H¶@{o(­Ëp:]³6‹bí:/`#@bGÙqu :Ûªö  "E” Š@"4•C•Ä6>÷(EìÏÆ@9¼    ø      À  ø      À  @TE$å²ä:HÄê@{o$W\:q¡9ƒ¾£9ğEv@bH€Öål :ÛÃ  #E”7/@"<ŠC•Ğã>¥Eììï@)    ø      À  ø      À  @TE&ÂÑn~:H‡È@{o*1ó
+:B§9Ã v:'%ò@bI(<ÄT :ÛÛ%  $E”D’@"?ƒC•ñÑ>8Eí
+B@¤    ø      À  ø      À  @TE$%ã…:H¹á@{o(¸’’t:d 9°†Ë:?yœ@bIÏ¢£, :Ûó;  %E”js@"JC•¯µ>aEíC @Y¤    ø      À  ø      À  @TE5é¦Â
+:HŒ©@{o$;º×q:Mâ:€v9µI]@bJwó :ÜP  &À  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @bKn*û :Ü#d  'E”Û@"6GC–4>ìvEìËH@\Ã    ø      À  ø      À  @TEJ,JØ:HñÀ@{o&ñ4:Œ(:­#¹šI@bKÅÔ?R :Ü;w  (E”? @"?QC•¬>ØˆEí
+U@g     ø      À  ø      À  @TEDÊZj¡:H{˜@{o#¶âµÏ:SŠ:Òf_º:5í@bLm:ú :ÜSŠ  )E”[Ş@"F’C•Ú¾>%éEí+ò@d\    ø      À  ø      À  @TE8d+õ:Hn*@{o#X
+
+:@v:™Ów¹ÑX~@bMŸÆÒ :Ük›  *E”P{@"AçC•²«>ÒEí!o@W0    ø      À  ø      À  @TEOSg¯:HAû@{o!ÎÕY:* :2Ø€º!Uk@bM¼Û
+ :Üƒ¬  +E”GÁ@"@”C–	œ>åËEíõ@d
+    ø      À  ø      À  @TE:º$¿¦:H."@{o¿¨‡:R:¡Dº)DW@bNck¹ :Ü›¼  ,E”%É@"6C•Ö„>óGEìáÁ@]ˆ    ø      À  ø      À  @TEd¦?:H´`@{o#º:b•:¨ÖÔº0ÈÜ@bO
+Ñb9 :Ü³Ë  -E”ğ@"5ÆC–™>õ©EìÍÅ@?    ø      À  ø      À  @TE/ÿRŠ:HÍz@{o"{f:}t:XÌ ¹‰ÖT@bO²7v@ :ÜËÙ  .E”Oí@"B0C•êµ>
+õEí#@_s    ø      À  ø      À  @TE-–¤À:Hiš@{o&ï:7ä:ª|o¹ÖzË@bPYTˆ :Üãæ  /E”.ú@"9ìC•Ãd>EìïC@c    ø      À  ø      À  @TE.mÑ:HŸ@{o"Œµ:^t:È?ºkÆ·@bQ2À :Üûò  0E”W6@"CC•³>BEí/®@nñ    ø      À  ø      À  @TE6»+S:H'@{o"ÜQõ:¼:ònº‚~¶@bQ¨hÛ8 :İı  1E”2¼@":9C•Án>ÿàEìí@T    ø      À  ø      À  @TE=pıñp:H‘ @{o%a²Æ–:Qj:°-¨º<oT@bROÎï :İ,  2E”>§@"=ßC•‘y>>XEí¥@]Ñ    ø      À  ø      À  @TE(íP1(:H­°@{o$²D‰:e:ù“¹Â'@bR÷4Í' :İD  3E”#¶@"6ÓC•¬€>ÑƒEìÙå@U‘    ø      À  ø      À  @TE-à©Ga:HÀü@{o#]9;G:r%:—@º0Ë@bSš« :İ\  4E”1’@":ØC–	v>Ë-Eìë@Mo    ø      À  ø      À  @TEL?Šé<:Hk@{o#£Å+â:C½:Ì‘¹ßÉß@bTF Sf :İt"  5E”B&@">C•¾ò>$ÃEí ù@OX    ø      À  ø      À  @TE)ÿJ;:Hcù@{o#ªw¾p:/9Toÿ9PAÓ@bTíffş :İŒ)  6E”>d@"?–C•ã=>ü‘EìøÚ@X    ø      À  ø      À  @TE®xd:H¦İ@{o$FïIJ:[…9pN8Ó$*@bU”ÌDÖ :İ¤/  7E”,R@":‹C•è‹>ÉèEìŞO@M    ø      À  ø      À  @TE8Ãrã:H¸Z@{o ÅPÚê:eø:5ÕÁ8(Ër@bV<1ìí :İ¼4  8E”<ß@">ÖC–l>ç”Eìğ¦@9>    ø      À  ø      À  @TE'ôØI:HŸl@{o$UH1 :X>9­¶×8Ú-£@bVã˜ U :İÔ8  9E”LË@"AcC– ->ú¤Eí=@NÕ    ø      À  ø      À  @TE ğsáE:HZ,@{o%ÕSşu:+s8ï-¸¸V@bWŠıŞ :İì<  :E”Iì@"B—C–>ÍïEíÈ@J~    ø      À  ø      À  @TE,rÒà :H¥è@{o#ß¤"Ø:[9¡pb¹çèC@bX2c»¤ :Ş>  ;E”;a@"= C•ÿœ>VEìò:@65    ø      À  ø      À  @TE/åìa«:H§@{o&’Ø“Ğ:PÀ¸i›8†W/@bXÙÉcŒ :Ş@  <E”6]@"@EC– >{YEìâÌ@;/    ø      À  ø      À  @TEGŞ®:Hµd@{o%^wiØ:Z…¸ÁQÑ¸	@bY/v´ :Ş4@  =E”$=@"8ÎC–	ë>ï÷EìÏ£@9™    ø      À  ø      À  @TE½ëˆ:HºF@{o$¤¶IÂ:\ü9“"@¸óÎô@bZ(•T+ :ŞL@  >E”!·@"8ŸC–¾>é7Eì¿X@J;    ø      À  ø      À  @TE3® 4Â:Hš&@{o'k2  :U²9®Äw9·x:@bZÏúûã :Şd?  ?E”wa@"LûC•Öš>)VEíJH@Bñ    ø      À  ø      À  @TE$lïDb:H¸H@{o$±#Ä{:^9Ÿ8Ğ9n%@b[w`Ù; :Ş|=  @E”LE@"@àC•ë¾>(ÄEìş-@,Ä    ø      À  ø      À  @TEê7a6:H­N@{o%ru0E:S½¹!}&9Œ@b\Æì2 :Ş”:  AE”M*@"BÚC•óó>>Eí
+²@VS    ø      À  ø      À  @TE´šœ:Hé)@{o&ƒº‡:„^9Uïü¹ïí@b\Æ,“º :Ş¬6  BE”6¶@"80C•Û½>ø½EìİÃ@NÚ    ø      À  ø      À  @TE#í—éX:H­8@{o"ÂX‘:`–9ˆF'¹¢Îµ@b]m’pò :ŞÄ2  CE”aë@"GBC–%:>ıEí&@D    ø      À  ø      À  @TE Ã:H´j@{o(ºdî:[ä¸gİÕ8äbÜ@b^øƒ¹ :ŞÜ,  DE”BÖ@"=ÿC•÷]> `Eìïä@N    ø      À  ø      À  @TE*Æ)˜:H§l@{o'S:ÍŸ:[q99°¹ Ã¨@b^¼^+! :Şô&  EE”C¥@">'C–0C>°Eìò@1    ø      À  ø      À  @TE w}‚:H¼û@{o$)QB<:a¡¹.·ä@b_cÄ :ß  FE”3ã@"8C–I>ô®EìÎÙ@3º    ø      À  ø      À  @TE,1F¾$:HÄ@{o$[{úm:p²8d´·ÊMX@b`)å :ß$  GE”Tw@"A˜C•Æ‘>Eí@Nß    ø      À  ø      À  @TEÄ«:H@{o"Å|ß:M«9æÜú¹ÿK˜@b`²Áø :ß<  HE”TŸ@"@C•Ú?>$~Eí¾@Js    ø      À  ø      À  @TEÓÅüª:H„Ò@{o#Z‰ŞŞ:<ã9J\ê¸ÿ@baYõÀ :ßT  IE”I@"/£C–>Ù>ãEì(@K‡    ø      À  ø      À  @TEÅœˆ:HèD@{o'‚Aş:‚¶9)^r8ÅFã@bb[{‡ :ßk÷  JE”Z@"CpC–>.Eí
+ã@5~    ø      À  ø      À  @TE	3ĞÄÚ:H†Ô@{o&j©Åó:0U¹v˜¤9ø@bb¨Áÿ :ßƒì  KE”Gµ@"=QC•Ó(>AEìñ@G„    ø      À  ø      À  @TE)‚‘§Ú:H»£@{o#n]ƒH:lA·.—å8~ï@bcP'4÷ :ß›ß  LE”d@"CC•Õ%>"%EíÂ@Jø    ø      À  ø      À  @TE ¯ì(:H‰]@{o&ö‘j¼:EL¹’^9±!`@bc÷ :ß³Ñ  ME”eL@"C³C•ğ>øEí4@E“    ø      À  ø      À  @TEL´èN:Hˆş@{o'%pš>:>:¹vÜ9øí@bdò¸f :ßËÂ  NE”X_@"@»C•Ğâ>ÿEìÿƒ@Lõ    ø      À  ø      À  @TE.É3p:Hu>@{o%ûlÆÄ:D¹?]ö:tÍ@beFXÊ :ßã³  OE”|è@"LwC•˜Y>wEí65@Mr    ø      À  ø      À  @TEa>¡ê:Hn§@{o'Á§Su:'º¹İÍè:§©@beí¾§ :ßû¢  PE”U@"C•C–5H>"ğEì÷„@7’    ø      À  ø      À  @TE(b›Ğ:H•£@{o'ñÔH:I-¹ÓSt:,Z @bf•$M½ :à‘  QE”Q¾@"A$C•¡µ>öEìïƒ@E¼    ø      À  ø      À  @TE ªĞIÀ:Hä@{o#bõóŠ:u•ºªü:âÔ@bg<Š_Å :à+  RE”g@"ELC•‚>éÇEí¨@P¸    ø      À  ø      À  @TE-ñÇ³ç:H¢
+@{o(× hğ:c²¹¼í/:«ô@bgãğ< :àCl  SE”V@"AFC•¤ş>yEìøT@O¶    ø      À  ø      À  @TE,»èö:HÁ@{o"AaÄê:r%¹Ú*ö9Æ€F@bh‹VD :à[X  TE”l‘@"GVC•š9>kEík@H&    ø      À  ø      À  @TE%}“ŠÒ:HŠQ@{o&ã³­:EÉ¹ı£ç9ÈE×@bi2»¾¬ :àsB  UE”r@"I!C•œ‹>Eí|@B•    ø      À  ø      À  @TEQ yÓf:HS@{o)¤KÀ:19¹ìé9Y¹@biÚ!Ğƒ :à‹-  VE”Yc@"C}C•®\>;Eìö*@<è    ø      À  ø      À  @TE/›Ñ :HÅ@{o&Q%ıÕ:l–¹à„ï9ğá	@bj‡¬‹ :à£  WE”G@">FC••#>!qEìÕ¥@0Ù    ø      À  ø      À  @TE¿Œô:HºÉ@{o&uMûÚ:dù¹€4Ö8² @bk(íRÓ :àºş  XE”Vw@"C>C•³Y>”EìùÕ@Sû    ø      À  ø      À  @TE!Å=.:HŸR@{o"Uôj°:\:8¹SM@bkĞS.º :àÒå  YE”_Ö@"DíC–æ>ô÷EìıÛ@L~    ø      À  ø      À  @TE$»f„:HgJ@{o$^³÷~:2Ñ¹éN¹9÷u@blw¹@R :àêÌ  ZE”J2@"?OC•sŒ> œEìß/@A³    ø      À  ø      À  @TE¶ï'4:Hªà@{o&gş4:UÍ¹è^L9N`˜@bmæj :á±  [E”A½@">½C•Y>9>EìÍâ@Jí    ø      À  ø      À  @TE™UML:HªK@{o Uş:Uş8+.¹T˜$@bmÆ„Â1 :á–  \E”"8@"6CC•¬g>Eìš@É    ø      À  ø      À  @TEÁt:H»‘@{o'Æ—Ñ†:S¹ãÄ¼8yy>@bnmêÓ™ :á2z  ]E”^p@"EøC• >ıöEìî‹@¿    ø      À  ø      À  @TE!è×ö$:HaĞ@{o%}U:,Áº;|Ú8WŸ¡@boPy :áJ\  ^E”.Â@"7>C•u>È
+Eì­å@$¥    ø      À  ø      À  @TE·şy¨:HÎ@{o$±]¤:iºKS¸Eš\@bo¼¶U :áb>  _E”LŞ@">åC•]Ñ>EìÕ@6¤    ø      À  ø      À  @TE&ı:H'»@{o%¬\Á¢:
+üÕº	8»‚˜@bpd0  :áz  `E”Wõ@"BÇC•¢´>ğ¶Eìê¯@¢    ø      À  ø      À  @TE¡o®^:HI¸@{o##„³:ºE…9sé@bq‚AÈ :á‘ÿ  aE”~œ@"JÎC•<>ŠEí!Í@1µ    ø      À  ø      À  @TEë
+ú:HNŞ@{o%v:>º‚
+9Ïj‰@bq²çç :á©Ş  bE”;@":_C•6s>îEìº@"S    ø      À  ø      À  @TE""Îªp:Hlò@{o&a:.0ºLcp9ÑZ–@brZMÂç :áÁ½  cE”Q²@"?'C•L÷>ÃEìÜÂ@P,    ø      À  ø      À  @TEùšÂ]:Hqœ@{o%Ÿ”t,:1¼¹–³H8ù†@bs³Óß :áÙš  dE”Jç@"?8C•H'>ûEìÓé@;    ø      À  ø      À  @TEd¸Ù :H‡ş@{o&†¾ch:?º2YÈ9„1:@bs©yf :áñv  eE”{©@"HÚC•1ş>óEíÜ@")    ø      À  ø      À  @TE1Ä½a:Hcm@{o(MV¢D:/,º;9Ğ˜Å@btPT :â	R  fE”g·@"FŒC•7s>¿Eìù¹@+ª    ø      À  ø      À  @TE [ã:H›@{o(òÑ‘:IpºYyª:!€@bt÷äú :â!,  gE”Y@"BWC•!ö>òÁEìâB@Gu    ø      À  ø      À  @TEËlı¬:H”¨@{o%Ä#§:Gì¹(›*:!@buŸK
+Í :â9  hE”x¶@"I›C”øã>6Eín@B_    ø      À  ø      À  @TE!+Ë4:Hvù@{o&Ú7:;¬8Ñãq9Ë\@bvF°åÅ :âPŞ  iE”Oc@"?C•3&>?kEìÒ@?Û    ø      À  ø      À  @TEmmì¤:Hrj@{o'YÔ6˜:)>¹ÃğY9Åk@bvî‹ :âh¶  jE”S~@"@ŸC•Dì>á=EìØ|@@g    ø      À  ø      À  @TE8üÙd:H­¾@{o(jNœŠ:XŒ¹Û˜9ÆVy@bw•|›¤ :â€  kE”lÔ@"FìC•\?>ËôEìı´@R.    ø      À  ø      À  @TE¬ok:H[A@{o'7]æ:[º
+%ß9ù3±@bx<âv| :â˜c  lE”d@"CxC•>ì½EìíV@En    ø      À  ø      À  @TE•çÛ:Hœu@{o$Ü§ëE:HÙºgZj:	e@bxäHQD :â°8  mE”iL@"E%C•,ş>–€EìòB@N    ø      À  ø      À  @TEßp•G:H…@{o#;—xÜ::µºş:%ï@by‹­öL :âÈ  nE”Eá@";C•".>À‹Eì¹}@60    ø      À  ø      À  @TEÙ¥m:H×@{o$¤” :nÎºiÙ¤:Uçc@bz3£ :âßß  oE”œÔ@"Q”C”Ü—>áİEí<Ö@2
+    ø      À  ø      À  @TDıYÒ::H‹@{o(§Ì:/º— Å:Ì/@bzÚyá; :â÷±  pE”VI@"AC•4>àEìÕ@2    ø      À  ø      À  @TEù{Ô:H´Á@{o(À<ú:XÕ¹æ	J9ÄÊ„@b{ß† :ã‚  qE”r×@"G_C•!->Ş~Eíı@Ae    ø      À  ø      À  @TDúæßç‚:HáÇ@{o$ÎI:l©º1hQ9ç#.@b|)E`š :ã'S  rE”f—@"CC•E
+>éEEìì4@8«    ø      À  ø      À  @TEa”":H·@{o&ıY>:ZºPlî9ÒÈü@b|Ğ«p² :ã?"  sÀ  À  À  À  À  À    @ ø      À  ø      À  ø      À  ø      À  À  À  @b}xi :ãVñ  tE”‰ª@"M C•E*>³Eí ä@,Ã    ø      À  ø      À  @TE=ê+j:HF3@{o$w¥Úô:Mº.¤Û9ôú†@b~vï± :ãn¾  uE”y	@"HrC”Ú;>EíÅ@FT    ø      À  ø      À  @TE*«Ez»:H:Î@{o%n:s:§¹0›“9W@b~ÆÜÿ© :ã†‹  vE”w+@"H)C•.z>ÒÏEìı°@8°    ø      À  ø      À  @TEf.U:H4]@{o&æ¾á—:¦ºk9à:^~@bnB¤0 :ãW  wE”b@"JæC•h]>õµEíé@?9    ø      À  ø      À  @TE'txŒ:H?@{o$Õ¯‚z:¸º
+/8É@b€¨~H :ã¶!  xE”]Ø@"AhC•O>àmEìÔj@3ı    ø      À  ø      À  @TEŒîèâ:Hux@{o'ğ
+'\:32ºkv: ÷ë@b€½X` :ãÍë  yE”l@"E.C•0>øEìî@™    ø      À  ø      À  @TE¬ñf:Hiá@{o!Ë>o::14º†¿9û]y@bdth :ãå´  zE”P™@">C•!5>ÛÌEì¾H@;R    ø      À  ø      À  @TEfÚ$!:HÚb@{o%®:sŸº71A9Ôç@b‚Ú_ :ãı|  {E”‰ª@"K;C•¹>¶$Eí$´@/å    ø      À  ø      À  @TE/ÎÑZ:HzÓ@{o%óA\ö:Eş8ÔúÍ¹ğ)@b‚³?æG :äC  |E”ea@"CµC•Q>Î•Eìä)@%a    ø      À  ø      À  @TE,È¿9¦:Hrh@{o%E—/Ü:<q¹…Ëü¹®	Ê@bƒZ¥õÎ :ä-	  }E”{ş@"IIC•(&>:Eí@KÃ    ø      À  ø      À  @TEM%Ìl&:H8×@{o%˜ob:#İ¸¸ûsºcC@b„™æ :äDÎ  ~E”c1@"? C”í">ğ§EìÜ‚@#¼    ø      À  ø      À  @TE/PYÌp:Hx†@{o"ÃXM‡:>š¸Tº3¹ÆUÚ@b„©qs :ä\’  E”k_@"D´C•u>ó¼Eìğ@@<“    ø      À  ø      À  @TE;!ï¨L:HŒ\@{o%!?z:Q96ü0ºëª@b…P×MU :ätV  €E””]@"NzC•?=>ûÒEí%@b    ø      À  ø      À  @TENCÕq:Hn[@{o([rO6:/¹1ğu8ÊØ@b…ø=&í :äŒ  E””¹@"P;C•Æ>ÔşEí,ï@AŞ    ø      À  ø      À  @TE%#C½:H… @{o'[ø:?¨¹µ/N9h3@b†Ÿ£ u :ä£Ù  ‚E”wµ@"GC•"Ò>¹æEìôg@G    ø      À  ø      À  @TE%ªÊ:HP@{o%„¶]h:Cõ¹»9”…s@b‡GÙü :ä»š  ƒE”Vª@">ÒC•Ç>°µEìÌ@Q    ø      À  ø      À  @TELÿ):Hµœ@{oQŒ:bş¹mî·ÍğŸ@b‡îné :äÓY  „E”] @"FC•>öÇEìÌX@<u    ø      À  ø      À  @TED¤H:Ie@{o$˜t]¡:ó        @bˆ•ÔŒÌ :äë  …E”s@"G¸C•,²>âEìø~@GÙ    ø      À  ø      À  @TEv¯?(:H¡@{o*ğô‹{:Eº9„á¹—ˆG@b‰=:f :åÕ  †E”˜|@"PÜC”Ù>4›Eí%—@T½    ø      À  ø      À  @TE(<"›¢:H=w@{o$ ^v:º(æ9óTö@b‰ä ?[ :å’  ‡E”<@";=C•k>è Eìš @AÜ    ø      À  ø      À  @TEì
+e@:HÁ•@{o%Ûq]:d¹Væ¡9ŸÛô@bŠŒ“ :å2N  ˆE”“ô@"QC”ß]>æ'Eíü@l¯    ø      À  ø      À  @TE'Ñ‚/:HQ@{o$Å÷q:!®¹íJ˜:,tø@b‹3kñª :åJ  ‰E”c@"CC”ßI>ü·EìÏ!@=³    ø      À  ø      À  @TE$Á×H:Hv¨@{o&t‰g„:=Íº»T:AİÈ@b‹ÚÑÊÂ :åaÂ  ŠE”oı@"H@C•*(>æŸEìÚÚ@/    ø      À  ø      À  @TE#.Î¹A:HÙ@{o#ıOt:HkºFÔ:P}ë@bŒ‚7n :åy{  ‹E”e±@"BîC•æ>å`EìÔ@68    ø      À  ø      À  @TEQõ:HKĞ@{o&²uÀ”:ß¹¾Y‘9®j@b)|Á :å‘3  ŒE”{Ô@"JôC•->ü
+Eìïó@EŠ    ø      À  ø      À  @TDöä(Ô:H´@{o+
+ YŒ:I*ºb:.İ&@bÑU© :å¨ê  E”{@"JC”ï]>sEìô!@>ò    ø      À  ø      À  @TE)İ×:HŒ3@{o'‚ƒA~:D/º€¡å:_cŞ@bxi. :åÀ   E”v¯@"IçC•>åÍEìáM@=©    ø      À  ø      À  @TE?³Y:HÁö@{o*3::dpº€Ã¯:œ¤è@bÏH :åØU  E”ƒ@"KnC”Ò›>Eìş˜@9š    ø      À  ø      À  @TE QNÒj:Ha@{o*ö Æ:
+èŞº•K:¦,ä@bÇ4à :åğ
+  E”E@"MAC”öÜ>û…EìóS@U9    ø      À  ø      À  @TEß˜Ÿ?:Hö@{o%‡Íh:NàºV¶P:ŠY@bnš¸¸ :æ½  ‘E”d‡@"D¢C•>ÿ|EìÌÉ@A    ø      À  ø      À  @TE#4:He'@{o$Nö :.Fº.ái:PÑ@b‘ [  :æo  ’E”nˆ@"FC• ë>iEìĞ@CM    ø      À  ø      À  @TEuÏ2:HŒ¨@{o+]Ø·:;ŠºŒâ::ˆ¼@b‘½fi× :æ7   “E”qì@"HóC•8„>ÀlEìÚW@B¶    ø      À  ø      À  @TE$¾ïl:HqC@{o+ø”Ì:-úºh4n:¥ÅÊ@b’dÌB_ :æNÑ  ”E”i@"QëC•LŞ>ÑEíç@Aë    ø      À  ø      À  @TE6Ë·\:HgË@{o&Äjüä:>º˜L…:Ç¾@b“1å :æf€  •E”zà@"IèC•%Ğ>÷ğEìæù@/å    ø      À  ø      À  @TE$¬’î:Huò@{o(¦_æP:,¿ºxwæ:¸Š3@b“³—ó :æ~.  –E”s>@"HğC•Ç>ÌEìÓ‰@DÊ    ø      À  ø      À  @TE,&ú:HXš@{o#±Àrÿ:Üº£Ã:®)8@b”ZıËv :æ•Ü  —E”n•@"JÃC–LÈ>Å•EìÕæ@<+    ø      À  ø      À  @TE´‡¸¤:H¬Ë@{o*ƒéJ¨:Xvº/mÁ:nÖ@b•cmş :æ­ˆ  ˜E”Zg@"A«C• Ö>j3Eì©7@('    ø      À  ø      À  @TE*
+?Ñ:HwF@{o)(ş´“:45º º:œYß@b•©ÉF5 :æÅ4  ™E”ƒ@"K°C•,†>Ë¤Eìït@dr    ø      À  ø      À  @TDú¼ºƒ¥:HÂ@{o*›É½h:Z¨ºŒb:Ş$@b–Q/T :æÜß  šE”¦@"UGC•"¹>'éEíT@R<    ø      À  ø      À  @TE˜ˆ”:H„R@{o*Ê>ª::2ºÚÁÑ:æœ/@b–ø”öd :æôˆ  ›E”{,@"IºC”äj>ónEìã@.7    ø      À  ø      À  @TE'œ‡:H9{@{o'ŞzFš:|ºpĞx:nê@b—ŸúÎl :ç1  œE”Õ@"PóC•$³>ÖEì÷O@6ş    ø      À  ø      À  @TEŠßåõ:H‚e@{o.ÏW2¸:4aº¾—ñ;›ã@b˜G`Ü :ç#Ù  E”˜r@"SVC•Ÿ>|Eí±@\    ø      À  ø      À  @TDşr„2:H£y@{o(àÁ Z:B2º¬s#:üå{@b˜îÆ³û :ç;€  E”…í@"NEC•HŞ>îEìí"@JÑ    ø      À  ø      À  @TEÿ—Š:HÚq@{o*q³tÌ:fĞºasŠ:Ú³=@b™–,V :çS%  ŸE”i«@"G‹C•_>'YEì¿÷@]è    ø      À  ø      À  @TE¤­Í%:H“a@{o*«y"D:6yº¢%*:äÇ@bš=’-Û :çjÊ   E”sË@"HC•Qï>/ÇEìÆÃ@N¼    ø      À  ø      À  @TEzrb7:H¨5@{o$ùê¬”:KÌº¯C´:ù|@bšäø;B :ç‚n  ¡E”wš@"I·C•‡>Ú1EìÎµ@Tì    ø      À  ø      À  @TDıv–m6:H¡@{o.¨ºî„:8nº‘™b:ÀË}@b›Œ]İ: :çš  ¢E”³d@"YÅC”ôE>àşEí+å@e    ø      À  ø      À  @TDñ¹ØŒÂ:HuZ@{o-òx‹½:mº¸@x:ó‰L@bœ3Ã´Ò :ç±³  £E”‚×@"L‚C•'ö>ÔAEìâZ@_ß    ø      À  ø      À  @TEüÿò?:HjÄ@{o+¶Uò:şº ÿV:âb%@bœÛ)Â	 :çÉT  ¤E”·)@"ZC•&X>ËEí/ê@?j    ø      À  ø      À  @TEQŠn:H-­@{o.™øô¶:
+ösºßC’;øô@b‚cÑ :çàô  ¥E”ª}@"T¸C•Gş>ËWEíf@YM    ø      À  ø      À  @TEí¹Ç‚:H9ò@{o(y´1:
+ùºÎà˜;f@b)õ;9 :çø“  ¦E”ş@"K±C•,·>ü=EìÚÅ@9T    ø      À  ø      À  @TEãÑÍå:Hj@@{o+üœ‹@:wºŠQm:ñÙ©@bÑ[  :è2  §E”‡B@"MãC•-X>ÕÀEìâd@ZX    ø      À  ø      À  @TE­âù:H[w@{o,_éáô:6º™ÑÊ:åI@bŸxÀéè :è'Ï  ¨E”‘@"O—C•;q>ùºEìôg@hÎ    ø      À  ø      À  @TEÑ¾¶¢:Hv@{o,Ş]:&:º:ãù@b  &Á  :è?k  ©E”­¶@"VjC•3>ÌhEí$h@eª    ø      À  ø      À  @TE7È+ß:H2»@{o'»àF:ºsV·:”äÄ@b ÇŒ˜H :èW  ªE”yÕ@"JàC•->gEìÎ$@LA    ø      À  ø      À  @TEœã´:Hš@{o*U{sJ:<Mº¢£­:¹`Ã@b¡nò9¯ :èn   «E”P@"TñC•6ã>13Eí_@:¦    ø      À  ø      À  @TE¿<ƒ:Hpˆ@{o'ñ×%A:#$º½Œß:ÑJ@b¢XFw :è†:  ¬E” ±@"U˜C•_ÿ>×>Eí@^Ù    ø      À  ø      À  @TE V%1:H;O@{o'¯ÚU€:º(á8:„gL@b¢½¾n :èÒ  ­E”—Ô@"PÍC•Ÿ>èEì÷ë@Kc    ø      À  ø      À  @TEQ$@:Hlû@{o%¦*x:zº²å:än÷@b£e#¾¶ :èµj  ®E”’¶@"OƒC•X­>Ş:Eìï:@a
+    ø      À  ø      À  @TEòØ9+:H{õ@{o.1oÌÊ:'åº¶\; ¶V@b¤‰Ë> :èÍ   ¯E”‹@"LwC”ål>äEìàc@Z”    ø      À  ø      À  @TE*4z:He¥@{o)×I¶=:†º—<÷:¾ó1@b¤³ï¢ :èä•  °E”h“@"CãC”ö…>
+ÆEì«ª@a™    ø      À  ø      À  @TEEÇ"`:H‘u@{o%|öè°::}º|f—:½G!@b¥[UC :èü*  ±E”ª@"L®C”ı²>áEìáI@[İ    ø      À  ø      À  @TDşŠGÑ	:H‡İ@{o+ÆRMA:/çºÄ˜Ö:öIQ@b¦»Å :é½  ²E”¨T@"RVC•Ü>ş#Eí@Fâ    ø      À  ø      À  @TDŞFzäø:H±@{o+<¢T#:=ãºº¿ü:ä·Ê@b¦ª!& :é+P  ³E”¬‰@"R#C”çª>ö§Eí–@U^    ø      À  ø      À  @TE
+Ç¶G:H|Ø@{o%±¶Ø‰:1º›éD:³³©@b§Q†ü´ :éBâ  ´E”¨Ç@"Q£C”Ü>$6Eí	H@K;    ø      À  ø      À  @TEÓ”D:HO@{o(—Ãøn:~ºÃgš:ãõû@b§øì| :éZr  µE”¬§@"PéC”èS>ÚÓEís@Zù    ø      À  ø      À  @TE(‚İI:HWİ@{o(Ğ»:óº¢}Ê:ëGæ@b¨ R©¤ :ér  ¶E”£Ú@"PcC”ßX>
+ÔEíÊ@mx    ø      À  ø      À  @TEF½Iè:Hlg@{o'Ç)Ú:%Üº¦×“:õ3­@b©G¸û :é‰  ·E”ŸÈ@"NQC”éı>îEìüù@Yƒ    ø      À  ø      À  @TE$AIå:H^e@{o)Ñù:$zº…A¦:ÉOI@b©ï £ :é¡  ¸À  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @bª–ƒöë :é¸«  ¹E”Ã·@"Y¼C•>ZEí1´@x|    ø      À  ø      À  @TEnuS:Hc~@{o%XÓâ':$º°Òª:æié@b«=êÂ :éĞ6  ºE”¤@"O³C”j
+>DÄEíú@7S    ø      À  ø      À  @TE >…h:H=¡@{o(÷F“Ñ:Eº³	[:Ü¢Ä@b«åO£: :éçÁ  »E”ŸŞ@"MûC”¹j>Eìö‹@_¾    ø      À  ø      À  @TDÿ4í:Hˆ@{o+>Û:2µºö:ëŞâ@b¬ŒµyR :éÿK  ¼E”Óç@"\ C”èL>şÛEíQµ@hu    ø      À  ø      À  @TE&‰üJ:H)¼@{o(ØƒÄ›:Ÿº|¸:ÂR²@b­4…	 :êÔ  ½E”Êf@"YwC”µø>&6Eí8K@hÌ    ø      À  ø      À  @TEìYÆœ:HAp@{o'i šu:ŞºÊîO;º@b­Û%Q :ê.\  ¾E”®@"RzC”¿V>"Eí
+Ü@K5    ø      À  ø      À  @TE$ß Ê:HLù@{o*TÎcú:2»ì3;#Ä@b®‚æû) :êEâ  ¿E”»v@"VåC•5>
+$Eí@QM    ø      À  ø      À  @TE:)Ò©:H‚Ñ@{o)ğƒé,:8ºğc,;ŞŞ@b¯*LÑ  :ê]h  ÀE”›k@"NGC•Õ>ÒEìğ£@Z~    ø      À  ø      À  @TE¼mÈ:H°
+@{o+³_²j:PºÊ¡u;zƒ@b¯Ñ²¦È :êtí  ÁE”×}@"\C”Ó5>ü¾EíBF@cñ    ø      À  ø      À  @TDü—Gš:H>@@{o.Îw:
+õoºıÖM;4±—@b°y|€ :êŒq  ÂE”²1@"R°C•k>4EíU@Sç    ø      À  ø      À  @TE)±Úí»:Ht7@{o1D[Ì:2‘ºú—/;6'@b± ~R' :ê£ô  ÃE”¿ê@"V»C”ø©>ø€Eí!@EÂ    ø      À  ø      À  @TE­hw:HqÁ@{o/¼5Z¿:&»‡£;0ŒÊ@b±Çä]o :ê»v  ÄE”¢L@"OEC”ÊU>Ò»Eìô:@^Â    ø      À  ø      À  @TEŞ
+'m:H„ğ@{o+€{;:5H»K;Ö²@b²oIıF :êÒ÷  ÅE”¬ë@"SC•8;>Ö=Eìş·@c—    ø      À  ø      À  @TEat›N:H~V@{o,$Â¶Ö:'?»u;1‚@b³¯Ò¾ :êêw  ÆE”´~@"S5C”²#>ìEíí@Wc    ø      À  ø      À  @TDóäØü:H¤Ú@{o-âkIú:7»å˜;@b³¾rv :ëö  ÇE”¼¨@"TäC”öÉ>…Eí¥@_W    ø      À  ø      À  @TEUf‹‚:HdÇ@{o+ã0:«» 1;"Ğà@b´e{}~ :ët  ÈE”Çº@"X+C”¤	>yEí4B@iü    ø      À  ø      À  @TELë:HcP@{o*bQ*Ÿ:(9º¥Î´:è‚æ@bµáRÅ :ë0ñ  ÉE”¸Ä@"TC”Ä¢>åêEíR@[¨    ø      À  ø      À  @TE?–`ˆ:Hp@{o-µÍSÔ:
+ßäºÖ–ß;@bµ´Fò= :ëHl  ÊE”¯w@"SŠC”L>>Eíš@b¹    ø      À  ø      À  @TE‹Óº:H‹ä@{o-[MLd:9ºÜv‡;%E@b¶[¬Çu :ë_è  ËE”“İ@"NC”²>ÀEìŞ~@Zh    ø      À  ø      À  @TE0F:H§C@{o(òCÏf:P×ºÛL:Å[œ@b·Ò< :ëwb  ÌE”Óˆ@"_tC”­•>æwEíJÈ@fä    ø      À  ø      À  @TEğZ4^:Hˆs@{o)¼š´:AU¹³äj:¼ìÿ@b·ªx§D :ëÛ  ÍE”³J@"WC”ìx>ÎĞEíª@Z     ø      À  ø      À  @TEÃ.¿Œ:H£î@{o%K°^¿:T:¹«•1:¼xä@b¸QŞFŒ :ë¦S  ÎE”¬p@"W C”Ğ >¦ÑEí.@rÆ    ø      À  ø      À  @TE š?R>:HL@{o(X°:Å¸g(:y:¹@b¸ùDQ# :ë½Ê  ÏE”‘£@"O(C”Š>	uEìÖ½@Wù    ø      À  ø      À  @TE!/½¨F:Hz×@{o(\vŠI:6I¹ÁHS:"@b¹ ª%û :ëÕ@  ĞE””4@"P5C”äü>õ.Eìà @Y@    ø      À  ø      À  @TEË·÷\:H£@{o'Ø6:Oêº ?:™Û„@bºHÅ :ëìµ  ÑE”è@"ekC”Ù’>ÈáEí`Ö@c€    ø      À  ø      À  @TE)ßRØ:HlZ@{o*Y€Â\:8Hºö:€ÿG@bºïu™Ê :ì)  ÒE”…û@"NGC”´>ö#EìÆÚ@eR    ø      À  ø      À  @TE#‘©G3:HR@{o*“
+
+:áºoøZ:¾@b»–Û¤" :ìœ  ÓE”É0@"]-C”İ·>ï\Eí+ @n‹    ø      À  ø      À  @TE&&¬™°:HD@{o(z¹:
+şŠºJ Ã:ÔÏˆ@b¼>Axº :ì3  ÔE”š9@"PÁC”Åá>şEìå}@s‹    ø      À  ø      À  @TEdM:Hr4@{o)…#Ò¾:'¤º%L:¦Ø@b¼å§‘ :ìJ  ÕE”…¿@"KXC”ß”>¸WEì»P@Kë    ø      À  ø      À  @TE'·¾R:H5o@{o,JI¿ :”º‚îÚ:Ûx@b½!¹ :ìaï  ÖE”¨Í@"U$C”ú>ü|Eìú"@Z°    ø      À  ø      À  @TE7O/:H@{o.@ÒÜ:Bdº;±ñ:Ë½Š@b¾4rö0 :ìy_  ×E”Æ.@"[½C”¢9>‰Eí @U    ø      À  ø      À  @TE¬Ê´l:HU)@{o(`ìPò:pºHu:÷:@b¾ÛØÊˆ :ìÍ  ØE”º‚@"YiC•Ÿ>EíÀ@`è    ø      À  ø      À  @TEv:HD@{o*Ç«!Ş:
+AºBû:ÂYË@b¿ƒ>i  :ì¨:  ÙE”Ÿ@"PéC”’8>dEìİÆ@]    ø      À  ø      À  @TE!:&:H–Ó@{o)yP}¼:9ÀºnĞ:Ä@bÀ*¤s :ì¿¦  ÚE”«‚@"UÌC”ÀW>ÕSEìú@R¼    ø      À  ø      À  @TDø¿È«‰:HdÖ@{o*^BÜå:¦ºVÆ–:Ê;@bÀÒ
+G/ :ì×  ÛE”µŠ@"W3C”¢>ÕEìúx@cÃ    ø      À  ø      À  @TEÎ%|>:HHX@{o,Œ ¸:øºÂ-ò;
+p@bÁyoå— :ìî{  ÜE”¦³@"RóC”YŸ><cEìé•@o›    ø      À  ø      À  @TDöLJê–:Hğ@{o0Ñ%nÎ:+zºÚ›(;Ğ@bÂ ÕïN :íä  İE”¡_@"SWC”ÇX> ®EìÔh@g    ø      À  ø      À  @TE	§{:Hªº@{o,$õ:BùºóT; H@bÂÈ;ÃV :íM  ŞE”®h@"VÄC”qn>	nEìót@aÛ    ø      À  ø      À  @TDôõd:Hª@{o+ à.±:9íº B±;¡ö@bÃo¡a :í4´  ßE”ÎN@"^İC”Â|>ùmEík@cÌ    ø      À  ø      À  @TDêoêî¬:Hë@{o+ŒûX:%ªºÃ$;*:í@bÄ5f :íL  àE”Š±@"M_C”†s>'³Eì¾"@U    ø      À  ø      À  @TE b¨¸Ú:H¾o@{o(ŠòŒé:Sgº]:à£@bÄ¾m>İ :íc  áE”§I@"U(C”‰?>.–EìİÕ@\     ø      À  ø      À  @TE·®šÅ:Hš@{o*mu¤:H(º²y.;9@bÅeÒÜå :ízã  âE”•@"OŒC”æh>ê›EìÄª@[k    ø      À  ø      À  @TE¶–z:H™¤@{o+ğÂĞğ:>hºÍ”N;”é@bÆ8° :í’F  ãE”®à@"VC”¬.> §Eìér@Y    ø      À  ø      À  @TEkF‘:H=z@{o+®‡k‘:¬ºÛù¢;œ¬@bÆ´¹Ô :í©¨  äE”«@"V$C”Ç>öªEìæ@he    ø      À  ø      À  @TDûï :H€@{o+Â*B:%ºÖóÌ;˜«@bÇ\W¼ :íÁ
+  åE”¿9@"XıC”„Ÿ>ëEí Q@b†    ø      À  ø      À  @TE¿°O":H€«@{o*Kş:/çº¨k™;"1@bÈj+4 :íØj  æE”®6@"TkC”<ö>ZEììº@T    ø      À  ø      À  @TDõ¢¦$\:HwÒ@{o(£Ÿ<½:×º«ú:şOÇ@bÈªÏş› :íïÉ  çE”È±@"[9C”fK>2Eít@iÒ    ø      À  ø      À  @TENC…Ì:Ha@{o+_Äš:+º”•:İò@bÉR6£ :î'  èE”²@"TÕC”€#>¦´Eìïy@O<    ø      À  ø      À  @TE¨7ªÚ:Hn“@{o+Ã²˜R:!hº·eé;ˆƒ@bÉù›¥; :î„  éE”¥“@"RC”@5>9EìØ @b/    ø      À  ø      À  @TEõ¤‚P:He(@{o'Àğşp:šº†@:ëAE@bÊ¡xr :î5à  êE”‹÷@"K»C”-Ê>zEì¸·@K    ø      À  ø      À  @TE™àp$:HR´@{o+sd¡\:¡º!á:ÔÁÜ@bËHgê :îM;  ëE”ÄŞ@"Z/C”\€>ç"Eíœ@W¾    ø      À  ø      À  @TEŒœ˜®:HM›@{o-Ã´>:²º¿ÙÏ;‡£@bËïÍ² :îd•  ìE”ã@"_¸C”<x>ÚBEí:@K÷    ø      À  ø      À  @TE¥Áp:H7i@{o,ÕY×:
+öñºPÿ·;‚;@bÌ—2ñ¹ :î{î  íE”Ú@"]JC”Ş>ù"Eí#!@P    ø      À  ø      À  @TE!jQÃ:H=@{o-
+wã:
+æèº‰Ã€;9l@bÍ>˜ :î“F  îE”Áu@"YHC”/*>ÒEí@YÔ    ø      À  ø      À  @TDÿ`\ñ:H\«@{o'ìú„ô:WºHw:ÈÅ6@bÍåş—™ :îª  ïE”ÖÛ@"]C”û>»NEí!Ã@bN    ø      À  ø      À  @TEÊå(:H7>@{o*¼šÌ}:
+ôÚº]‰ :êdr@bÎdj€ :îÁô  ğE”Ék@"ZC”@Ã>éÚEíh@e#    ø      À  ø      À  @TE&¥Q¨Â:H&æ@{o)ÜŸ:
+şº‚1:ıF\@bÏ4Ê=H :îÙI  ñE”»h@"T³C”Tâ>cEìï"@a    ø      À  ø      À  @TEo’ğD:HO	@{o)ê‚'ì:¶º¹¾±;ƒ
+@bÏÜ/ÚP :îğ  òE”¶@"SHC”J>ïUEìïO@Wr    ø      À  ø      À  @TDô£¬(B:Hte@{o(y¾´:‹º^fã:Ñ`%@bĞƒ•â§ :ïğ  óE”Õ]@"ZçC”$¶>èEíU@]Œ    ø      À  ø      À  @TE!s˜ä:H8€@{o&iÉ:ÄºeÎ(:ßGQ@bÑ*ûµ? :ïB  ôE”Ç@"U'C”ş>êüEí)@Oœ    ø      À  ø      À  @TECœÓ2:H„ú@{o*xYà:+÷ºŸæ#:ô×2@bÑÒaR :ï6’  õE”Øc@"ZC”!á>çÚEíp@K    ø      À  ø      À  @TEg044:H„!@{o)W£h:+şº¢è·;h@@bÒyÇZ. :ïMâ  öE”äë@"_ C”7Ò>ÏEí4€@aP    ø      À  ø      À  @TE%Õøkó:H$¾@{o%ˆ±9ò:ºàv:õts@bÓ!-,– :ïe1  ÷E”Ùâ@"[0C“ûG>ÇGEíÂ@T\    ø      À  ø      À  @TE On:H—Ä@{o,\¦„ğ::º×Ã|;vZ@bÓÈ’É> :ï|  øE•Ú@"iôC”'>ÈÒEí‡3@lZ    ø      À  ø      À  @TE1àyI,:Gs@{o.ïÌl,:
+‹`ºÅ ;:ìÙÅ@bÔoø›… :ï“Ì  ùE”³@"Q6C”&á>ùËEìÚ@I¢    ø      À  ø      À  @TE‹I£L:Hky@{o,ÔX:!Œº¿Ÿ:íR¥@bÕ^£m :ï«  úE”ô(@"avC“æÍ>æEíF@Z’    ø      À  ø      À  @TE'ÓÜ9:Gúm@{o)¨&:
+á¡ºÅÈ:Êàƒ@bÕ¾Ä?å :ïÂc  ûE”êô@"_9C”)©>äEí.x@Pó    ø      À  ø      À  @TE+°ñå:HDı@{o)?2H:	ïº¨¹:ÜZ|@bÖf*ü :ïÙ­  üE”È”@"V	C“ëU>üJEìû”@K2    ø      À  ø      À  @TE#•3^´:HM@{o)ŠÉmš:º¼_:Òó9@b×´ :ïğö  ıE”Á(@"TğC”2»>ËEìíA@R'    ø      À  ø      À  @TEÄƒ¾{:H‹@{o1IÇéR:.Eº¤:Åğò@b×´õë¬ :ğ>  şE”Ìy@"X7C”)*>ävEíd@h    ø      À  ø      À  @TEaB­è:HL0@{o+RûH:Aº±Nß:¯„Ø@bØ\[‡Ó :ğ„  ÿE”ÙÎ@"XÊC”¤>¬ÓEí@@O/    ø      À  ø      À  @TEY_&':HjD@{o'½~”:%îº¨I°:Ì#ğ@bÙÁY« :ğ6Ê   E”Ã“@"UäC”g>üQEìñ@k˜    ø      À  ø      À  @TE$D³\~:HAt@{o(Ş:vºÆ‰i:ÊúS@bÙ«'a# :ğN  E”È†@"XzC”ê>Ï¾EìóV@Z	    ø      À  ø      À  @TE…ô¶Ü:H~/@{o'¨âU:5:º²ê":Ø=r@bÚRŒı* :ğeS  E”³‰@"QúC”	¦>ıõEìÓà@O†    ø      À  ø      À  @TE
+Ö½2:H`ê@{o)‰éê„:•ºÈ$…:ÇEá@bÚùòÎÂ :ğ|•  E”òm@"búC”$V>²+Eí0J@gñ    ø      À  ø      À  @TE ù7 º:HVÃ@{o'/8:ºù~;=Ã@bÛ¡XÖ
+ :ğ“×  E”İ9@"^«C”N>ÓVEíÛ@qÎ    ø      À  ø      À  @TE@*f:HS§@{o+Œ'§:ºô*;	5/@bÜH¾qá :ğ«  E”º'@"TNC”i>öEìÕ¿@[     ø      À  ø      À  @TE>T>:H‘İ@{o)x:8ºìã:í’»@bÜğ$CI :ğÂW  E”Ûê@"]ZC”U©>ó†Eí%@g¯    ø      À  ø      À  @TDıíœ•:HsÉ@{o*Ù°¾:!»İ;M@bİ—Š± :ğÙ–  E”¿ú@"WéC”8a>‚œEìÛç@Sq    ø      À  ø      À  @TE}´:Hbú@{o+ŸIç®:ì»@!:ú-„@bŞ>ïæ :ğğÔ  E”Ì§@"YğC”3Q>±üEìö:@U%    ø      À  ø      À  @TE¹h£:HR·@{o+°2G:CºãrB:ÇÇp@bŞæU·@ :ñ  	E”Õ2@"[ C”sw>òƒEìú@_(    ø      À  ø      À  @TEL<éH:Hrä@{o)u”×: ^»5;&²@bß»ˆx :ñL  
+E”ÆÍ@"VÓC“ÛÔ>ê"EìåÈ@N^    ø      À  ø      À  @TE‰4e}:HT©@{o+¥g!N:ˆ»ãÉ:û©¯@bà5!#à :ñ6†  E”áM@"^ÓC”J‹>¹EíÕ@lP    ø      À  ø      À  @TE)c¾¿¹:H=h@{o,«S:¨ºİtæ:õjÀ@bàÜ‡*§ :ñMÀ  E”Í1@"[C”[>>¹REìğ°@b4    ø      À  ø      À  @TE|ß›I:Hš¯@{o%Î•ÿL:DºÆéZ:ô @báƒìûŸ :ñdø  E”è_@"aÛC”‰>ÇgEíö@cË    ø      À  ø      À  @TEVàÈ:HXË@{o(y–Ø:Ï»|ï:Ö@bâ+R–æ :ñ|0  E”Á±@"Y>C”[¹>ÚæEìÜ¨@`ß    ø      À  ø      À  @TEë0•:H<ø@{o%ø×iÔ:ºøÔ:¨ğô@bâÒ¸n :ñ“f  E”Ìû@"[´C”0«>ã`Eìî‹@XÛ    ø      À  ø      À  @TEYg¯2:Hp@{o'ıÇâÀ:(‘ºıÍÒ:Ë#„@bãzn6 :ñª›  E”Ä¢@"ZßC”¥>ë7Eìá©@L"    ø      À  ø      À  @TE)R:H[Ë@{o(ªÖK:ºá^:¥Ì@bä!„	M :ñÁĞ  E”Ø¾@"bbC”ˆÏ>Ù;Eí>@E½    ø      À  ø      À  @TE”>)0:HXâ@{o(
+š6:-ºÉ£À:œÄµ@bäÈéÙõ :ñÙ  E”İu@"aóC”m>ÖëEíJ@]    ø      À  ø      À  @TDó‡¯-†:Hwè@{o+cïf: »#H:Û&á@båpOà= :ñğ5  E”·ä@"X¦C”‘W>EìÈê@d¡    ø      À  ø      À  @TE	Á’G:HV@{o'Ò:ºÛx:¿Ä×@bæµ{ :òf  E”âY@"sWC”|q>äEí;@hO   €ø      À  ø      À  @TEJö22:H^W@{o*(aÃ:1ºÕ^f:ÁŸÜ@bæ¿Kœ :ò—  E”¹Y@"W C“ş>@EìÅ\@]Ç    ø      À  ø      À  @TDõCI³:H:Ç@{o/ö×ä:
+ñ|»'®;Ë.@bçfQ´ :ò5Æ  E”ÆB@"]’C”ka>ùEìÙÌ@d%    ø      À  ø      À  @TDñÇ:HAø@{o,¦ ¤:
+û»/(:÷U@bèç" :òLô  E”¬ø@"TÁC”6¿>´?Eì³ö@b‚    ø      À  ø      À  @TE›öh:Ht1@{o+£û#:$ºïx·:Öğ@bèµL¼£ :òd!  E”áH@"b®C” p>ûEíË@Qb    ø      À  ø      À  @TDó•Û‹ä:HTÄ@{o,Û•3é:§ºÄ1³:ÊŠœ@bé\²ŒÛ :ò{M  E”Á;@"Y‚C”LT>æEìÕØ@SD    ø      À  ø      À  @TE
+¤Ãgª:HY	@{o&‹’ŸX:ÁºĞ¤{:²@bê’² :ò’x  E”Ñ²@"\èC”A¥>Õ§Eìé@W    ø      À  ø      À  @TEÖ'z:H3@{o)ı- P:
+ú³ºÇî:ÀÃS@bê«~- :ò©¢  E”â›@"c’C”T>´ÅEí@T^    ø      À  ø      À  @TDüŸi'u:HS”@{o-î6:=ºßêw:â—2@bëRãı" :òÀË  E”ÉO@"]4C”Rq>½ÛEìÚ$@It    ø      À  ø      À  @TEÊŞ4‹:Hkd@{o*Ü:ü:/ºªç…:³«œ@bëúJÉ :ò×ó  E”Êf@"].C”Gé>Ä:Eìá³@R|    ø      À  ø      À  @TEkØW4:HQ@{o') 3Ø:jºŸÑ:ÈÑí@bì¡¯ :òï  E”èâ@"e&C”GX>ù EíĞ@O    ø      À  ø      À  @TE"¤:T¬:H¢@{o)†pZ\:
+ğº²bƒ:”¢A@bíIlÉ :ó?  E”ÏÀ@"]ÒC”$>-Eìì·@!¨    ø      À  ø      À  @TDíUÓß:HEº@{o(¿F-+:
+úºdôo:h4x@bíğ{< :ód   E”À@"YC”„>ğ¿EìË¢@9    ø      À  ø      À  @TE°'ú:H}˜@{o(k ³l:3º_p:=w~@bî—áH :ó4ˆ  !E”º™@"YmC”I½>¬EìÌ½@/•    ø      À  ø      À  @TDùuKz´:H8Û@{o*¯	Êh:
+øÊºT:#	í@bï?FÛğ :óK«  "E”é^@"g5C•M!>ª×Eí"@5º    ø      À  ø      À  @TDô®h–V:HA¦@{o'Z :
+ùÿºp‘·:N^@bïæ¬«w :óbÌ  #E”´~@"UÇC”;Ê> «Eì¾'@G`    ø      À  ø      À  @TDëÕ>û:H~M@{o&[/ûÀ:êºm=:Vôò@bğzÿ :óyí  $E”¿@"VC”*>°tEìÊ¶@2‚    ø      À  ø      À  @TE¸¢:H]Í@{o$u˜^:ÏºZ­£:l&Z@bñ5xJg :ó‘  %E”Õß@"Z‘C”P¤>ïEìñ@]    ø      À  ø      À  @TE	I‰Š:Hoæ@{o&…Ãšˆ:!ÑºQyM:.¦1@bñÜŞÎ :ó¨+  &E”ëÎ@"aC”6}>ğÓEíœ@1X    ø      À  ø      À  @TDÙ·r :Hpõ@{o#^·s:&ºC
+9ä»@bò„Cé :ó¿H  'E”îk@"b@C”&\>è’Eíÿ@7M    ø      À  ø      À  @TDòØGú:HU—@{o&t½€:¯ºn$—:sFq@bó+©î :óÖe  (E”Æï@"W_C“óº>í3EìÎO@FÒ    ø      À  ø      À  @TDî&]d:He@{o(SE:Šº—²º:¥›0@bóÓ‡… :óí€  )E”Ğr@"VéC“©Ç>ÉEìâ=@=-    ø      À  ø      À  @TE[z¬v:H#/@{o)1Ó,ğ:
+ôƒºU:˜H@bôzuV :ôš  *E”ü*@"câC”	å>"oEí$	@@À    ø      À  ø      À  @TE	ÇMBÃ:H%@{o%™Ÿ‡:
+î¨ºLì:§¢&@bõ!Û%µ :ô´  +À  À  À  À  À  À    @ø      À  ø      À  ø      À  ø      À  À  À  @bõÉ@ô¬ :ô2Ì  ,E”õæ@"aDC“™ï>ø(EíE@_ê    ø      À  ø      À  @TEÌ”•:H8@{o'p&†:
+ı»
+¨;åö@böp¦Ã” :ôIã  -E•’@"h›C”Aë>qEíF@e·    ø      À  ø      À  @TEDBÆ:HL@{o+³­²u:
+í»Ì;L@b÷’l :ô`ù  .E•@"uƒC“Öa>Ş{EíDê@mÚ   €ø      À  ø      À  @TE
+pŒw:Ho@{o/#â¥ô:
+ŞR»¼@:îØ=@b÷¿ra3 :ôx  /E•<@"c C“¯‹>ÖİEí+É@sG    ø      À  ø      À  @TDüHÁ¶³:HˆZ@{o-‚ºL2:-JºãÙT:ùW5@bøfØ/ë :ô"  0E”ìÉ@"^{C“ìÚ>˜EìıQ@X¹    ø      À  ø      À  @TDõÖW’:H/@{o(…Êè:
+íºô+8:îˆ2@bù=ş“ :ô¦5  1E”Ö«@"WiC“âç>ãqEìæ¤@Pá    ø      À  ø      À  @TDş³;Ã:Hm¼@{o#{V¤Ê:4ºîÈ‡:Ê8Ò@bùµ£—z :ô½G  2E”û÷@"a˜C“ø>ç£Eí3@`Î    ø      À  ø      À  @TEk°:H-!@{o,tÚ¯w:
+øÑ» R«:ìın@bú]	›² :ôÔX  3E”İ@"YÌC“İ¼>ÚEìíƒ@>;    ø      À  ø      À  @TDşj7ëH:HXª@{o-­ñ „:	í»İõ;h¢@bûoj* :ôëh  4E”ö@"_÷C”¤>¸ÌEí°@RÏ    ø      À  ø      À  @TEGpÜ:H!@{o'T2ßF:
+øvºøÿ‘:ú ¤@bû«Õâ :õw  5E•ª@"h³C“ÔÙ>øÚEíDæ@b>    ø      À  ø      À  @TE¿ KH:H$@{o*\şU:
+İ »à;N—@büS;Ù :õ„  6E”î@"_–C”">û½Eí q@AD    ø      À  ø      À  @TEçu×C:H-ã@{o*yÄ:
+ı4ºîU¡:éÂ&@büú Õ! :õ0‘  7E”â—@"[,C“‘ê>øæEìò?@aå    ø      À  ø      À  @TE@XJ\:H'+@{o)Ãp’:
+ş"ºèä*:üš½@bı¢m¨ :õG  8E”ó.@"`†C“º:>·FEíú@Z³    ø      À  ø      À  @TEòG¤:H@{o0{5Fl:
+èÌ»½;(@bşIl;À :õ^§  9E• @"eQC“Ø>İ6Eí(1@I    ø      À  ø      À  @TEïEMÆ:H,Õ@{o-LÔí:
+÷»)ı:ısG@bşğÒ?ˆ :õu±  :E•*@"e0C““>>C€Eíô@O@    ø      À  ø      À  @TEË#ú:HÎ@{o/:¤¶":
+éïºóÕœ;dş@bÿ˜8 :õŒ¹  ;E”öR@"búC“Ø>"4EíP@N^    ø      À  ø      À  @TERs\x:HE@{o.’võ:
+éîºìzé;¿c@c ?¥· :õ£À  <E”÷ú@"b7C“à§>:ÅEí „@H    ø      À  ø      À  @TE÷­Z~:H,:@{o1‡_Éd:
+üt»³Ã;PLe@c ç©O :õºÇ  =E”îT@"_C“Ô>ÉTEìıu@Fæ    ø      À  ø      À  @TE	@ãt:H3@{o-«JÈ:
+ò·»ù";*İ@ciw :õÑÌ  >E•£@"h¿C“¸\>ŞÏEí0T@i    ø      À  ø      À  @TDñ[‘âı:H­@{o.v™2ä:
+Ğ#»`Ö;<³+@c5Ï :õèĞ  ?E”üÙ@"cİC“·ã>MEía@ZŸ    ø      À  ø      À  @TEİ1‚!:HZµ@{o+?p€¸:§»w;?µ­@cİ4ÜÆ :õÿÓ  @E•1\@"r‘C“Î9>#_Eí]á@bƒ    ø      À  ø      À  @TE‚QeS:H7Æ@{o.Ò‰æ½:
+ıÁ»"€j;Ai‹@c„šà :öÕ  AE•A@"e¥C“Èİ>MHEí¨@dÀ    ø      À  ø      À  @TEeTŠö:HŸ@{o-;2º:
+ã@»¾û;%ş@c, wå :ö-Ö  BE•Æ@"hSC“}¹>>Eí)s@bå    ø      À  ø      À  @TEyF¹8:HÖ@{o-ïY<):
+â»;;,i†@cÓfE] :öDÖ  CE”Õ@"ZC“¡9>ä½EìÎá@S?    ø      À  ø      À  @TD÷´oW­:HU#@{o.yÀÆG:¨» >Ş;EXÌ@czÌÄ :ö[Õ  DE”â@"]ÛC“¹=>2Eìß6@_    ø      À  ø      À  @TDô¯Xİ¸:HUµ@{o-yŠÆ:Á»!j;>=`@c"1à :örÓ  EE”ñ@"`ÚC“¼È>ÿEìö˜@dë    ø      À  ø      À  @TE ]rL^:Hn¶@{o+œÒÖx:É»3¿Á;J™r@cÉ—­T :ö‰Ï  FE•Ç@"h’C“v$>â‚Eí(ö@YY    ø      À  ø      À  @TE¤ ®:Gîp@{o2HA³m:
+Í»n®;S,æ@cpızŒ :ö Ë  GE•„@"j$C“ŠÃ>¨ÕEí.…@`!    ø      À  ø      À  @TE!V7W:Gõ¤@{o.Ôps@:
+Û=»bÉ;Ggb@cc}c :ö·Æ  HE•ë@"eC“¢Ü>ÜEí\@}Ì    ø      À  ø      À  @TERóT:H	ï@{o/ËÁ=Ê:
+Ô6»B;Nå@c¿É» :öÎ¿  IE•+@"npC“põ>5bEíOŠ@cà    ø      À  ø      À  @TE°ÁÎ:Gül@{o)~†‹:
+ÕÈ»®;6Y@c	g.áÂ :öå¸  JÀ  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @c
+”xú :öü¯  KE•A6@"t“C“W.>ÓEígş@z    ø      À  ø      À  @TE4áxˆ:G‹ @{o0kË8:
+“,»-»M;^w@c
+µú{‚ :÷¥  LE”ô_@"`ëC“}Z>Eìòv@dÕ    ø      À  ø      À  @TEÂ¦äË:H:P@{o-ŸÅå:
+õ‡»!Õr;`d@c]`HJ :÷*š  ME•(r@"nFC“X>ô¹EíE(@X    ø      À  ø      À  @TE9'VĞ:Gì÷@{o.Î\\:
+ÆÁ»,€;eÔH@cÅßa :÷A  NE•˜@"gC“W~>å²EíÕ@jÉ    ø      À  ø      À  @TEØ>ï„:H`@{o/²Ú½¹:
+ßX»,ïÎ;fšÛ@c¬+á¹ :÷X‚  OE•ù@"l[C“FÆ>¿OEí+$@a    ø      À  ø      À  @TEIò›l:H)J@{o,ƒMd:
+úÇ».Ìo;x ñ@cS‘®P :÷ot  PE•ß@"lfC“U>áÜEí1…@Cf    ø      À  ø      À  @TE	´Sö”:H+5@{o1L³å,:
+ë	»'˜;d¥@cú÷zØ :÷†e  QE”ûÜ@"f5C“Nl>šEì÷^@`\    ø      À  ø      À  @TE‰!–:H[÷@{o/ñt¾À:¥»,Êp;v6@c¢]  :÷U  RE”üd@"dŞC“_>íEìşP@jG    ø      À  ø      À  @TDòéH0:HJY@{o1#Í–q:
+ùĞ» I‹;d®ó@cIÃ¸ :÷´D  SE”óƒ@"c—C“”>ñsEìê3@Hy    ø      À  ø      À  @TEÉNï:HI@{o+á¤ı.:	Õ»ª¿;`Ü@@cñ(ßÿ :÷Ë1  TE”şú@"e/C“-;>ÉÕEí@F¿    ø      À  ø      À  @TEËÙÒ_:Hò@{o0Aøj:
+èY»;WñŒ@c˜v— :÷â  UE•*¡@"o†C“S>˜EíCÈ@D<    ø      À  ø      À  @TE0Ò–5„:GÄ*@{o,}€Ôb:
+¾ì»KŒ;c¹>@c?ôx~ :÷ù
+  VE•±@"m®C“E»>+Eí,@v'    ø      À  ø      À  @TEuã4:Gíœ@{o.f@ ö:
+À7»Ëí;NBJ@cçZD– :øô  WE•¾@"m²C“@G>ÊEí.@^    ø      À  ø      À  @TEé¯:Gñõ@{o-YŒ}¼:
+ËÃ»&Û;eÓ6@c¿Úî :ø&İ  XE•(Ó@"qªC“Fv>ÚeEí>Í@]+    ø      À  ø      À  @TDş¹"'¨:GòZ@{o.ˆ;$:
+Ãa»#×ë;o3@c6%¦ö :ø=Æ  YE•@"fC“i4>iEìøß@i:    ø      À  ø      À  @TDøfÀV:H;u@{o-cPg:
+îD»"–J;kÔ|@cİ‹¨ :øT­  ZE”îï@"cC’ÜÛ>$»Eìâš@BB    ø      À  ø      À  @TDï¦¿ö:HV@{o2åİ
+ç:
+ÑÕ»D;of2@c„ñ>µ :øk“  [E•â@"fâC“7>Ú<Eìù_@7&    ø      À  ø      À  @TEkHT:H @{o/•ÕZ:
+àw» ];o»‰@c,W
+} :ø‚x  \À  À  À  À  À  À    @ ø      À  ø      À  ø      À  ø      À  À  À  @cÓ¼Ö4 :ø™\  ]E•i@"kC“$©>ìEíÜ@:d    ø      À  ø      À  @TDí^çJ
+:H3“@{o3 ºˆ:
+åh» ;uã±@c{"¡Ü :ø°?  ^E•.Ò@"q·C“Oœ>ìğEíAå@‡    ø      À  ø      À  @TDë
+¢9:H@{o,×TµÊ:
+Ò-»“ñ;ggÕ@c"ˆmt :øÇ!  _E”ô½@"c»C“O”>õEìÚÈ@E{   ø      À  ø      À  @TE‚´ú:HY@{o.$[Y:
+ÚD»!Hº;dİÌ@cÉî8û :øŞ  `E•!(@"pC“_Ø>¿”Eí$ @NT   ø      À  ø      À  @TDòŠé|n:Hê@{o0Ö"Ò:
+ÒÂ»Şj;ƒú@cqT:# :øôâ  aE•X@"faC“Êç>ÙEìãf@4c   ø      À  ø      À  @TDøˆÔN@:Hi.@{o.B`sj:ºàKs;od@c¹ÏÊ :ùÀ  bE•æ@"tFC”À>îëEíc@n¡   ø      À  ø      À  @TDúº±4È:HAŞ@{o2ƒ]­`:
+ğ™»“Ù;‡Ã¼@cÀ›" :ù"  cE•.ü@"r6C“qr>Eí-â@J   ø      À  ø      À  @TDõÿ#S:Gê*@{o0
+¶‚a:
+³»™Ÿ;‡Xñ@cg…0ª :ù9z  dE•»@"nÎC“pJ> ŠEíg@€ı„   ø      À  ø      À  @TE@ŸŠ2:Gı|@{o5léùN:
+Ë¬ºş;ÿ“@cë1’ :ùPV  eE”ï-@"c¶C“­ƒ>½–EììÁ@Q   ø      À  ø      À  @TDç–û¤{:HK@{o)ò]E:
+úÊ»eÏ;eİ@c¶Pü© :ùg0  fE•í@"jşC“Œ>æEí©@Tğ    ø      À  ø      À  @TDı‚Šü
+:H"@{o1“Åá:
+Ò;»/Òğ;f7{@c]¶’ :ù~	  gE•@"m„C“…ê>åÛEí,Ò@-    ø      À  ø      À  @TDïì8:H
+ó@{o2 ºqf:
+Ãù»E4§;‚<p@c’¨ :ù”á  hE•/†@"rC“É›>ÓCEíL‡@&œ    ø      À  ø      À  @TDàä`o8:H3½@{o/Ås>Ö:
+İ »1ü;€Jô@c¬‚] :ù«¸  iE•u@"jC“ !>¨Eíz@>û   ø      À  ø      À  @TDã JVÚ:H.w@{o,QbÍÈ:
+Üv»QÉ;€ò-@cSè(h :ùÂ  jE”ñ @"dšC“‚>	EìÛÆ@(~   ø      À  ø      À  @TDÜ1:Hp;@{o06ù”z:‚»*9T;‹c@cûM½€ :ùÙc  kE•"@"pÅC“ğr>|Eí!“@I¶   ø      À  ø      À  @TDê‹\_p:H@·@{o5GÂÆ:
+éØ»(É;‰}ü@c¢³½ç :ùğ7  lE•Bõ@"x(C“ü·>ÙgEíR+@[   ø      À  ø      À  @TDåÑèÛ:H9Ê@{o5XÚÏv:
+àÇ»! ¢;‰~™@c Jˆ :ú
+  mE•!@"o]C“İp>ÛEíá@^Ê   ø      À  ø      À  @TDíù#I:HY@{o2/¾V:
+Êf»'q…;‚ëH@c ñg :úÛ  nE•8œ@"tGC“ê>î„Eí=¹@'c   ø      À  ø      À  @TDş?ß¶ä:Gäñ@{o,ñmQ6:
+¸ä»5	;ˆšj@c!˜å :ú4¬  oE•%~@"qC”;¯>õšEíU@%Õ   ø      À  ø      À  @TDİGëô˜:H=;@{o5cÆÄ":
+İç»ĞŞ;ˆÍ@c"@Jè :úK{  pE•,@"qVC”¤>¿ôEí+à@-e   ø      À  ø      À  @TDùhP:H:@{o1·²:
+×ºûX8;lnó@c"ç°|® :úbI  qE•Í@"n«C”k>ÒÓEí%Ö@Kæ   ø      À  ø      À  @TEF'ÿ:HŒ@{o.!CÏ:
+Ù	ºıçÙ;Gø@c#G :úy  rE”îB@"c~C”>>ëÇEìÈû@kº   ø      À  ø      À  @TDåHfh4:H‡@{o,Ûo~:™»%Î;5b#@c$6|Fí :úã  sE•&€@"nƒC“á¦>Ø%Eí'i@6Š    ø      À  ø      À  @TDïqãë:H6Ğ@{o&ùn` :
+ì-»	 |;>7@c$İáÛe :ú¦®  tE•¿@"m]C”<>á†EíD@NL    ø      À  ø      À  @TDæ à((:Hi5@{o+”öì‘:æ»g;0Ã@c%…G¥| :ú½x  uE”ø@"d;C”Jh>×WEìã"@S°    ø      À  ø      À  @TDİsæ‰Å:Hr½@{o+~¸|:±»˜¿;,W™@c&,­ot :úÔ@  vE•,ç@"o«C”+>ŸòEí+k@H    ø      À  ø      À  @TDèR]:H%@{o,’õØì:
+Ü»€Z;/ 8@c&Ôo :úë  wE•*@"n§C”DÄ>ÎXEí,¬@M    ø      À  ø      À  @TDè«YÀ:HVk@{o*ùıº@:
+ÿ‡»ÂÁ;=ña@c'{y9 :ûÏ  xE•N[@"xzC”^>İùEí[“@Z    ø      À  ø      À  @TE9@E:H@{o+…®ÕZ:
+ØŞ»	î—;>S‚@c("ŞÍ :û”  yE•<@"ríC”ş>–Eí#š@cT    ø      À  ø      À  @TDıß2<:H8 @{o*\oÌ:
+öqºâw;+u.@c(ÊDÌ’ :û/Y  zE•b†@"}fC“ùù>²$EíQ~@Yb    ø      À  ø      À  @TE½	:H€@{o*Ñ T:
+ÛAºßşù;Š	@c)qª–: :ûF  {E”şÏ@"d‹C”L>ÉOEì¿c@g¹    ø      À  ø      À  @TDîàeÊ:HPÁ@{o/ö¦:
+ÿgºøÏO;MÎ@c**" :û\Ş  |E•+@"nNC””>â4Eí @Mr    ø      À  ø      À  @TE	‹xŒ:Hù@{o.»f"’:
+ÙĞ» q;)Š>@c*Àuóº :ûs   }E•4á@"pvC“½Í>ÊEí5x@i    ø      À  ø      À  @TEm‡zB:HL@{o/¹˜
+†:ü»\à;=!u@c+gÛ½1 :ûŠ`  ~E•;@"e9C”"Ÿ>ØIEìÖ·@s¦    ø      À  ø      À  @TEÄ.î:Hx@{o/:gÌ:Ç»-8£;Yuá@c,A†‰ :û¡  E•Ö@"lıC”L>óEìş[@d_    ø      À  ø      À  @TDüee$ü:H9>@{o4½/³1:
+ù¸»%Xê;b¢@c,¶§Oá :û·Ü  €E•G¶@"uBC“İ^>ßEí>ç@‡à    ø      À  ø      À  @TE v¢g:H@{o-Ğı¸W:
+ã¬»KP‰;uû@c-^NØ :ûÎ™  E•!ë@"mÙC”>ÚeEí~@RÇ    ø      À  ø      À  @TE i]*:H>Œ@{o3Ñví:E»M'û;‡Y(@c.s :ûåU  ‚E•HH@"vğC“Î	>à7Eí=ú@uƒ    ø      À  ø      À  @TDş``=
+:H5–@{o2ïç¸°:
+êÊ»f˜;’ÿ@c.¬Ø«x :ûü  ƒE•"P@"koC”î>»·Eí@b’    ø      À  ø      À  @TDú‡]p:H-¿@{o1%&:
+ì´»Wüú;‰UĞ@c/T>t :üÉ  „E•'@"l*C“Á˜>Ñ9Eìø¿@m    ø      À  ø      À  @TEì²c:H\p@{o0\Ïº:Ã»\¸Ş;‡f@c/û¤s7 :ü)  …E•a¿@"|ŞC“É>íÓEíi¼@p    ø      À  ø      À  @TDşå¾¤Z:Gö@{o2€£:
+Æ»JcH;ƒùg@c0£
+o :ü@8  †E•i@"lÌC“ğŒ>ÆßEìø«@…-    ø      À  ø      À  @TDûŞ®4ú:HJò@{o/­ È¼:
+÷2»U«m;…-Š@c1JoÏF :üVî  ‡E•8Z@"qşC“öÆ>×Eí%R@r~    ø      À  ø      À  @TEÉ¶íÔ:HD÷@{o1x¸'Ğ:
+şŠ»JLI;…?‘@c1ñÕÍ¾ :üm£  ˆE•Gß@"vòC”}>ÓğEí?Z@Xn    ø      À  ø      À  @TExÎ$:Hö@{o1ó¼[.:
+İ»M‰T;‚-´@c2™;`Æ :ü„W  ‰E•T‹@"yC“á>ÖEíPğ@\Ÿ    ø      À  ø      À  @TE˜Û0J:Hæ@{o+/úÀ:
+áK»DG×;ƒ¾„@c3@¡)m :ü›
+  ŠE•2~@"q!C“Ñ<>ú•Eí×@R    ø      À  ø      À  @TE4Ã;:HI_@{o1¢Ã½:i»S~ª;„äZ@c3èò :ü±¼  ‹E•S@"eC“—÷>ãëEìÌÇ@q¤    ø      À  ø      À  @TEL"Ü:HdX@{o.À$–:ø»]0m;‚‰F@c4lº} :üÈl  ŒE•*@"oáC“á>ôûEíR@Sî    ø      À  ø      À  @TDø@Â/':HvD@{o1Äº”<:_»K3n;Ë@c56Ò‚ô :üß  E•9V@"séC“ºM>Eí¦@w+    ø      À  ø      À  @TDòjZ:HW@{o/Õ>m¼:
+úÂ»Z²‹;|Pe@c5Ş8KL :üõÊ  E”ìA@"_¢C“ø¤>©Eì£Ï@Za    ø      À  ø      À  @TDãº	<“:H‹Y@{o0Á©µt:ª»bMæ;€ª1@c6…İä :ıw  E•Å@"m}C“}õ>ŸEìŞ®@xŠ    ø      À  ø      À  @TDñ•qù:H7@{o*„5Â~:'È»{õa;‡¢@c7-ÛË :ı##  E•ô@"hÌC“Ê¨>¯EìáK@{õ    ø      À  ø      À  @TE&X¸:Hùë@{o*ùÓŠ0:j»e¦;~t@c7Ôi£ó :ı9Î  ‘E•!a@"mC“²ğ>±Eìò'@q”    ø      À  ø      À  @TE'[›k:HW°@{o2_Pc:ß»n…Ÿ;z‡‚@c8{Ï6[ :ıPx  ’E•;@"j)C“ªñ>ı²Eìî@{è    ø      À  ø      À  @TEìpŞ:H	n@{o/uª™ï:
+Ôw»wku;u$U@c9#54 :ıg!  “E•)Î@"m×C“¥;>ºPEì÷@~³    ø      À  ø      À  @TE ©û):HK¤@{o/Fnk(:»z_£;„ùA@c9Êšü
+ :ı}É  ”E•*°@"ošC“µ>Ù×Eí Û@ƒI    ø      À  ø      À  @TD÷(°‚:H+Ç@{o3F€}c:
+ä¶»rN†;}v.@c:r 2 :ı”o  •E•+@"nÎC“j>ÖÑEìõÁ@˜s    ø      À  ø      À  @TDñ`Ö2:He@{o/€]:Š»‹7k;Š™=@c;fV	 :ı«  –E• @"lÊC“¿°>%EìêL@‡}    ø      À  ø      À  @TEÕFÑx:H8¦@{o.7&—:
+õ»Ö;½Ô@c;ÀÌSq :ıÁ¹  —E•&õ@"mµC“æÈ> œEìï$@‘    ø      À  ø      À  @TDÚŸY\:H[ç@{o1‡!u
+:
+÷ğ»‹2Ù;ô¿@c<h1åi :ıØ\  ˜E•NÌ@"xC“ğw>ù£Eí5ñ@›‘    ø      À  ø      À  @TDé¾M”:HoJ@{o.ÿæ":»‡rm;Šû@c=—­  :ıîş  ™E•G,@"v‚C“ø†>ÄEí ô@•Ö    ø      À  ø      À  @TE×ÁĞŠ:Gõ‘@{o6éyNÜ:
+ÌH»€¨;‘$@c=¶ıª8 :şŸ  šE•.œ@"qšC“Ø¦>ßÌEìú#@’2    ø      À  ø      À  @TDĞâÕaº:HNê@{o6­…’Š:
+êæ»‡.;‹é§@c>^cq° :ş?  ›E•=£@"vvC“ñá>Å)Eíâ@}¿    ø      À  ø      À  @TDä?viu:Hù@{o6¥*õD:
+Èı»Œ	±;‰Ïk@c?Ég :ş2Ş  œE•y*@"ƒÏC“°€>×Eíré@‹    ø      À  ø      À  @TEêŒî¤:GíÛ@{o.ˆFEv:
+Ä
+»‹$–;~¹p@c?­.Ê¿ :şI|  E•=ù@"u8C“—c>¢TEíÿ@”;    ø      À  ø      À  @TDî(•.¨:HJë@{o0İpËV:
+õ»S;ƒ@c@T”Ç§ :ş`  E•5@"qãC“¥M>·5EíÉ@~:    ø      À  ø      À  @TDìşPğ:Hd_@{o1¡~¬:É»‡“Û;€Š@c@ûúY :şv³  ŸE•š@"nTC“ŒB>ñ§EìØ3@Œ^    ø      À  ø      À  @TDùËÒí§:Hiã@{o2pĞ‰¤:
+!»…œ;…Ê@cA£` F :şN   E•8Ô@"w=C“¼<>ÃºEí	B@”_    ø      À  ø      À  @TDï_Ù)â:H*@{o4ÌE‡&:
+Ñ»ŒWç;„úÚ@cBJÆş :ş£ç  ¡E•*b@"r¨C“Ï¼>‘¦Eìí`@°    ø      À  ø      À  @TEæ¡ ı:HCş@{o7’ôœ:
+ø»Šå…;‡°=@cBò+®E :şº  ¢E•Aß@"vcC“Âç>ô•EíĞ@½    ø      À  ø      À  @TDãtĞWz:HYX@{o,%-«:
+ù »Œã";ƒS0@cC™‘u- :şÑ  £E•&ğ@"oC“‘)>Ê„EìçØ@}é    ø      À  ø      À  @TDåÀ"Å¶:H>9@{o-ÛeÛ :
+êN»’(S;i@cD@÷;õ :şç«  ¤E•
+P@"h6C“„>äEì·¬@€/    ø      À  ø      À  @TDßBx„:Hl‹@{o0/EİÀ:	»“¹2;ƒÈÅ@cDè]¼ :şş@  ¥E•@"hÑC“•›>½™Eì¿-@"    ø      À  ø      À  @TD÷VÅ à:H+@@{o.–®ãº:
+ä×»ˆ!;ƒDÃ@cEÂÉt :ÿÔ  ¦E•#E@"nC“œó>ÎšEìÜ‚@ˆµ    ø      À  ø      À  @TDØwİ!:HN @{o-"'áV:
+î»‘é/;†O@cF7( :ÿ+f  §E•
+F@"h›C“†¿>¯JEì½@|…    ø      À  ø      À  @TDæ¢¥&:HFf@{o.Ü‰+^:
+óÆ»Ñ~;hãc@cFŞV“ :ÿA÷  ¨E•*Ç@"qDC“wÉ>ĞiEìå“@{}    ø      À  ø      À  @TDîĞõ–:H@{o1íÃu’:
+ÆĞ»£;rÔB@cG…ô :ÿX‡  ©E•(‡@"p°C“b.>»Eìéó@w9    ø      À  ø      À  @TDéÏıc7:H¥@{o-üZæ:
+Ó»ƒÓÏ;wÒL@cH-Yãs :ÿo  ªE•)X@"qÙC“u>ùÁEìßâ@€Ä    ø      À  ø      À  @TDıÑ"à.:HÀ@{o6§¤ ¦:
+ØN»»;lº@cHÔ¿t :ÿ…¤  «E•+T@"qBC“@X>¼9EìéÑ@…    ø      À  ø      À  @TDÚßJù:H:.@{o.b¸•y:
+âõ»“<;tÛ@cI|%p :ÿœ1  ¬E•¡@"luC“%Ú>DgEìÅÕ@~¶    ø      À  ø      À  @TDíÒU/‚:HLÅ@{o-ŸQ¡z:
+ó»‚7;{½K@cJ#‹6: :ÿ²¼  ­E•†@"nC“gü>îEìÓÜ@{å    ø      À  ø      À  @TDâl}š:HH@{o3İW5l:
+Ì-»‹¦;D	@cJÊğÆ± :ÿÉG  ®E•Ç@"kîC“›>ÀgEì¸[@{    ø      À  ø      À  @TDâ<Ó®ä:HPZ@{o-5V.:
+õÍ»ğ;wçÀ@cKrVŒ¹ :ÿßĞ  ¯E•4¢@"tˆC“ºı>¡oEì÷4@ŠÕ    ø      À  ø      À  @TDÛ6§ïE:H-%@{o7¡µ:
+Òb»®k;s+†@cL¼ˆa :ÿöX  °E•CÈ@"wC“tw>½”Eíz@yÑ    ø      À  ø      À  @TDó–2šy:Gá@{o2·¿L:
+³Z»“¶;wŞÂ@cLÁ"¨ ; p  ±E•4@"t{C“\m>7áEìïí@i    ø      À  ø      À  @TDáÄ†ír:H,³@{o.ˆ˜[v:
+Ø™»‰è
+;ttC@cMh‡Ş€ ; ³  ²E•1@"sWC“F>ÜEìãŒ@s«    ø      À  ø      À  @TD×[Ö_:H<@{o2Ì–:
+Æ»’ÍÃ;z»a@cNíÙè ; õ  ³E•Û@"lĞC“‰>ä?Eìºµ@t:    ø      À  ø      À  @TDé†Ÿô:H+9@{o/9~q:
+Üı»ˆ;Zg5@cN·SŸŸ ; (7  ´E•Q@"jÛC“?Ø>ëäEìÁn@u°    ø      À  ø      À  @TDÄŒ{Ë:HXÄ@{o2's2:
+ç‘»“8½;ib@cO^¹/‡ ; 3x  µE•B@"u9C“Qn>Æ4EíÍ@sû    ø      À  ø      À  @TDÚzáeı:Hß@{o-”R:
+¼b»³;jš@cPõ ; >¹  ¶E•G|@"w®C’è¢>wEíŸ@‡…    ø      À  ø      À  @TDìYœU:Gñ„@{o-ù£ŸÅ:
+³í»åñ;l‹.@cP­„ğF ; Iù  ·E•ù@"gÕC“@¸>è#Eì¹#@]±    ø      À  ø      À  @TDë í÷ï:Hô@{o.úK:
+Ë'»ŒğZ;k¼r@cQTê€ ; U9  ¸E•1®@"pÏC“@7>ÀˆEìéC@l    ø      À  ø      À  @TDŞf’"Æ:H2@{o/	üIN:
+İ»˜n—;r"U@cQüPEf ; `x  ¹E•C@"tC“b>âJEìş­@z€    ø      À  ø      À  @TDŞŒÂ•:H'à@{o/$­è:
+Õé»“!k;‚²@cR£¶@M ; k¶  ºE•0K@"oˆC“t>HEìã@v(    ø      À  ø      À  @TDÇmc(:H*ë@{o-æÙª:
+Ë»’Q;xÛ?@cSKÏÕ ; vô  »E•>@"râC“ Â>êOEìîT@az    ø      À  ø      À  @TDÛ¸ÊvL:H 6@{o.›³”:
+Íj»œ—O;|§¶@cSò”í ; ‚1  ¼E•?×@"vBC”>KLEìø©@ló    ø      À  ø      À  @TDÕhñ7:H/G@{o*ù†¾°:
+×y»˜cÆ;sl‹@cT™çZ ; n  ½E•P=@"wdC’ÿ>ñªEí'@\s    ø      À  ø      À  @TDëË-2Ú:GÖù@{o4¸ÖÉ×:
+¥u» ³;yêù@cUAMü ; ˜ª  ¾E•By@"t(C“-ƒ>Eìú@aı    ø      À  ø      À  @TDÔÉåÇ‘:H$†@{o-–Û¨:
+ÑK»Ÿo;x½@cUè²ãô ; £æ  ¿E•Zs@"y³C“03>ãEí†@q9    ø      À  ø      À  @TDÀ~J«Å:H@{o/re:
+±ç» )
+;êÊ@cV¨Ë ; ¯!  ÀE•:@"r>C’ğ½>´EìíQ@VT    ø      À  ø      À  @TDëùt^f:Gó?@{o/Ÿi¹P:
+¹|»’X;xL@cW7~£3 ; º[  ÁE•Nê@"w^C“.L>BEíÍ@a7    ø      À  ø      À  @TDÌz˜÷Ù:H6@{o-ƒô:
+Ä*»š¡˜;u@cWŞä2; ; Å•  ÂE•/=@"o;C’üá>9\Eì×¹@Y¼    ø      À  ø      À  @TDÒ_´@:H6h@{o/-.ó›:
+ÓÀ»•Aî;yí~@cX†IöÒ ; ĞÎ  ÃE•e6@"|C“'>1ôEí'å@sñ    ø      À  ø      À  @TDîºé“:Gå¯@{o.
+õ²?:
+®—»ÇÍ;r«e@cY-¯»j ; Ü  ÄE•Tf@"xkC“—>(éEí@\Û    ø      À  ø      À  @TDÓŞ…1š:H"‡@{o0•@ÇN:
+Ìz»…Ñ;Oo
+@cYÕâ ; ç?  ÅE•'@"k>C“?ê>5%EìË<@:ß    ø      À  ø      À  @TDãn`Su:HTŠ@{o.™PI^:
+ñÂ»…Ê‹;La@cZ|{DY ; òw  ÆE•E@"uC“>—EíÉ@Né    ø      À  ø      À  @TDîKHW¹:HÊ@{o,L:
+Ò¯»sàİ;/ç@c[#àÓ ; ı®  ÇE•6@"oöC“!>ÿ¸EìíÂ@    ø      À  ø      À  @TDæÒeË:H)@{o+?Mc:
+ÕÄ»eà;{{@c[ËFÌé ;ä  ÈE•ÿ@"jLC“$¯>Y€EìÇÖ@3    ø      À  ø      À  @TDâ®/êH:H[ì@{o*†ş¥:
+ù¼»}Ó¢;2Ö6@c\r¬‘  ;  ÉE•GÕ@"s°C’öÍ>@Eí	7@<    ø      À  ø      À  @TE+6Å?:Göà@{o/jH1.:
+Æ
+»zc+;)2@c]U8 ;O  ÊE•?•@"sC“ä>ò}Eìú@%d    ø      À  ø      À  @TDÕÑ¼¶:H(@{o,÷ıÕr:
+Óï»v9b;!{Ê@c]ÁxP ;*„  ËE•PK@"vgC“->Í5Eít@!³    ø      À  ø      À  @TDß~¸Öl:Gõ¾@{o-Ä˜JŠ:
+·à»si";/ìy@c^hİİG ;5¸  ÌE•1÷@"oSC’Ú%>½»EìÛ@.é    ø      À  ø      À  @TDÚu`Ä:H`Ö@{o(šßÂ.:
+şN»À¯;,ï@c_C¡? ;@ì  ÍE•E°@"rìC’ô¢>ŞÇEìğØ@    ø      À  ø      À  @TDîä5j:HC@{o-ã.µ	:
+Ò…»|œØ;mÿ@c_·©e ;L  ÎE•S7@"uˆC“ë>Û…Eíë@Í    ø      À  ø      À  @TDêuŒ:Gıí@{o,Ó%!(:
+Ã#»‡^©;+]_@c`_ó ;WQ  ÏE•E“@"rMC’óu>ÙBEìö‹@(0    ø      À  ø      À  @TDş€ÀÎ:G×·@{o/Z])ø:
+°»ƒcã;)t@catì† ;bƒ  ĞE•Ym@"vÈC’Äü>øïEí@HC    ø      À  ø      À  @TDìŠ<²:H3@{o/²%ëœ:
+ÃW»—$“;P¢g@ca­Ú° ;m´  ÑE•@"i>C’œG>
+±Eì¹a@$˜    ø      À  ø      À  @TDñSØ_:H#ó@{o/R¾ÿ¬:
+áÌ»’³S;D‹º@cbU@> ;xå  ÒE•Mk@"vmC“/ƒ>UEìôq@a¡    ø      À  ø      À  @TDñ3ŠÖ@:Hg@{o.Ü±©
+:
+Ï0»£a;~‘@cbü¦7- ;„  ÓE•3ô@"m@C’¾¦>ü]EìÕD@Bs    ø      À  ø      À  @TDäôTòn:GäJ@{o.Ccº:
+¬f»œ*;uWa@cc¤ú… ;D  ÔE•ZÉ@"v‚C’àä>YEíÍ@A    ø      À  ø      À  @TDí„/äÔ:H®@{o1:´šG:
+Ä®»¥Ğ3;r•y@cdKqˆ, ;šs  ÕE•R@"vC’öy>ÁEí+@P©    ø      À  ø      À  @TDÛ%¯©:H"@{o6q’Š”:
+ÅÑ»¨5o;€+z@cdò×K„ ;¥¢  ÖE•\%@"x4C’İi>õñEí	ğ@aé    ø      À  ø      À  @TDß¶±·¤:HÆ@{o+\×N):
+ÉÁ»¬r¼;ƒ.@ceš=Dl ;°Ğ  ×E•
+ @"eC“>ÅEìŒ˜@SH    ø      À  ø      À  @TDÖÆ¹vß:Hö@{o0àt-ğ:|»¨LÍ;ƒ3ï@cfA£ƒ ;»ı  ØE•4Ä@"nMC’œv>áÕEìÉ¥@DÔ    ø      À  ø      À  @TDõÆŸ‚ã:H@{o1_w¥L:
+×»²5¹;€o}@cfé”Ë ;Ç)  ÙE•.y@"lIC’‰$>ÆEìÄI@Qƒ    ø      À  ø      À  @TDêù€•:Gğ|@{o0g¾:
+»Æ»©•;„pn@cgnWã ;ÒV  ÚE•0c@"lpC’á×>ë‡EìÂ@GQ    ø      À  ø      À  @TDÖT‘L»:H29@{o2µPbc:
+ß-»«jş;vIê@ch7ÔPj ;İ  ÛE•:w@"nfC’Ç>ì(EìÔÎ@OÂ    ø      À  ø      À  @TDİ%lò>:H:a@{o,ºí:z:
+åà»°Å¿;§Ì@chß9İ’ ;è¬  ÜÀ  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @ci†Ÿ J ;óÖ  İE•[—@"wVC“0>ïÎEí Ù@|k    ø      À  ø      À  @TDÏâfÒ¤:H6@{o6àù:
+Ó»®»(;•~E@cj.˜± ;ÿ   ŞE•j@"|íC’¶K>À±Eí)@ty    ø      À  ø      À  @TDğ|x6è:GÜ¸@{o0Æ…—:
+¦h»®i$;—°Ñ@cjÕk%™ ;
+)  ßE•6ê@"o×C’Ğ€>/úEìÃ_@=M    ø      À  ø      À  @TDÜZ^²:H8@{o2´@.:
+İk»² µ;‰×ê@ck|Ğè1 ;R  àE•U5@"v¢C’{•>İ1EìúÕ@XÌ    ø      À  ø      À  @TDŞˆà†$:Gøå@{o3¬:
+°*»¬w<;‡#@cl$6ª¨ ; z  áE•'à@"k:C’¨P>ãaEì¯ÿ@_†    ø      À  ø      À  @TDÙ·[W£:H0y@{o3„£ßÒ:
+×»°¡;‹¶:@clËœm  ;+¡  âE•Kñ@"t2C’ƒİ>ú‹Eìì¬@jr    ø      À  ø      À  @TDéD`¾ˆ:Gö@{o-ºr/:
+·ü»°b;‹%¬@cms/X ;6È  ãE•9ù@"qC’ˆ²>òÈEìÊ@m    ø      À  ø      À  @TDË7yD:H†@{o2Ò®:
+Çu»¯ƒä;“ë@cngñ ;Aî  äE•F¬@"ryC’~å>Ë EìäG@a"    ø      À  ø      À  @TDæ6¸„X:GíÊ@{o,LÓî:
+´f»¨;Û)@cnÁÍéw ;M  åE•;ÿ@"qdC’¨>ĞrEìÉ}@i3    ø      À  ø      À  @TDíË X:Gå‰@{o2á¥•µ:
+«L»­Ç;”·K@coi3uß ;X9  æE•DX@"sÉC’°€>Î(EìŞO@QÁ    ø      À  ø      À  @TDíïz¶:Gòñ@{o2SW{h:
+²2»¯Î;‘÷@cp™7Ö ;c]  çE•J@"uçC’Ú”>â‰Eìá@v4    ø      À  ø      À  @TDã©²S:H"­@{o2˜fü2:
+Õ/»²÷;Ù¨@cp·şÄ ;n  èE•:j@"p	C’¥ >å#EìÏÇ@}    ø      À  ø      À  @TDÜŠs¨:GæÁ@{o9Ë´D:
+ ¶»¯ÏA;İë@cq_d»Æ ;y¥  éE•7ş@"r]C’¹7>ê#EìÅ!@X    ø      À  ø      À  @TDÜÀ‘Ô:H(@{o0AA²:
+³9»°ßŒ;œöÓ@crÊ} ;„È  êÀ  À  À  À  À  À    @ø      À  ø      À  ø      À  ø      À  À  À  @cr®0	¥ ;ê  ëE•dr@"~|C’Ç˜>ã÷Eí@ca    ø      À  ø      À  @TDæãm³:H²@{o3ºÖå:
+¾	»³O ;˜Ò$@csU– í ;›  ìE•,(@"n0C’Œæ>ğEì±M@\¿    ø      À  ø      À  @TDÛnñi¾:H?@{o7	~7©:
+Æü»¯W;ë´@csüûÂ„ ;¦,  íE•j¾@"~C’>Ş5Eí?@yğ    ø      À  ø      À  @TDÕFı£B:GŞ<@{o4K}…ò:
+›]»µÈm;¢Vˆ@ct¤a„ ;±M  îE•K­@"uC’t>(Eìâ©@b    ø      À  ø      À  @TD¼šé§e:H;@{o3ìÊ†è:
+¬Ì»±|`;ÉA@cuKÇÄ ;¼l  ïE•J(@"uşC’“ø>ñİEìáZ@v    ø      À  ø      À  @TDÂ+Ô:Hu@{o4Ãˆ¨9:
+¦Ş»³øn;¨u@cuó-ì ;ÇŒ  ğE•P-@"y®C’¥>©ªEìä@~›    ø      À  ø      À  @TDÂø‘[:HÆ@{o1Ïİk°:
+¶ş»­c.;ªjï@cvš’È# ;Òª  ñE•G @"u7C’ND>±<EìÛ\@|    ø      À  ø      À  @TDĞ}âƒ(:HÜ@{o5ëŞÙ:
+¶»©ã·;§ö@cwAøS« ;İÈ  òE•h@"}ºC’ê>AEíL@XŠ    ø      À  ø      À  @TDÎôŠG|:GÒÈ@{o3Ø`:
+»¶õ;ª»]@cwé^ã ;èæ  óE•m»@"~—C’.á>ĞùEíÓ@}b    ø      À  ø      À  @TD¼ÁşZz:Gşğ@{o5ëì^Ò:
+¢=»¯¥*;®Àµ@cxÄª ;ô  ôE•W'@"x¹C’?´>ªåEìê¾@S°    ø      À  ø      À  @TDÂ]Şgt:GÇ¨@{o2šÈ?g:
+‚Ù»·{î;°@cy8)–ò ;ÿ  õE•{¯@"‚oC’‘7>&]Eí*›@oï    ø      À  ø      À  @TDÀªÃÜ:Hº@{o3í‡T:
+´G»²¥;­p@cyßWê ;
+;  öE•h²@"~2C’™>÷ÍEí@w    ø      À  ø      À  @TD¼æšúK:GÛ:@{o5I{Ì„:
+Š7»¶#Å;·aÕ@cz†õNq ;V  ÷E•Eö@"vC’oñ>ûEìÓN@„í    ø      À  ø      À  @TDª¬Ht:H_s@{o4¿O–:
+ÑÀ»°oà;°#@c{.ZÙ™ ; q  øE•…ş@"„ÊC’C>>Eí0Ä@vø    ø      À  ø      À  @TD±ÙŒ?:H)´@{o4M!íb:
+º1»²z‹;¶Ùì@c{ÕÀšQ ;+‹  ùE•sÿ@"ïC’l¾>ñ³Eíˆ@~P    ø      À  ø      À  @TDÏ34):Gá?@{o4ÜlÜÿ:
+”æ»³Y;¶÷×@c|}&Zè ;6¤  úE•[~@"xbC’d>Ú˜EìëŠ@ˆ    ø      À  ø      À  @TD˜
+)£w:H,S@{o1×@Ş¾:
+²_»¸™7;´/@c}$ŒQ0 ;A½  ûE•\C@"xqC’³ï>UEìïË@~h    ø      À  ø      À  @TD»şØgn:HSÄ@{o0è˜ì:
+Û»·¯2;·R¬@c}ËñÛø ;LÕ  üE•[¬@"w½C’ŸZ>»¹Eìë,@yå    ø      À  ø      À  @TD½¾¦Ö¢:HUÇ@{o2GX£·:
+İÿ»µ®r;·- @c~sWœO ;Wì  ıE•v'@"}kC’É±>³MEí1@qE    ø      À  ø      À  @TD½MİÆj:H	Z@{o2qK×>:
+¨©»µ¾&;Å’@c½’w ;c  şE•s@"„ÔC’q'>÷…Eí;S@oá    ø      À  ø      À  @TD½]	€ï:Gøû@{o5×¥v:
+›\»µÙÈ;½òâ@cÂ#ş ;n  ÿE•y&@"~VC’UW>»”Eíá@|İ    ø      À  ø      À  @TD¿ÃFë:H*^@{o9DÜíÏ:
+¹»¹Æ;¹*v@c€iˆİ6 ;y0  	 E•}Ñ@"#C’Ì>ê~Eí°@ˆ}    ø      À  ø      À  @TDÊì…|:H1Í@{o50ÙCi:
+ÉÍ»¼?!;»¦S@cîg ;„E  	E•}S@"JC’–¾> ôEí@a›    ø      À  ø      À  @TDÓ++^\:Hú@{o22Ë4:
+À_»»:Ë;¾¡j@c¸T]f ;Z  	E•‚Ç@"KC’™Ã>ĞıEí$n@÷    ø      À  ø      À  @TDÔœGxâ:H.@{o6”Šc2:
+Ç£»¸ƒ–;¼#î@c‚_º] ;šn  	E•}@"ÂC’ŠÉ>ÉåEí§@    ø      À  ø      À  @TDÅqŠß³:H
+$@{o9¬/V(:
+«R»»‡¢;Ãns@cƒİ5 ;¥  	E•„¿@"€0C’PR>íaEí#;@j    ø      À  ø      À  @TDËìEZ†:Gó#@{o6¿€3:
+%»¸>M;ÁdÏ@cƒ®… ;°”  	E•kÃ@"yıC’X’>¦şEìö@÷    ø      À  ø      À  @TD¬.åë²:HKæ@{o4ˆè©:
+Îg»¿ô¼;Ä<@c„Uë\Ä ;»¦  	E•ay@"yC’Š>íZEìïû@    ø      À  ø      À  @TD»B F:HB®@{o4]Ñ
+.:
+Ò»µ5¯;¹z'@c„ıQ| ;Æ¸  	E•¡Ÿ@"†İC’sã>Ù&EíPŞ@~Å    ø      À  ø      À  @TDÓ¬ª·.:GÎô@{o7/!›ü:
+ˆ»»³Ó[;ÀiÈ@c…¤¶¦d ;ÑÉ  	E•µŠ@"HC’oğ>òÚEíw @v²    ø      À  ø      À  @TDÍ:Æèo:Gb@{o7…*V:
+8?»³:±;Áó*@c†L›« ;ÜÚ  		E•^,@"v¡C’}>½¡EìæŞ@‰    ø      À  ø      À  @TDÕ‘ÑPj:H@{o6C:
+»¼»Àš»;Áu×@c†ó‚[# ;çê  	
+E•l|@"{ÔC’‚ß>ÎÕEìûc@gD    ø      À  ø      À  @TDÖµà¡À:GØ@{o9ÿìr¢:
+‘œ»¾œ•;É"@c‡šçäË ;òù  	E•Ğ¹@"”°C’vÄ>¢…Eí—ï@œ¹    ø      À  ø      À  @TDàvÛÃ‚:GÀ @{o53İ :
+{H»µĞ
+;Ãøw@cˆBM¤" ;ş  	E•fÎ@"yHC’jÏ>TEììY@m­    ø      À  ø      À  @TDÎâ4ËZ:H'Ã@{o6yN¸ğ:
+½µ»»ºV;Å]µ@cˆé³™
+ ;	  	E•–#@"„lC’LÈ>êEí8T@Z=    ø      À  ø      À  @TDÎ8¯:Gâ™@{o9:"¦©:
+¡¡»¿h;ÇES@c‰‘"r ;#  	E•€ @"C’¬,>¨ÅEíœ@t    ø      À  ø      À  @TDÛ!CÆú:Gçæ@{o:B«Q:
+Ÿy»Âa9;Áò@cŠ8~á‰ ;0  	E•ˆ@@".C’¬ò>¯¦Eí á@wò    ø      À  ø      À  @TDÏo£:H@{o;J@hÄ:
+¿8»¸¦;Äãu@cŠßäÖQ ;*=  	E•Â@"ƒaC’š‘>Ì>Eí ¹@~°    ø      À  ø      À  @TDÇÜñP¼:H@{o;•©Ö:
+¬µ»Âò—;Ç·@c‹‡J_y ;5H  	E•Æ@"’lC’‡Ù>¼ÙEí{i@p    ø      À  ø      À  @TDæ\áÉ :G·³@{o9}•jD:
+|u»»i;Å-@cŒ.°P ;@S  	E•i @"z˜C’›ó>é`EìŞë@j»    ø      À  ø      À  @TDØÈ£†:HZr@{o3‚–Û":
+íŒ»Ãe÷;ÃÛ^@cŒÖİ( ;K^  	E•x@"}²C’c‹>¿nEí Í@e    ø      À  ø      À  @TD¼©1ƒ:H/@{o7I5Z2:
+Å»ÀœT;Æš¦@c}{Ñ ;Vh  	E•‚Û@"€ŒC’Gë>Á™Eí@X    ø      À  ø      À  @TDÕCyuö:G×â@{o6SPáã:
+“r»»â;Ëgğ@c$áZw ;aq  	E•n@"|nC’q>üEìùâ@i–    ø      À  ø      À  @TD¾Œl‹ò:H¡@{o7Ği¹:
+ª»°ÿğ;·×ò@cÌG ;lz  	E•y@"…ĞC’€>…Eí<A@…÷    ø      À  ø      À  @TDÜ.6:Ha@{o8™i}i:
+¶9»±¡r;¹ü8@cs­6 ;w‚  	E•Š¿@"åC’z!>OEí$Â@q6    ø      À  ø      À  @TDÆa—É:H-{@{o8c°¨:
+Ä5»§¨
+;¯@c•ş ;‚Š  	E•Š@"€¥C’Aò>ØòEí#@e    ø      À  ø      À  @TDØRU0:H[@{o3´÷ÔF:
+©Ô»¥
+;¦8Š@cÂxTV ;‘  	E•ïí@"œLC’ >ëqEíÆ½@}‡    ø      À  ø      À  @TDØT×Š:G‰5@{o3ÈÄTz:
+\B» #`;«@c‘iŞ ;˜—  	E•u@"|€C’Nú>åwEí‡@q`    ø      À  ø      À  @TDõ
+×Ç:Gşƒ@{o5uÃù:
+¾»£î;¢£@c’CĞÅ ;£  	E•š¼@"….C’cB>¸¯Eí@Z@gz    ø      À  ø      À  @TDÍŸœo:Gö¢@{o40
+A[:
+¥ù»¤9¼;¢+ğ@c’¸©İ ;®¢  	E•m±@"yWC’Hõ>Ğ£EìüØ@[5    ø      À  ø      À  @TDê›Ì2:H#8@{o2ó-*„:
+ÓŒ»œ«³;£ÇĞ@c“`Lõ ;¹§  	E•xÙ@"zéC’a·>ÔEí;@b¶    ø      À  ø      À  @TDÑ¦Á:H]@{o3ÿGÃ :
+¿^» ÕZ;§GQ@c”u
+ì ;Ä«  	E•‘†@"€C‘ôå>#ûEí.ç@xÿ    ø      À  ø      À  @TDòµîŸœ:G·‹@{o5ÕD[t:
+n»–Û”;¢ï‰@c”®ÚÈÄ ;Ï®  	E•‹Ã@"~9C’Q”>Û6Eím@j<    ø      À  ø      À  @TDñ¾À—;:G¯»@{o3fª:
+…É»™×;¨Æ7@c•V@†œ ;Ú±  	 E•u‹@"yIC’@x>ÑtEìı£@Y;    ø      À  ø      À  @TDîÿ¥€:Gµ@{o4€~Ì:
+‹»¡*•;¯Ûu@c•ı¦DS ;å³  	!E•‹É@"êC’Ü>ÔKEí¥@f=    ø      À  ø      À  @TDø+Z¿:Gš0@{o5ií“b:
+z¶»¤hï;­tá@c–¥ ;ğµ  	"E•qÄ@"zC‘í
+>„LEìõÙ@?f    ø      À  ø      À  @TDéœéæ:Gê/@{o5/Í:
+©;»§Çå;¬|Š@c—Lq¿£ ;û¶  	#E•¢Y@"„àC’,@>ĞúEí9 @w`    ø      À  ø      À  @TEùg7$:G÷@{o8tèp:
+pœ»²îÆ;ºß–@c—ó×} ;¶  	$E•y @"zÚC’Ö>Â Eìû„@X‰    ø      À  ø      À  @TDØ™ >ø:Gİ@{o61Î:
+˜q»±‚¨;¿]@c˜›=â ;¶  	%E•–Ä@"‚½C’0_>Û²Eí ‹@`õ    ø      À  ø      À  @TDñ‚xè:GÖN@{o6¥fá¸:
+ (»º§-;ÏïÈ@c™B¢÷ê ;µ  	&E•¿0@"ŒyC‘ŞP>ÏEí_¥@uà    ø      À  ø      À  @TDõÇüe:GÊ@{o14å:
+»Ä¾;Ô¥>@c™êµA ;'´  	'E•˜@"‚^C‘Û¥>úÔEíä@s     ø      À  ø      À  @TDÛÙÈÙİ:GĞĞ@{o3G)ìZ:
+@»Ã\ø;Ü?@cš‘nry ;2²  	(E•û@"|âC’1ø>ØEìıÑ@tø    ø      À  ø      À  @TDÚ€Îkƒ:H÷@{o6Ö
+¦h:
+¿Ø»Åo¸;ÖÇ†@c›8Ô/‘ ;=¯  	)E•„©@"}çC‘æ¯>õEí:@X|    ø      À  ø      À  @TDÜÁJÕ[:Géÿ@{o9%×ß:
+¡ï»ÂZŒ;Ú}‘@c›à9ì¨ ;H¬  	*E•|2@"}0C‘èÆ>æEìñ™@LO    ø      À  ø      À  @TDİnü•:Gõˆ@{o4‚ªEü:
+¯×»Å&t;Ö@cœ‡Ÿ©  ;S¨  	+E•’Ä@"=C‘Ì#>ÈEíü@z˜    ø      À  ø      À  @TDçPŒƒñ:GØ@{o7ˆßå8:
+¡R»Ãö;Ù¼@c/0È ;^£  	,E•…·@"~ C‘ék>ªYEìı6@hG    ø      À  ø      À  @TDÚõRf…:H@{o6C0k:
+»»È";Ò·	@cÖk#O ;i  	-E• #@"†#C‘Âf>ßîEí*ä@l—    ø      À  ø      À  @TDãqœh>:GºB@{o<oê#¾:
+»Èè8;İí@c}Ğà' ;t™  	.E•­@"‰ûC’J>ä
+Eí7h@^k    ø      À  ø      À  @TDŞÈ/n:Gì"@{o<3ên:
+˜|»Îú5;â‚ô@cŸ%6g ;’  	/E•Š4@""C’>¼NEíÕ@}b    ø      À  ø      À  @TDá`…„t:Gäû@{o9ç@À‹:
+ŸÃ»ÊuÄ;Õ‚9@cŸÌœYv ;ŠŒ  	0E•x2@"{ÀC‘±>·^Eìá=@w¼    ø      À  ø      À  @TDË5bîŒ:HV@{o=R7Ì¤:
+¦³»Öo¦;ã©ô@c tî ;•„  	1E•–)@"…6C’}>ækEí@q½    ø      À  ø      À  @TDëB¡È:Gğq@{o8•Ş:
+¯ƒ»ĞKz;İiÏ@c¡gœ¶ ; |  	2E•”½@"…0C‘û»>ß+Eí™@Œ    ø      À  ø      À  @TD¸i¡ğw:Gõ@{o<óÓ„:
+1»ĞWı;Ó?@c¡ÂÍY ;«s  	3E•w‹@"~}C’5>ÒªEìæ_@e/    ø      À  ø      À  @TDØc+~:Gë†@{o6Å®M4:
+§a»Ïü­;Ú„@c¢j3K ;¶j  	4E•s @"}ŒC’‚µ>¤ÛEì×:@y3    ø      À  ø      À  @TD¾ö.á©:HOq@{o6àÈÓ:
+Ë¹»Ò§ë;âæ@c£˜Ñ ;Á`  	5E•Œ@"„òC’4l>šEEí@J    ø      À  ø      À  @TD¯¶Ù8:H[/@{o7Œ æ:
+ÎÜ»×=Ã;à7@c£¸şÔ ;ÌV  	6E•†É@"·C‘şÖ> tEìø”@ˆ|    ø      À  ø      À  @TDÕòÎí:Gùà@{o<¢ò9»:
+ ¯»Ò'œ;Şî @c¤`dœ ;×K  	7E•†è@"ƒ¼C’9.>³ EìøŞ@†Ù    ø      À  ø      À  @TDÄ-É:HHm@{o7sšİ:
+Ìm»ÔP};ãè(@c¥Ê;” ;â?  	8E•y§@"~;C’D>Æ÷EìåÄ@xÂ    ø      À  ø      À  @TDÔéÉO¿:GÈ@{o8º8b:
+…@»Ôô»;âv@c¥¯/Á» ;í2  	9E•m@"‚ØC‘şs>lEìşT@‡×    ø      À  ø      À  @TDĞÉÇÄ:GúÌ@{o9lØª\:
+¨<»Øš;ã;w@c¦V•}³ ;ø&  	:E•œô@"†-C‘ôÍ>Ë‘Eí@–    ø      À  ø      À  @TDÀí¹X:H@{o8ĞÓ9|:
+«õ»Õî;İnÃ@c¦ıûo ;  	;E• @"ˆ›C’Ú>Ç.Eí±@}ö    ø      À  ø      À  @TDÊ›l)û:HŞ@{o9Ñw:
+³-»İ/‚;é×æ@c§¥`õ" ;
+  	<E•¼¯@"C‘Ù->ÅEíO“@n    ø      À  ø      À  @TDítş¥y:G¡Ÿ@{o<*O”:
+qä»ÓÓ€;á'C@c¨LÆ°º ;û  	=E••Û@"„C‘Â\>ùEíl@†É    ø      À  ø      À  @TDÀbb(:Hl@{o;{†P:
+£N»Ún;ğĞ@c¨ô,lR ;#ì  	>E•‘ı@"‚+C‘Ş>ÂEí	B@•“    ø      À  ø      À  @TDè¨×*:GØ@{o7õ'Ğ:
+“ó»ÓŞ„;åÎô@c©›’'É ;.Ü  	?E•·@"|²C‘ÆŒ>ÜEìás@ŠÍ    ø      À  ø      À  @TD»,X–Ê:H7D@{o:0¤ëµ:
+¾–»àO±;ôp…@cªB÷ã! ;9Ë  	@E•—è@"ƒ?C’>Ù¯Eís@xV    ø      À  ø      À  @TDâ”?*:GÑe@{o>ìîrA:
+†"»ÖWÀ;í“¯@cªê]y ;Dº  	AE•¬>@"ŠC‘ô>¹íEí*©@{D    ø      À  ø      À  @TDÅjë'C:HB@{o;º´³Æ:
+˜(»ŞaD;ï}@c«‘ÃY° ;O¨  	BE•¤Æ@"ˆTC‘Éæ>ùEí@ZÇ    ø      À  ø      À  @TDØÊğn:GÎ>@{o9ExÕ:
+¬»Úc‰;ëf¿@c¬9)è ;Z–  	CE•Ì@"€uC‘×>œñEìàV@{    ø      À  ø      À  @TDÄìC?’:HLÑ@{o;ãÕÛ:
+Ëæ»â­%;ë¤ş@c¬àĞ  ;eƒ  	DE•¦@"Š»C’)5>Ì EíL@„=    ø      À  ø      À  @TDÇ=;ñ(:Gì¯@{o;MÀ,˜:
+–»âHğ;æi@c­‡ôUH ;po  	EE•wZ@"}C’
+’>Ã¥EìÕõ@‡y    ø      À  ø      À  @TDÌ_™ô::Hú@{o7¿7½:
+¼ã»ßš¼;çYÜ@c®/ZEï ;{[  	FE•jP@"{3C’>·Eì»h@}¡    ø      À  ø      À  @TDÄ°åC :H¼@{o< Ö¥Á:
+½å»æí7;ê#¾@c®ÖÀ Ç ;†F  	GE•zÇ@"2C’z=>ù EìßA@q    ø      À  ø      À  @TDÔ…0A\:HL@{o6I[²:
+²j»Ù©(;åz·@c¯~%…Î ;‘0  	HE•­Œ@"Œ¹C’DŒ>éBEí%N@‚û    ø      À  ø      À  @TDÆÀ…ƒ:Gôª@{o:ª”öÔ:
+‡»â|;ç)S@c°%‹v6 ;œ  	IE•„Á@"ÉC‘ù>¡vEìéè@Œı    ø      À  ø      À  @TDÓ,äm
+:GğL@{o3DĞ‚Š:
+ c»ßZú;ß@c°Ìñ0î ;§  	JE•Ã¢@"’¬C’“>óEíE"@˜»    ø      À  ø      À  @TD½×şC:Gİ!@{o9ìSo;:
+ˆ«»âvä;â­	@c±tVµµ ;±ì  	KE•XÜ@"v‚C’+ø>­Eì k@v    ø      À  ø      À  @TD¼,€¹:H=H@{o9goyb:
+¿á»ÜSK;ßwa@c²¼p- ;¼Ô  	LE•¤Ş@"‹¸C’ô>äEí<@„»    ø      À  ø      À  @TDÃè
+…”:GÇ@{o;ñ±UĞ:
+{i»é5P;æ˜[@c²Ã"`U ;Ç¼  	ME•x;@"1C’ZÑ>ã-EìÔÀ@‚ü    ø      À  ø      À  @TD¬¤ã´Ë:HEA@{o7¬Å9ğ:
+Æ˜»×I;ã¾Ÿ@c³j‡äü ;Ò£  	NE•@"…{C’=„>÷VEìğI@”ã    ø      À  ø      À  @TD¹ %:HE¹@{o=EâèØ:
+½È»ày;åÒ‹@c´íŸ4 ;İ‰  	OE•zI@"C’+>Ş¥EìÏ^@w”    ø      À  ø      À  @TD®¸(å:Hİ@{o9&zº:
+Ÿ<»ã‰;â­U@c´¹S ;èo  	PE••õ@"†]C‘ò>ÚºEí @zÙ    ø      À  ø      À  @TD±,{:HÊ@{o9¸‚a:
+˜ø»á+;Ş¾S@cµ`¹I3 ;óT  	QE•„@"ùC’d>ö%Eìİ@@ŠR    ø      À  ø      À  @TD¼à)j:H$Q@{o>M£:
+¬Î»ßz;â@]@c¶Í{ ;ş8  	RE•„ @"‚C’:Ã>2jEìßi@€Á    ø      À  ø      À  @TDÜÕá:H?m@{o7Óxˆ´:
+¦z»ß;åÁh@c¶¯„‡s ;	  	SE•Á¡@"“ÛC’!Ì>/Eí;W@t1    ø      À  ø      À  @TDÕVlt:G¤š@{o8”~:
+c¾»ç³;ìÚ]@c·Vêvú ;ÿ  	TE•†@"‚mC’Œ>Ï*EìåÖ@u    ø      À  ø      À  @TDÄ$².‚:H+@{o7)È:
+„k»Üã?;âCú@c·şOû" ;â  	UE•¥I@"‹‚C‘Úo>ÉEíÏ@    ø      À  ø      À  @TDÂüÑ–:H[@{o6®WÓâ:
+’|»éz¥;ë|Ø@c¸¥µ´º ;)Ã  	VE•‚‚@"ÒC’Æ>êbEìà@˜Ñ    ø      À  ø      À  @TDÍ>@Î:GÖı@{o;sÔ£Å:
+Š¤»æèe;ã—@c¹M¤! ;4¥  	WE•Œr@"„çC’œ>ºÁEìæ@t    ø      À  ø      À  @TD¶P!:Gı©@{o;áÆ%å:
+‡»ë¹ú;î=Ì@c¹ô'é ;?…  	XE•¢Î@"Š+C‘É“>ç†EíÔ@‹ô    ø      À  ø      À  @TD½cM	
+:Gä½@{o76>ÃÈ:
+…Ì»äº%;éNğ@cº›æá ;Jf  	YE•“@"†\C’Xp>ÌÄEìé5@nL    ø      À  ø      À  @TD¦
+½B:H08@{o:q¼„:
+©ã»ãQî;ê@c»CLšØ ;UE  	ZE•“Ä@"…C‘ÖÖ>âÜEìñâ@z‘    ø      À  ø      À  @TD³N‚A:GßÀ@{o<¡ßè:
+tä»å¿;ëçõ@c»ê²T0 ;`$  	[E•~Ú@"~¸C‘­Ì>ü¥EìË¸@qC    ø      À  ø      À  @TD˜á`Œh:HNb@{o8Ÿ¦>:
+³»ë$O;ñ…Ş@c¼’h ;k  	\E•…@"€ÿC‘çù>çEìØo@Ø    ø      À  ø      À  @TD•2‹‘@:H/í@{o>
+}È:
+»ğS¼;óES@c½9}ÆŸ ;uà  	]E•½3@">C‘õš>–ƒEí5Œ@†j    ø      À  ø      À  @TDœè˜q´:Hc@{o=0/:
+¦ë»ë#V;áæÁ@c½àãJ ;€½  	^E•£D@"‰?C’
+*>úEíü@d     ø      À  ø      À  @TD´Ü`ùQ:GìE@{o>ñŸPë:
+{
+»ë|¼;ç+ @c¾ˆI8¯ ;‹™  	_E•ª”@"‹áC’n>äEí?@    ø      À  ø      À  @TD¥†ò€5:Gõ¦@{o6L–¾¢:
+ŒÕ»î;áõË@c¿/®ñ¦ ;–u  	`E•“û@"…VC‘Ö>Ü%Eìê@ü    ø      À  ø      À  @TDÓ@àŸ:H,@{o8ğÇ¶z:
+ »í;ëGñ@c¿×tÎ ;¡P  	aE•‰…@"€¶C‘Ú•>ÂEìâ%@…    ø      À  ø      À  @TD— .ï¾:H;®@{o9á«Ç:
+ª»êU;èu<@cÀ~zc6 ;¬*  	bE•¦,@"ˆC‘µ¦>²êEíZ@O    ø      À  ø      À  @TD£Ÿ®s[:H´@{o:`ï3:
+“9»îx;ñf¸@cÁ%àí ;·  	cE•À­@"ÖC‘Î‡>ÍÅEí4â@‹à    ø      À  ø      À  @TD¹-zx :GŠô@{o@Ø$:
+?¼»è˜˜;ëñà@cÁÍEõ ;ÁŞ  	dE•Êû@"¤C‘Ş>»FEí=—@mÉ    ø      À  ø      À  @TD¶4@:GÛ(@{o>gW£:
+rN»êˆ<;ót‰@cÂt«Wm ;Ì¶  	eE•’\@"‚2C‘â\>şwEìém@s    ø      À  ø      À  @TD¨b`\:H@{o8àñ:
+ê»ç";ì·²@cÃE” ;×  	fE•¼J@"™}C‘”Q>È>Eí,ö@š~   €ø      À  ø      À  @TDÇ–/˜_:GÜ@{o6F·èß:
+‚ »äP;æY^@cÃÃvş ;âf  	gE•›†@"€ŒC‘¬i>şÚEì÷õ@tü    ø      À  ø      À  @TD¹Ì¹$œ:GĞ[@{o>§7wt:
+qÚ»ègu;î ¹@cÄjÜ€” ;í<  	hE•©¼@"…„C‘Ğ®>¶·EíE@.    ø      À  ø      À  @TD­Îf,:Gõk@{o=e./Ø:
+––»áı;êN)@cÅBn› ;ø  	iE•˜ò@"JC‘Ô†>üzEìòA@n£    ø      À  ø      À  @TDµàI…•:H¢@{o3•­Î:
+©Á»Û˜;ŞØD@cÅ¹¨&³ ;è  	jE•„{@"}ŠC‘”I>¯²EìÚg@T    ø      À  ø      À  @TDÌ%w+:GĞâ@{o5
+;:
+ŒX»Ó{¨;Ö›@cÆa© ;½  	kE•¬@"‡æC‘”ö>µ_EíŸ@    ø      À  ø      À  @TD·£K¾(:Gº@{o50P”º:
+nµ»Ô¹l;Ó2`@cÇsa ;‘  	lE•É)@"C‘¸T>»XEíJ@rˆ    ø      À  ø      À  @TD¸ÿ+G:GÓ„@{o66k :
+€M»ÄÆÄ;Áá°@cÇ¯ÙNº ;#e  	mE••¦@"€ĞC‘oí>Í·EìéH@oÅ    ø      À  ø      À  @TDÍLwûE:GÜ‡@{o1«¨Ó÷:
+‘{»Ë…;Â]z@cÈW>Ğâ ;.8  	nÀ  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @cÈş¤ˆš ;9
+  	oE•v–@"x‹C‘Øÿ>é‘Eì·y@kp    ø      À  ø      À  @TDœ(wÔ¤:H^@{o6 p¬:
+Á=»Ñ¼“;Î‡%@cÉ¦
+v ;CÜ  	pE•¥@"…éC‘÷>¥Eí
+¸@,    ø      À  ø      À  @TD½·ì!:GÀÅ@{o2/'4l:
+v]»Ò“ù;ÈA`@cÊMp-™ ;N­  	qE•™@"ƒNC‘»X>œeEìï´@fÓ    ø      À  ø      À  @TD™‚Ëiâ:HÀ@{o3â‰Ö:
+œÜ»ÚYì;Ë]B@cÊôÕ¯€ ;Y~  	rE•¨~@"†C‘zÍ> EíQ@nJ    ø      À  ø      À  @TD±ÿÒE:Gå@{o8º²<:
+ˆ»Ñ›~;ÏŒz@cËœ;fø ;dN  	sE•M@"}ÜC‘˜&>úìEìÚZ@jŠ    ø      À  ø      À  @TD½XZ¸k:H*µ@{o3ÂÁ:
+À’»Ó®ö;Í\5@cÌC¡T  ;o  	tE•¬g@"…ÜC‘v(>éEí@†J    ø      À  ø      À  @TDÈPñoG:G±ê@{o4ª»qà:
+q%»Ô	R;Ñ­]@cÌëW ;yì  	uE•œI@"kC‘šV>ÉEìôß@wT    ø      À  ø      À  @TD¾¤âlK:Gÿ4@{o8Ú$_Æ:
+ ¤»İúÚ;ÏU¸@cÍ’lŒß ;„º  	vE•¦@"ƒÆC‘z>ÛEEìı’@ŠÄ    ø      À  ø      À  @TD°éüq:GşÏ@{o:$bş:
+‘»ë‡Ô;ßoÜ@cÎ9ÒC÷ ;‡  	wE•Y@"tC‘vÖ>Ì@EìâH@€
+    ø      À  ø      À  @TDÁ¬“:GÔ«@{o9r
+oÜ:
+ƒo»è‹
+;ß±#@cÎá80¾ ;šT  	xE•¹@"ˆ(C‘oá>ŞßEíÀ@”k    ø      À  ø      À  @TD´F$sO:Gê†@{o>9Œ(Œ:
+»ó&l;î¥V@cÏˆ² ;¥   	yE•˜ü@"€¸C‘m×>ÕEìé3@pn    ø      À  ø      À  @TD²K¿Y:H("@{o8ÒF]À:
+¦¿»ôŸ;ğ½!@cĞ0hş ;¯ì  	zE•àŸ@"’bC‘XT>ÚèEíQÍ@|z    ø      À  ø      À  @TDçrgLN:G«1@{o;ìü:
+Vy»ùuy;ğlİ@cĞ×iU… ;º·  	{E•œB@"‘C‘GT>(Eìí€@…'    ø      À  ø      À  @TDËí„F:GÅZ@{o8¾Aé:
+s»øŸ;ìÃË@cÑ~ÎÖ ;Å  	|E•Àâ@"ˆÆC‘'€>âEí#@‚1    ø      À  ø      À  @TDÂ	 :GŞ€@{o?z8h:
+{6»üU;òŠï@cÒ&4E ;ĞK  	}E•¬A@"…¹C‘\[>Ç˜Eí©@oH    ø      À  ø      À  @TDÓ°íÕë:G¹G@{o:m¹c:
+nÃ»øª	;ñG@cÒÍšCÜ ;Û  	~E•–\@"]C‘_.>ÊEìáW@ƒÂ    ø      À  ø      À  @TDºéá–:H%Ÿ@{o9kÙ¯:
+³“»ğ½˜;ô9@cÓtÿúT ;åÜ  	E•±ì@"†ÀC‘G1>Ç‰Eí`@x£    ø      À  ø      À  @TD­á>)j:G×C@{o4ƒ 6:
+€»ö¿=;ñK¦@cÔe°Ì ;ğ¤  	€E•µÛ@"‡¯C‘ŠX>ÚjEíß@qC    ø      À  ø      À  @TDËY'„:GÖ@{o;Éğ)²:
+‚0»ø¼;ùvM@cÔÃËg$ ;ûk  	E•ÍQ@"ŒÓC‘ ->ÜÆEí1@_Ø    ø      À  ø      À  @TDÉCû:G¢@{o:ÇáÌ©:
+YX¼š¯<Š@cÕk1S ;	1  	‚E•¸B@"ŠC‘;¨>bEíÏ@xŞ    ø      À  ø      À  @TDÏ¥*3:GËÓ@{o<[:0E:
+t0»ù›x;íÎ@cÖ–Ó“ ;	÷  	ƒE•ƒ.@"{YCî9>ÌEì½@}ì    ø      À  ø      À  @TD¶ Œh:GØ@{o:õğŒ:
+ƒH»ş¥–;ğ–@cÖ¹ü‰Ê ;	½  	„E•§Ê@"„®C‘—>´³Eìş.@i±    ø      À  ø      À  @TDÃ‘xÈ*:GÄ}@{o:HKÊT:
+uÂ¼64;õLå@c×ab
+ ;	&  	…E•÷ç@"©HC‘ZI>ìEír…@ª‡   €ø      À  ø      À  @TDÆ[AËÑ:GÆ!@{o6²«“ :
+€´¼ *j;üÀ@cØÇõº ;	1E  	†E•ÈÔ@"C‘)ø>áEí.Ø@k¹    ø      À  ø      À  @TDÜğ7QU:Gà'@{o:çt¤¼:
+‹P»üòÓ;ó*@cØ°-«’ ;	<  	‡E•½%@"‹¢C‘xm>¿Eíä@z	    ø      À  ø      À  @TD´d¾|æ:Gêù@{o8yÄ
+¡:
+„®¼ sá;ò#ü@cÙW“ai ;	FË  	ˆE•¤İ@"…¬C‘Lt>áÁEìóÙ@Šr    ø      À  ø      À  @TDÎk('H:Gè#@{o9iDµU:
+s¼ •#;ò«k@cÙşù! ;	Q  	‰E•¶R@"‹C‘™¶>ëFEí	@Ñ    ø      À  ø      À  @TD¶İŠæ8:Gëã@{o?»BV:
+€{¼±ÿ;õØA@cÚ¦^ÌØ ;	\O  	ŠE•Õ@"~ÊC‘|G>¿5Eì¸5@{)    ø      À  ø      À  @TD°È†±Ø:H -@{o=ŠÛët:
+¦¾¼¢;øÈM@cÛMÄ‚p ;	g  	‹E•ªt@"ˆC‘T¥>ÛEìø!@ƒ    ø      À  ø      À  @TD¢~€“Æ:GÌ;@{o9Â_‘:
+pB»ûßÙ;öß‡@cÛõ*8 ;	qĞ  	ŒE•œ@"…šC‘cw>˜›EìÜy@‡     ø      À  ø      À  @TDÀ¹kİ:Gä#@{o<P*JĞ:
+„Ÿ»ıí;ÿ¯û@cÜœí@ ;	|  	E•³Õ@"ŠÀC‘Œ‚>!ıEíO@ƒ:    ø      À  ø      À  @TDÈ!F2ø:GŠ2@{o8°åÀ:
+Ql»ù;;øk@cİCõ¢— ;	‡N  	E•‹ú@"ƒ>C‘‰2>õ?EìÁà@‰J    ø      À  ø      À  @TD¿a'Ğ:Gíæ@{o?°àÊÜ:
+‡X»ıv< ½I@cİë["? ;	’  	E• @"ƒ!C‘©>Ì|EìĞ9@±    ø      À  ø      À  @TD¸åÁ‘:Gî­@{o<ú¸:
+‚ß»ÿC]< Àî@cŞ’Á ;	œÊ  	E•‚@"‹C‘›>*«Eì®Ö@{    ø      À  ø      À  @TD³ÓP0:H@{o@»]ìÎ:
+¡Ù¼.Ç<@cß:&Â ;	§‡  	‘E•“)@"„C‘~’>ÜŸEìÑ{@u,    ø      À  ø      À  @TD¹}wî˜:HÄ@{o9U/Õp:
+¨?»ı
+< *†@cßáŒA† ;	²D  	’E•À`@"?C‘e`>-ŒEí[@ƒ0    ø      À  ø      À  @TDÑÍÎ(`:G™@{o<*²²&:
+Zk¼ °Î< “@càˆñö~ ;	½   	“E• Ì@"ˆC‘rß>±Eìà$@0    ø      À  ø      À  @TDÇ™[æ:G›Ë@{o:¢ÿG®:
+_(¼ æ<n@cá0Wá ;	Ç»  	”E••ò@"„C‘^î>ËöEìÏ!@o    ø      À  ø      À  @TD«‡şßi:H%@{o>ÑöL:
+£h¼r¦<ø@cá×½` ;	Òu  	•E•‹@"æC‘x¸>ÜEì¼F@~A    ø      À  ø      À  @TD¿£Â$°:H ô@{oB&‹çv:
+’Z¼§<r@câ#Å ;	İ/  	–E•¦ö@"…®C‘T–>1çEìì&@oÉ    ø      À  ø      À  @TDÊLomº:G¤ @{o;»†à:
+]¼:Ş<œ†@cã&ˆÉ\ ;	çè  	—E•œ@"…ÉC‘‰˜>ÀŞEìÕ§@~Ù    ø      À  ø      À  @TDïrSËâ:GÈr@{o@:Î/g:
+~A¼·<O‹@cãÍî³¤ ;	ò¡  	˜E•˜@"‚sC‘1”>ıEìÑX@y    ø      À  ø      À  @TDÀİ|+:HO@{o=ö˜ª:
+’¼=¶<êõ@cäuT2l ;	ıY  	™E•ÕØ@"”C‘)ö>ôEí%ã@    ø      À  ø      À  @TD¶·ƒÓ›:GïÎ@{o:Ô¡eº:
+…­¼	TÃ<®U@cå¹æÃ ;
+  	šE•™±@"‚{C‘>#>ùxEìÑ$@{î    ø      À  ø      À  @TDĞùÖ`ï:Gâz@{o?lˆÕ :
+†S¼dh<+µ@cåÄĞË ;
+Ç  	›E•¡ï@"‡OC‘r)>ë²EìÖ‰@k¾    ø      À  ø      À  @TDµ`E‘':HX@{o:vGÔ:
+¼?Á<XÂ@cæk…OR ;
+}  	œE•˜š@"„C‘38>*EìÏ­@oÅ    ø      À  ø      À  @TD¬eŸˆ:Hç@{o<5å^.:
+û¼ï—<è\@cçëj ;
+(2  	E•©Ñ@"†YC‘>ÓQEìäà@6    ø      À  ø      À  @TDÃ]>·:GŞw@{o?£ğƒ†:
+}p¼<Ö<œ@cçºPÒ ;
+2ç  	E•Ò£@"’C‘‘D>,Eí'M@ƒ8    ø      À  ø      À  @TDºİZè::GÔ7@{o?…Ö>:
+s»ÿ‚¬<³³@cèa¶kz ;
+=›  	ŸE•¼@"C‘Ss>9ûEìÿÇ@iF    ø      À  ø      À  @TDÎK¸¡ƒ:G¯‚@{o?yw8:
+b)¼iç<n@cé	q ;
+HO  	 E•É@"”C‘ch>ÎpEíx@s_    ø      À  ø      À  @TD¿¶ü.~:G³@{o?Fo0n:
+^c¼N<ss@cé°Ó) ;
+S  	¡E•§0@"ˆ–C‘–†>ªZEìß‹@‘V    ø      À  ø      À  @TD›!1w:H‡@{o;cØ:
+ˆK¼7<u@cêWç‡  ;
+]´  	¢E•©Ì@"‡´C‘ê>ü©Eìİq@+    ø      À  ø      À  @TD¿z‚˜×:GÜÕ@{o?~ÅÛ:
+u¨¼
+p<
+“@cêÿM:˜ ;
+he  	£E•Şó@"–›C‘…#>Æ¯Eí8@’×    ø      À  ø      À  @TD´ùæ}>:GÁA@{o@°;O\:
+^D¼ "<<­@cë¦²î0 ;
+s  	¤E•À`@"¤C‘bğ>MEìıV@r¾    ø      À  ø      À  @TD¯¼/{:Ht@{o:£SÙî:
+šª¼9·<	ï.@cìNkø ;
+}Æ  	¥E•µÓ@"‹¦C‘”5>ØEìğ™@Š    ø      À  ø      À  @TDÅX#_í:G­è@{o:Û‘Ãô:
+g¼‰œ<Ìb@cìõ~U ;
+ˆv  	¦E•¯’@"‰ûC‘N‡>ıEìâÌ@d    ø      À  ø      À  @TDšw¢jp:HÃ@{o:ö²:
+‹R¼Ö¨<	p³@cíœäw ;
+“%  	§E•šÅ@"ƒüC‘]P>ÄEìÇ²@¡    ø      À  ø      À  @TD­ùÍY:H­@{oB.¶/:
+—5¼ˆb<îã@cîDI…ÿ ;
+Ó  	¨E•¯I@"Š,C‘wt>Eìâ­@„Ô    ø      À  ø      À  @TD¬"2:H o@{o<»6”(:
+J¼<	ÿ@cîë¯næ ;
+¨  	©E• &@"†óC‘r§>Ã1EìÊÑ@kq    ø      À  ø      À  @TD¡%Xí:H*ı@{o>¡>¿:
+›¼
+–l<Ç@cï“!ş ;
+³.  	ªE•Äİ@"‘¡C‘Ty>üEíz@c$    ø      À  ø      À  @TDª%Öª:GÊæ@{o@ Ò‰:
+cù¼	ƒ<©@cğ:zŸf ;
+½Û  	«E•Ôì@"“C‘%ã>&Eí@võ    ø      À  ø      À  @TD¬;c.Õ:Gâ„@{o=e9’:
+n¼	RW<%ç@cğáàR] ;
+È‡  	¬E•¸İ@"ŒAC‘¬‹>ß‚Eìñ^@kŸ    ø      À  ø      À  @TD¶ãFm:Gê%@{o=ÓÒïÜ:
+F¼ÿÍ<²²@cñ‰F:å ;
+Ó2  	­E•Òü@"’¦C‘[Ï>ÛEí@r0    ø      À  ø      À  @TD¬=Óîû:Gå@{o<múñ:
+y*¼	ı—<¯}@cò0«·í ;
+İÜ  	®E•¼Ö@"¢C‘71>é¥EìøÊ@}¾    ø      À  ø      À  @TD©˜X?ú:Gé|@{o>FH:
+xô¼£	<"K@còØj¤ ;
+è†  	¯E•¼+@"ŒœC‘&‘>îVEìòû@‚©    ø      À  ø      À  @TDIS4:GàZ@{o?.™4.:
+nB¼	£e<[G@ców< ;
+ó/  	°E•Îc@"‘¢C‘>üEí7@k    ø      À  ø      À  @TD«n…ª:GåF@{o@œ»ˆÂ:
+n¹¼
+š®<Æ
+@cô&İ„ ;
+ıØ  	±E•Îj@"‘C‘#Ï>Eí@x§    ø      À  ø      À  @TD¨Ä{)T:Gã†@{o@Wø¥:
+mF¼f<'J@côÎB‚K ;€  	²E•àÚ@"•…C‘;­>Í?Eí)W@wø    ø      À  ø      À  @TD¿¼>5:G¶5@{o>Îj¢è:
+_¼;¦<¯~@cõu¨4£ ;'  	³E•ä@"—;C‘bV>ì÷Eí0Â@fğ    ø      À  ø      À  @TDˆU¯™:H@{o="«ø:
+Œ•¼¾Œ<KJ@cöª ;Î  	´E•Ñë@"’
+C‘nİ>³EíU@€ô    ø      À  ø      À  @TDºˆ0:H½@{o> î|<:
+—5¼1<i–@cöÄs™2 ;(t  	µE•är@"–1C‘Zt>ĞEí3@zô    ø      À  ø      À  @TD³0¦DŠ:Gºö@{oBgÔÉ:
+[5¼Ÿp<ü@@c÷kÙKJ ;3  	¶E•ÉI@"aC‘>>.ƒEìşŒ@n«    ø      À  ø      À  @TD‘q•² :H/@{o>à¯Ã:
+o¼ä<æš@cø>ıb ;=¾  	·E•Í†@"‘œC‘Vt>ôPEíÎ@wå    ø      À  ø      À  @TD·$ÿº:GËŸ@{o?Í Êå:
+j¼«<Æ@cøº¤¯Y ;Hb  	¸E•ÔÂ@"‘C‘Wï>ÔEíX@n;    ø      À  ø      À  @TDª"äø:Gî»@{oA#ªâ(:
+tX¼Ù5< Q@cùb
+a1 ;S  	¹E•šŒ@"ƒC‘:¤>åEì¸ú@n    ø      À  ø      À  @TD§Şù@Ò:GÚ§@{o=}‰Å:
+oø¼
+ <)@cú	p	 ;]¨  	ºE•¶"@"ŠC‘4>ÛƒEìßÀ@^g    ø      À  ø      À  @TDÅ,dë:GêØ@{oD…2‚:
+€ø¼	ŠE<óz@cú°ÕÄÀ ;hJ  	»E•©Ñ@"†ØC‘Hõ>*"EìÓ@l     ø      À  ø      À  @TDŸ•áO:Gÿî@{o>Ìúİ„:
+²¼×À<	İæ@cûX;vx ;rì  	¼E•½š@"!C‘@Ò>Ï^EìïÈ@_    ø      À  ø      À  @TD±Z K­:G³@{o@ŒKÕ:
+S¼©{<@cûÿ¡( ;}  	½E•°g@"ŠC‘3¹>Ø¦EìØ–@s    ø      À  ø      À  @TD±öw‡&:G¿@{o<Ó‰€\:
+^P¼‡!<´Q@cü§£× ;ˆ-  	¾E•®Û@"‰nC‘2Å>Eì×,@e    ø      À  ø      À  @TD”ô:Hå@{o=š¹	’:
+â»ö‘< L€@cıNlŠß ;’Ì  	¿E•À"@"¤C‘Cp>úÈEìä2@pì    ø      À  ø      À  @TDº³ÓÒ:G×}@{o?Qâ•:
+r$»û±À<3@@cıõÒ<7 ;k  	ÀE•Å@"ÒC‘#•>ÿ?Eìÿƒ@l    ø      À  ø      À  @TD´kÆôµ:GóÎ@{o;ıØÔ°:
+†)»ótô< *i@cş7í ;¨
+  	ÁE•›£@"ƒÂCòP>Û”Eì¹‡@_â    ø      À  ø      À  @TDÁgXR:GĞ@{o:ißiq:
+uV»øÃ;ıÚı@cÿD¦ ;²§  	ÂE•¸°@"Œ@C‘NÕ>»Eìî¡@wA    ø      À  ø      À  @TD¤ÅŞs¨:H
+Â@{o;iEFZ:
+=»û—a;ùèŞ@cÿìO¾ ;½D  	ÃE•¨?@"ƒÊCòÄ>·ÊEìË®@gK    ø      À  ø      À  @TD‘Nwpá:H`@{o;À¨ªú:
+Š•¼ ªà< VW@d “i Õ ;Çá  	ÄE•¡ë@"…ÃC‘7>ÖœEìÅ@oÃ    ø      À  ø      À  @TDˆŒçéÿ:HÀ@{o=9°uÒ:
+‹¢¼”~<\‘@d:Î±­ ;Ò|  	ÅE•ì@"•C‘b>Eí3Ò@sª    ø      À  ø      À  @TD«‘f7²:GÕ@{o=­3ŸZ:
+4Q»ÿ'É<@dâ4b… ;İ  	ÆE•Øä@"õC…´>ÊïEí­@Xc    ø      À  ø      À  @TD¬÷½C6:GŒu@{o8vÜjˆ:
+LÁ»şˆ;şÍ¬@d‰š\ ;ç²  	ÇE•Øª@"‘:C‘>Å®Eí¬@e    ø      À  ø      À  @TD‹0ng :Gév@{o@,ÿÍ:
+cœ¼ ôF< @d0ÿÃô ;òK  	ÈE•¾@"‰nC‘a>£ÀEìé@QW    ø      À  ø      À  @TD¯=¶d:GÑŒ@{o<ä:
+iº¼Rı<ã½@dØe>Ü ;üä  	ÉE•º:@"‰>C‘Ÿ>­oEìâ`@x    ø      À  ø      À  @TD‹ãßt¿:Gë
+@{o<D n:
+hŒ¼m6<&¼@dË%# ;}  	ÊE•êì@"”ÏCì>á‹Eí)@sÜ    ø      À  ø      À  @TDœÆÌ±è:Gá>@{o;ÍèVÀ:
+hê¼	—ı<uz@d'0Õ› ;  	ËE•è7@"óC¥<>¼MEí(ç@{¿    ø      À  ø      À  @TD™±ãŠ:G·ş@{oBãéÁÜ:
+Dl¼¶A<ş@dÎ–PC ;¬  	ÌE•á¥@"“âC‘$h>ùEí@|š    ø      À  ø      À  @TD™Ú“Ø2:HR@{o=A™°˜:
+ƒ¼-´<T@duü6* ;'B  	ÍE•âÃ@"‘CCÛ\>ØóEí¬@f¤    ø      À  ø      À  @TDª'5§È:GËL@{oBb­ïò:
+a)¼Ã÷<¬B@daæb ;1Ø  	ÎE•Ì£@"‹‰C‘ñ>ûßEìó@~»    ø      À  ø      À  @TD‹a›6¯:Gí¾@{oD4•:
+fö¼³R<&-@dÄÇ`Ê ;<m  	ÏE•çÆ@"C½á>ù
+Eí!â@P    ø      À  ø      À  @TD¢:IE:GŞ­@{o@´mªº:
+l±¼ÇØ<|ø@dl-á ;G  	ĞE•ßB@"ãC‘©>øùEí¾@|'    ø      À  ø      À  @TDÉ" ïÔ:G¨õ@{o>+ıjş:
+]}¼<›<@d	’ö‰ ;Q–  	ÑE•ğ @"’{C‘ï>ÈlEí)Ê@g³    ø      À  ø      À  @TDºSäl:G{Ã@{oFr'Ø2:
+26¼]T< @d	ºøp± ;\)  	ÒE•ìÄ@"“°Cå>×áEí'y@mÔ    ø      À  ø      À  @TD«ÌÎò¾:Géz@{oG~¿?ğ:
+p¥¼ÂŞ< %—@d
+b^ h ;f»  	ÓE•À«@"‡àC‘k>¶EìÚ@x»    ø      À  ø      À  @TD®ÜÁâ:H@{o?Z^¶:
+ƒ²¼õË<Ã@d	ÄĞ ;qM  	ÔE•İ@"~C‘´>ŞzEíµ@_$    ø      À  ø      À  @TD¼©jd¦:G¥
+@{oB
+[Õ9:
+Pô¼ƒ<„¦@d±)µh ;{Ş  	ÕE•ğ/@"”ÏCî×>Ü&Eí'-@`    ø      À  ø      À  @TDŒ#Bí:Gå@{oAS¦‚:
+_w¼¥m<"]@dX/O ;†o  	ÖE•Ç@"‰CÖ”>òÒEìéŒ@_&    ø      À  ø      À  @TD–‡N2:GÕÓ@{oEY-P:
+^õ¼Dú<™@dÿôŞÇ ;ÿ  	×E•êî@"“rC‘ù>êøEín@÷    ø      À  ø      À  @TD¹‹kwE:Gè*@{oGGÚ|:
+wØ¼ıy<"½ @d§ZÃÏ ;›  	ØE•Û=@"îC‘|>Ù'Eí6@t     ø      À  ø      À  @TD«ÿÊ:Gâ|@{oC=î:
+nf¼´}<wR@dNÀ=v ;¦  	ÙE•âF@"‘qC‘Â>°`Eí›@{Õ    ø      À  ø      À  @TD²ÁÈ:GùS@{oBÛ–×H:
+{*¼›j<!À#@dö%ì® ;°«  	ÚE•Íå@"‹ÈCúc>´¼Eìï@u6    ø      À  ø      À  @TDªv³¬
+:Hæ@{oBÕ5èF:
+ˆ'¼=ı< š@d‹Ñv ;»8  	ÛE•§®@"ƒ?CĞH>²ÈEì¶Ü@d    ø      À  ø      À  @TDÇw :Gø×@{o=QE:
+a¼•„<c¿@dDñJİ ;ÅÅ  	ÜE•ã@"“xC‘Ê>×ÆEí@r^    ø      À  ø      À  @TD±åïKî:Gáş@{oDêº<:
+uV¼™<"Gƒ@dìVùÕ ;ĞQ  	İE•±¸@"….Cùà>ßEìÄ©@y•    ø      À  ø      À  @TD¾5ÿ²¾:Gè·@{oC§:
+zÕ¼ıÔ<!·A@d“¼¨­ ;ÚÜ  	ŞE•Ù¹@"‘C‘8>¤Eìûô@Z    ø      À  ø      À  @TDÁ¾ëÆK:G°@{o;nüs::
+Q½¼»¼<#ß	@d;"W„ ;åg  	ßE•ãí@"’Cÿh>¸¤Eí„@rü    ø      À  ø      À  @TD¥èØÌŞ:G¾@{oC§Kfà:
+V_¼r<Ô[@dâˆ< ;ïñ  	àE•á‚@"‘-Còñ>™EíÚ@m    ø      À  ø      À  @TD»ØÇ :G¯Ò@{oEœ£c›:
+N‚¼±Û<#ÿ¦@d‰í´Ô ;úz  	áE•áv@"“=C‘1>È`Eí@kÄ    ø      À  ø      À  @TD¡à®n.:H]@{oA„é.:
+…m¼_<ÚJ@d1S-¼ ;  	âE–C@"›¯C‘O >È‡EíB@dn    ø      À  ø      À  @TDÁƒşi—:GÄ@{oBi„¾:
+cŸ¼ÉQ< D^@dØ¹ã ;‹  	ãE•ùÛ@"˜äCì>Ú±Eí1S@`~    ø      À  ø      À  @TD»œ™ïè:GĞ @{oDœâº:
+kı¼/÷<!„@d€À; ;  	äE•éÏ@"”£Cõñ>Ë¯Eí…@Z    ø      À  ø      À  @TD¿$ÑF:G×Ÿ@{o<êËÍ,:
+|¼g*< ¦@d'„8â ;$™  	åE•÷
+@"˜JCÃ,>ìeEí'Ä@w    ø      À  ø      À  @TD©®A÷:GŸ@{oCü35à:
+C¼„—<"¶D@dÎêÊ ;/  	æE•¿à@"ŒC‘	^>ÀğEìÓ‰@_    ø      À  ø      À  @TD§C#:H"ì@{o?YÊ2:
+Æ¼A< j»@dvOË ;9¥  	çE•ËÒ@"‚C‘ƒ>Ş¢EìÙI@|ì    ø      À  ø      À  @TDªŞúº”:GÚö@{oAÀE¾„:
+lv¼ÁÁ<'@™@dµCI ;D)  	èE–ç@"›C‘İ>Û[Eí<°@s3    ø      À  ø      À  @TD±) ?:GÀ»@{o@íİ:
+bÇ¼ã<§@dÅñA ;N­  	éE–×@"Ÿ8CÄ)>’EíRi@v®    ø      À  ø      À  @TD¤Ğ]k:G„Ú@{oB›‡p:
+kQ¼¨ <"ë±@dl€Ôé ;Y1  	êE•ŞÖ@"ÀCêK>Ã&Eìÿ4@~ƒ    ø      À  ø      À  @TDÈıPª]:G„o@{oB{ÓÓè:
+C+¼³Ş<!fò@dæ‚À ;c´  	ëE•ëq@"•0CÔ}>ä.Eí<@”õ    ø      À  ø      À  @TD¹gwØ:GÉ~@{oB¶¨Ò¸:
+b„¼õ…<"•¶@d»KúÈ ;n6  	ìE•Éµ@"C‘$+>º9EìÚû@d&    ø      À  ø      À  @TDÉ!Ÿô*:G­e@{o@ÀFk:
+Z¼ è< c@db±Ş ;x·  	íE•Ê7@"öC‘:>³Eìß*@sË    ø      À  ø      À  @TD¬‘ÔÙ˜:Gá@{oB¦X×ö:
+p ¼Ï×<#­°@d
+‹§ ;ƒ8  	îE•Î@"ƒC‘î>¨}EìÜg@nœ    ø      À  ø      À  @TDºÒä±r:Gå6@{oA¨òŞ:
+|
+¼m<$™‰@d±}o ;¸  	ïE•ÕZ@"‘ªC‘>óZEìï€@wL    ø      À  ø      À  @TD·k²—-:Gïî@{oBú’F:
+}a¼ <"g7@dXâ°ç ;˜8  	ğE•ÔN@"‘€Cî4>ÜEìæ/@mÕ    ø      À  ø      À  @TD½ö½6†:G«Ù@{oE¿à¡û:
+O÷¼"a<"„Ñ@d H“Î ;¢¶  	ñE•¸ï@"ŠâCû>~3EìÀ-@r®    ø      À  ø      À  @TDˆ8/Ø:H9½@{oALõpÖ:
+˜N¼#½< sÉ@d§®v ;­5  	òE•Ô%@"“ÜC‘)>6Eìæ7@^œ    ø      À  ø      À  @TD¤ÆQâÔ:Hº@{oD¡¯:
+’¼#*<'M£@dO¸ ;·²  	óE•ÖZ@"“1CÜ‰>ÔßEìêu@f	    ø      À  ø      À  @TDšIUè‰:H@{oB(•k:
+}À¼%e <'Q@döy›U ;Â/  	ôE•á@"˜C‘/C>êºEìø2@w‰    ø      À  ø      À  @TD³Ş‚B:H!!@{oEt<ï:
+›´¼#í9<(@d ß ;Ì«  	õE•Ó6@"““C‘! >±]EìÜ@^Ã    ø      À  ø      À  @TD¥Eºçx:H‰@{oCÄ’Œ:
+¼%ã|<+n[@d!ED¿• ;×'  	öE•Âå@"gCÑN>¹ EìÊf@p4    ø      À  ø      À  @TDœ˜R	V:H"@{oDr™1:
+Œš¼]ı<&7a@d!ìªlL ;á¡  	÷E•Ïl@"¹CÌ˜>˜XEìÖ£@C˜    ø      À  ø      À  @TDUê|æ:Gø @{oB’ß:
+o™¼$¼t<'*H@d"”$ ;ì  	øE•¦²@"‡lCğ#>ÏzEì´@c    ø      À  ø      À  @TD Qûf :Gÿ@{oGßpÖ:
+zï¼!g<#Y@d#;uÅ¼ ;ö•  	ùE•Ô®@"‘eC‘á>ƒ<Eìâa@_[    ø      À  ø      À  @TD¬ªNyö:GÃ¶@{oBù±HË:
+Y¼%wT<'U{@d#âÛrS ;  	úE•Ç@"•C‘>bEìÍÇ@{¥    ø      À  ø      À  @TDÀ¯¸ª:H@{o>şÅV=:
+†¼)	<'É@d$ŠAT{ ;†  	ûE•Õf@"”ACı·>»EEìáÿ@G    ø      À  ø      À  @TDŒB7ÇŠ:Gó8@{oD`Z•“:
+f*¼#\ª<(ß@d%1¦ËC ;ş  	üE•´W@"‹×C‘1>ˆ	Eì®“@U    ø      À  ø      À  @TDMğQ:HN¤@{o;Å¢Ä:
+±¿¼ :†<"+­@d%Ùwš ; u  	ıE•ß_@"•úC‘ >—™Eìï@fí    ø      À  ø      À  @TD‘-Âœâ:GùF@{oF¨ff«:
+kÄ¼#S“<+b5@d&€qî" ;*ë  	şE•Å×@""CìĞ>¿EìÄŒ@KK    ø      À  ø      À  @TDx‡Ù}^:H?7@{oAÜ\:
+“¼'ÀÂ<+SS@d''×Ïê ;5`  	ÿE•Û.@"˜wC‘üa>ùÀEìîí@f©    ø      À  ø      À  @TDqûDï:HNÆ@{oEÏªÖ:
+—÷¼#—<#ùo@d'Ï=| ;?Õ  
+ À  À  À  À  À  À    € ø      À  ø      À  ø      À  ø      À  À  À  @d(v£'ù ;JI  
+E•²_@"ŠVCî‚>ÿEì¬¹@[Ì    ø      À  ø      À  @TD—O^Që:GıÙ@{oF_¸ı:
+qÏ¼(Ö™<,¦@d)A ;T½  
+E•ğ@"™¨Có>øEí·@zL    ø      À  ø      À  @TD~Ùù·‚:HÇ@{oI=4Oô:
+kæ¼+^<-µ @d)ÅnÈ ;_0  
+E•˜ú@"[C ä>È›Eì~9@pa    ø      À  ø      À  @TD”j	C:Hğ@{oA€Jö:
+‚ä¼)–½<*º@d*lÔ+€ ;i¢  
+E•Áy@"Cİ«>íEì´¥@pİ    ø      À  ø      À  @TDyWƒÓÀ:HX@{oFŒk4<:
+f¾¼*Ã„<0Ö@d+9¡h ;t  
+E•·Ø@"‰şC‘$¢>â^Eì¨è@kà    ø      À  ø      À  @TD‘ºüB:H$H@{o@¬šé:
+Šğ¼)n±<*ëA@d+»Ÿ‚¯ ;~„  
+E•×‰@"›C‘ò>-xEìİÁ@}/    ø      À  ø      À  @TD‡]E•b:Gì§@{oG’?Õ‚:
+`¼.Æ„<)îA@d,c.' ;ˆô  
+E•ÈT@"¤Câ5>?àEìÂ@}z    ø      À  ø      À  @TDu8ğ:H
+è@{oBÊ¦IŠ:
+k¼/d}<-«F@d-
+j£ï ;“d  
+E•İI@"‘åC¡³>´sEìèo@]Â    ø      À  ø      À  @TDyÌeR:H@{oHuÏ¢ :
+j‘¼*U¢</z@d-±ĞOF ;Ó  
+	E•Ó@"’ÓC‘Tw>îCEìÏ}@xÌ    ø      À  ø      À  @TDbhÕÉ³:HG³@{oF[9¿¤:
+‰Ø¼,Ó<-Pñ@d.Y60. ;¨A  
+
+E•â‚@"“ÿCÇ˜>#Eììö@t    ø      À  ø      À  @TDíªŒ:Gír@{oEHYNü:
+c+¼*õ<<)°H@d/ ›¥– ;²®  
+E–@"›fC±^>ÍÏEí6@€¶    ø      À  ø      À  @TD—W\·$:G®@{oA]¡ıo:
+A‡¼*œ5<-š†@d/¨P® ;½  
+E•Î<@"™C¦B>Ö+EìÎ @yT    ø      À  ø      À  @TDxŒçÜ:Gã$@{oE.È:
+T!¼-§¾<0H@d0Og1u ;Çˆ  
+E•×Š@"CšÊ>óEìÛ`@já    ø      À  ø      À  @TDw,\†õ:HG@{o@…¬İ:
+x/¼*¨Z<) ÷@d0öÌ¦ ;Ñó  
+E•¿Å@"‰:Cºp>ªÏEìµ@„í    ø      À  ø      À  @TDˆçĞßò:H-o@{o<RÊ?-:
+Œê¼-0<#w”@d12Qt ;Ü^  
+E•½@"ŠBCİæ>sÕEì±×@aª    ø      À  ø      À  @TD„g}Í :GúP@{oAï‰¬:
+næ¼)¢< ]8@d2E—ü, ;æÈ  
+E•÷„@"˜ÉCş>¹MEí@0    ø      À  ø      À  @TDx\aFj:H ş@{oDJĞÀd:
+jR¼)<%A@d2ìıÜt ;ñ1  
+E•Ü@"ÙCœL>Ğ¡Eìæ@†×    ø      À  ø      À  @TD{ºåÑ¡:Gäğ@{oAnŒœ:
+Zâ¼êV<IU@d3”cQ\ ;ûš  
+E•Ôù@"ğCß°>åŸEì×+@g    ø      À  ø      À  @TD‘x˜{Ö:H¼@{oCGàãO:
+¡¼%C<fø@d4;ÈûÓ ;  
+E•®³@"†¬C°l>Û
+EìŸÔ@…©   ø      À  ø      À  @TD…º'K:H4î@{oC2zU:
+•¼$1<Fº@d4ã.Ûû ;j  
+E•Ë @"‹ĞCŠÿ>Ş
+EìÏ…@lø   ø      À  ø      À  @TD£°âF{:GÖÙ@{oAq*Üş:
+bˆ¼“²<¼@d5Š”†R ;Ñ  
+E•èŠ@"’ÉC´/>âuEìú@„¬   ø      À  ø      À  @TD•?ä×:GÅß@{oDnÚÜ:
+N¼*Ê< C>@d61ùúÚ ;%7  
+E•µæ@"‡#C¦û> qEì¥÷@k¹   ø      À  ø      À  @TD¦3<Cä:Gön@{oBy„ßÑ:
+{‡¼Ş¹<‡3@d6Ù_¤ò ;/œ  
+E•ô@"–C¡Æ>ÑêEíŠ@”   ø      À  ø      À  @TD…o‡Q<:GÈÕ@{oCª@§º:
+I4¼ ¤\< qå@d7€Å„¹ ;:  
+E•ş@"˜JCË‰>ÁWEíL@‚   ø      À  ø      À  @TDÉóÓgŠ:GPÌ@{oCà=:
+!¼ €< ı›@d8(*ù ;De  
+E•Ğ%@"‹²C©|>”îEìÉ‘@‘-   ø      À  ø      À  @TDrh±::GõO@{oB‚‚t¡:
+l‘¼"‚Ç<!@d8Ï¢ù ;NÉ  
+E•Ìª@"Œ›CÚµ>“wEìÉ @lÃ   ø      À  ø      À  @TD˜M
+PÌ:GèÒ@{oFİçØ:
+h{¼'jé<&ü;@d9vöL° ;Y+  
+E•Üc@"’vC¿§>·ñEìÚV@ƒ   ø      À  ø      À  @TD€ÀÔQj:Hˆ@{oDÖ&Ò:
+}4¼()Z<):@d:[öh ;c  
+E–æ@"œCšB>Â®Eí3@{   ø      À  ø      À  @TD‹øÆC:G¨@{oGAƒ[˜:
+6²¼%É<(Á]@d:ÅÁ   ;mï  
+E•üi@"—pCÁO>Ç|Eí'@”1   ø      À  ø      À  @TDÈR"&:Gï§@{oF‚duÒ:
+_¼,¦Ğ<-&¯@d;m'I¸ ;xP  
+E•ı@"—^C€N>ß¦Eí	å@x&   ø      À  ø      À  @TDŠû©œ:H+@{oCpÑ”€:
+~Ò¼/æÎ<1‹å@d<(ß ;‚°  
+E•İ+@"HCx.>Ğ×Eìß@u   ø      À  ø      À  @TD~Ë¹|:Hû@{oDoÑw¶:
+qh¼2_Ï<1OÀ@d<»òœ‡ ;  
+ E•·¦@"…òCÕ >¡ÛEì¦n@s   ø      À  ø      À  @TDú0ká:GØA@{o@9«­¶:
+Yò¼9ğİ<&@d=cXEŞ ;—n  
+!E•ë6@"‘ÉCœÅ>ÎÇEìëÊ@˜·   ø      À  ø      À  @TD‰\lt:GàZ@{oEÂ¬S—:
+YD¼6‘3<( ¨@d>
+½¹f ;¡Ì  
+"E•üÆ@"•ÂCïs>ÙEìün@ˆl    ø      À  ø      À  @TDzsE¯X:H‡@{oDĞü:
+x|¼:ó<*ä*@d>²#˜. ;¬)  
+#E•Ë@"ŠkCÃ¤>×mEì·c@ˆî    ø      À  ø      À  @TDxÊäÈ:HÜ@{oD¼M½D:
+i ¼6í<$?ş@d?Y‰AF ;¶†  
+$E•ïj@"“!C‘9>ÙÊEììÜ@„Õ    ø      À  ø      À  @TDŠ[¼¢d:GÎŸ@{oGOn®T:
+M¼:k<'õÚ@d@ îê= ;Àâ  
+%E•À×@"….Cz	>©ÇEì¤´@€À    ø      À  ø      À  @TDxè“`:H@{oA!Íc|:
+€ü¼7š4<(ª2@d@¨T“ ;Ë=  
+&E•Óã@"Œ¢C·W>È EìÁ=@¸    ø      À  ø      À  @TDH—:HÓ@{oCàtE:
+‰Ü¼9]Ê<'<}@dAOº;ì ;Õ˜  
+'E•ôø@"•·CÉn>ÂEìòO@ŒJ    ø      À  ø      À  @TD}Cß‰`:H±@{oEz†¨ğ:
+p¼8A<)Ñ‰@dA÷ä¤ ;ßò  
+(E•İ@"éCoğ>ÔcEìÎO@“¶    ø      À  ø      À  @TDšlª:GØ‰@{oFıõª€:
+X@¼<i2<,A9@dB…WŒ ;êK  
+)E•è¿@"’ôC©t>¹øEìÔê@‰    ø      À  ø      À  @TD =9"L:G¾R@{oEæD”ô:
+H}¼=<.V@dCEë5Ô ;ô¤  
+*E–&@"˜C©ß>ü EíX@‚    ø      À  ø      À  @TDšãM:Gº³@{oB#BE:
+GÆ¼<·<*·®@dCíPŞK ;şü  
++E•Ä¾@"‡ÍCQ>‡ßEì@{    ø      À  ø      À  @TD‘ÀŠTC:H ’@{oD…ÅÏ:
+†F¼@Hw</ÃÛ@dD”¶Pó ;	S  
+,E•è	@"‘êC‹ú>´&EìÚİ@|     ø      À  ø      À  @TDw¬o:GŞ@{oBÙÓ™ :
+TJ¼;”"<)sÑ@dE<.Ú ;©  
+-E•¯ë@"ıCG>¹wEì}‘@n    ø      À  ø      À  @TD ¤GÒ:GúÇ@{oF-¶Ö:
+nç¼=b»<,pÖ@dEã× ;ÿ  
+.E•ô4@"“¶C>ÑnEìæ£@,    ø      À  ø      À  @TD}ìú’:GÖ¢@{oEñ©¥X:
+RX¼<Q<.+Ë@dFŠçIš ;(U  
+/E•à@"ÆCšz>î!EìÇ4@œ    ø      À  ø      À  @TDŠèéÿ=:GàŒ@{oHû}UŒ:
+ZV¼=}z<.–È@dG2Lñ’ ;2©  
+0E•×t@"C”\>ıºEì³«@p    ø      À  ø      À  @TDqV¤Î:H=w@{oEU½!F:
+U¼A^¹<,ƒW@dGÙ²Ï9 ;<ı  
+1E•åg@"’AC¾Ü>Á%EìÕ€@mĞ    ø      À  ø      À  @TD“îË:Gœ(@{o?Æ`N:
+)Ï¼>Hb<$ó@dHAa ;GP  
+2E•Ô˜@"C§Â>İ¦Eì³–@~ƒ    ø      À  ø      À  @TD’Ba?:Gİ@{oD´­¦:
+Yn¼@­W<'ÌP@dI(}é9 ;Q£  
+3E•Ù¯@"úC¢£>>EìÂï@kõ    ø      À  ø      À  @TD‡Íè:Gñ¦@{o@ÆÙÎ :
+h¼;ól<#¡Ù@dIÏãÆ€ ;[ô  
+4E•ÙN@"ÈCVg>¿#Eì¼•@ˆŠ    ø      À  ø      À  @TD„kÆ“:H@{o>À:
+_¼8Øâ<# ´@dJwIn8 ;fF  
+5E•òï@"•C°2>ÅÒEìâI@€o    ø      À  ø      À  @TD1£:H@{oA
+#•B:
+zr¼<é¤<%B³@dK®à  ;p–  
+6E•ÕM@"ŒdC I>úĞEì´{@í    ø      À  ø      À  @TDŠZün:GêÂ@{oC4ã‰,:
+c¼@•<*!b@dKÆ‡w ;zæ  
+7E•Æ@"‰ÅC§m>À7Eì˜ñ@v#    ø      À  ø      À  @TDqÆú :HE@{oCõ™û:
+vş¼Aì<&Ş×@dLmzd ;…5  
+8E•Úú@"/C¹&> ¶Eì¾¶@lû    ø      À  ø      À  @TD‘ñû©¤:G»@{oG"i—;:
+H–¼C…Ç<'8Ñ@dMßÖ ;ƒ  
+9E•ÁÂ@"Š"C~‡>æREì@CÛ    ø      À  ø      À  @TDp!Âø:HMb@{oC% :
+•Â¼EĞ(<'Ÿ@dM¼E}> ;™Ñ  
+:E•Ü¾@"rCk>ç½Eì¼/@vJ    ø      À  ø      À  @TDslL:H~@{oB¢âÂŠ:
+lâ¼Aq8<'A@dNcªî¦ ;¤  
+;E•ŞÎ@">C»“>ä	Eì´F@†A    ø      À  ø      À  @TDl[89:Gú@{oJAh¾€:
+ZŸ¼H›¯<0EÃ@dOËN ;®j  
+<E•Ê¹@"‹Cº>›Eì˜ø@q.    ø      À  ø      À  @TD†>4:H:>@{oEûİ&:
+•’¼B»<)®Œ@dO²vrE ;¸¶  
+=E•ø7@"–pCœ
+> _Eìáª@‹£    ø      À  ø      À  @TD‚tt:GÎ"@{oAªŒ²:
+N›¼A}N<$%Ñ@dPYÚÖş ;Ã  
+>E•é\@"”9C(>àEìË¡@k/    ø      À  ø      À  @TD¤-ù:G¼“@{oE¤Àö¨:
+M&¼?¿< ¥#@dQ@³e ;ÍK  
+?E•ß<@"Ÿ-C‘È>ÃYEì¿]@Œ   €ø      À  ø      À  @TD˜2ÅN:GŞê@{o@ïqª:
+Yê¼AÍ‘<%Ğ@dQ¨¦$m ;×•  
+@E•î2@"“,C&Û>í¼EìÎ‰@t‹    ø      À  ø      À  @TD–-P<H:Gºõ@{oBÍ¢Dú:
+E	¼@I¤<&8@dRPË ;áŞ  
+AE•¼~@"‡µCœM>ÏEì„-@q    ø      À  ø      À  @TD‰²§nb:H@{oE:&~:
+‚u¼C0I<%ğw@dR÷qq| ;ì&  
+BE•Ğx@"‹ûC“>ç#Eì˜h@rœ    ø      À  ø      À  @TD\l7@:H‡@{oC0¾ë:
+h¼EÄŞ<(şu@dS×M¤ ;ön  
+CE•Ğv@"‹‰C£´>àíEì @{İ    ø      À  ø      À  @TD{3_¾|:GÜ @{oB~) n:
+Xœ¼Bw¶<"õ´@dTF<¾L ; µ  
+DE•¸@"…æC]£>èÖEìw@ƒs   ø      À  ø      À  @TDy¡~:Gö+@{oE¥‚:
+d™¼CìV<+4@dTí¢dƒ ;
+û  
+EE•Ì²@"‹ßC~>İKEì”,@vC   ø      À  ø      À  @TDªõã–:G¿@{oGB
+øô:
+QP¼Jc<,B>@dU•@K ;@  
+FE•ÚW@"Cy½>¨Eìªå@}ß   ø      À  ø      À  @TD	f×Ø:G½¾@{oDæÈuà:
+Ká¼Dy<.@dV<m°² ;…  
+GE•å@"’´C^>åEì¶°@ˆp   ø      À  ø      À  @TDªmô«Ğ:G¤)@{oE¾Ù5:
+Gl¼G0„<.Èæ@dVãÓVª ;)É  
+HE•íÑ@"”oCIŒ>øEìËI@‹   ø      À  ø      À  @TDˆ,`µB:Gµ@{oFª2œ:
+:Ş¼F_k<.šX@dW‹8ü¢ ;4  
+IE•âè@"‘C=>øEì²@ˆB   ø      À  ø      À  @TDg._:GåÅ@{oGûYì´:
+Y¼J<1†9@dX2¢z ;>P  
+JE•Ñ§@"ÓCA¯>´“EìŸÓ@t[   ø      À  ø      À  @TD-QÖê:GĞf@{oE‘7ø<:
+F§¼N!*<0¬ï@dXÚH1 ;H’  
+KE•ä8@"“‚C>Á©Eì·[@vò   ø      À  ø      À  @TDo¹Ë+A:H ó@{oIƒ¢¬:
+`ù¼N¼k<8Ğ@dYiíÉ ;RÓ  
+LE•á;@"‘eC6)>Ä’Eì­Û@}T   ø      À  ø      À  @TDÑÎ³T:GÅ@{oEE|Íˆ:
+EÉ¼O[,<8a$@dZ(Ï“` ;]  
+ME•¹E@"‡¾CJX>ç@Eìpç@iÍ   ø      À  ø      À  @TDs^—‘ :H(–@{oBHbvb:
+}	¼M²|<9,@dZĞ58Ø ;gT  
+NE•çÊ@"“ÜC<G>¶¤Eìµ2@Œê   ø      À  ø      À  @TDqè•i„:H!?@{oDoëf:
+|¼JQÏ<6ú@d[wšŞ0 ;q“  
+OE•½Å@"ŠC>%>ÆÕEìz@wV   ø      À  ø      À  @TD^Á¼m:H@G@{oF
+Ï¢:
+€½¼Ksf<5ÀL@d\ MØ ;{Ò  
+PE•ÒA@"qCYœ>í/Eì@€Œ   ø      À  ø      À  @TDkç4,:H6™@{oDY ’:
+Ú¼PÌÆ<8S@d\Æf(¿ ;†  
+QE•ç‰@"“‚Ce©>´Eì´ª@T¼   ø      À  ø      À  @TDbuh:Gú$@{oFä¯Í:
+V¼[A<5Q@d]mËÍ× ;M  
+RE•Üö@"‘cC[>ã.Eì @u'   ø      À  ø      À  @TDTÈF,ª:H+µ@{oCî]”:
+p¼T7g<3$@d^1= ;š‰  
+SE•é“@"’ıC³>ÒœEì®M@Q$   ø      À  ø      À  @TDBç­çŞ:H)e@{oCí{‘S:
+e=¼W…¨<0,=@d^¼–â ;¤Å  
+TE•â@"“KCad>±çEì¢a@o   ø      À  ø      À  @TDoöT&Œ:Gì„@{oF7©ó:
+T'¼TEƒ<6-ã@d_cü¼¾ ;¯  
+UE•Ê…@"ŒC8°>³Eì{-@‚)   ø      À  ø      À  @TDc°¥1>:H+C@{oHòqUp:
+tq¼O;û<6É!@d`b+Æ ;¹;  
+VE•×-@"„CEï>ÊoEì–@~¢   ø      À  ø      À  @TDZÖæì~:GïÔ@{oJOÊ:
+Cd¼P=¯<5½@@d`²ÇĞ} ;Ãu  
+WE–Ö@"™œCúB>­áEìà¤@|:   ø      À  ø      À  @TDr€×Aô:G³V@{oJ*¿.:
+$­¼Wst<8§³@daZ-ªÅ ;Í®  
+XE•à@"‘cCT?>àEì¤]@Z"   ø      À  ø      À  @TDjd³%ù:G¯G@{oM—bÀ:
+&.¼Sò</°B@db“O< ;×æ  
+YE•Ú›@"¼C€¿>¤áEì–@n{   ø      À  ø      À  @TDEÛoÁ:H(7@{oE•†ÿ|:
+ja¼Q,<598@db¨ø¾ ;â  
+ZE–·@"™‚C¨>ù/Eìã{@Œ‰   ø      À  ø      À  @TDc…¹ğ:Gæ°@{oHf×¸p:
+E„¼MŒ¶<7˜ã@dcP^b\ ;ìU  
+[E•õa@"•rCqj>ÃEìÆ#@bE   ø      À  ø      À  @TD]¸*¹%:HP@{oI_Ù,:
+]¼O½i<<˜ë@dc÷Ä<D ;ö‹  
+\E–)@"˜µCÀ>³ŞEìàÿ@s   ø      À  ø      À  @TDja¹¬|:G½Ï@{oL0{K:
+0V¼Q
+ª<><N@ddŸ)ªË ; Á  
+]E–»@"•QC>¶>ÙçEìÔÏ@Z>   ø      À  ø      À  @TDmMQä:G\@{oHV¥Là:
+¼VÏú<9“ë@deFNã ;
+ö  
+^E•òI@"• CZ>3Eì¬¹@uë   ø      À  ø      À  @TDlød:Güú@{oI=.Fd:
+W¼Zug<>pì@deíõ(Š ;*  
+_E•÷Ü@"“ŸC
+D>Æ…Eì¾ã@‚   ø      À  ø      À  @TDe6î‚:GÈE@{oG¾”şÏ:
+7ñ¼J~Î<9e.@df•Z–Ò ;^  
+`E–Á@"›õC&E>¹kEìì(@{   ø      À  ø      À  @TD‚ê7«$:G½*@{oF”Äç:
+9œ¼CH$<2µ(@dg<À:ª ;)‘  
+aE•û@"–ñC†0>Ü‚EìÂA@{   ø      À  ø      À  @TDja-ú:H·@{oG®úâ:
+iœ¼Jë`<4ì@dgä%Şb ;3Ã  
+bE•ë@"íCZ>aEì®€@|V   ø      À  ø      À  @TDu÷ 29:Gç€@{o?Å1nÔ:
+Q¨¼G<(ƒ@dh‹‹ù ;=ô  
+cE–0@"–ÇCK}>É4EìØä@rß   ø      À  ø      À  @TDyÖé:G£u@{oBí`\r:
+&Ë¼CÜ< ¯@di2ñ%‘ ;H%  
+dE•Ë]@"‡ìC)>Eì†™@bÿ   ø      À  ø      À  @TDpáş{ß:H±@{o@g4A:
+p®¼AÃ<x§@diÚVÉ	 ;RU  
+eE–§@"™úC/¿>ôEìİö@Šı   ø      À  ø      À  @TD~Á‰é:GNu@{oB–Ş:	÷¿¼DwÊ<%n5@dj¼¢0 ;\…  
+fE•Íî@"‰FC)>²kEì‹â@xœ   ø      À  ø      À  @TD{£IéÈ:H)F@{oFÑy2¾:
+‚t¼<µ<#:n@dk)"Ø ;f´  
+gE•ë»@"4CI>·"Eì¶H@~ª   ø      À  ø      À  @TDŠ4™Ë :GÆ@{oBïKÿ:
+K8¼;•<%U@dkĞ‡³ ;pâ  
+hE•ù)@"•~CM>îÛEìÎ×@‘È   ø      À  ø      À  @TDŠÆ‹Æş:GØS@{oC5Uj:
+Uş¼7†<&a&@dlwí w ;{  
+iE•ó(@"”	C>»ZEìÂĞ@wÄ   ø      À  ø      À  @TDi|=eî:GÆª@{oI—’àH:
+9ä¼<W<'#º@dmRù ;…;  
+jE•Ò5@"ŠóCü¶>ò[Eì{U@‘   ø      À  ø      À  @TDm”M92:Gø@{oD]£Ñ:
+`Ğ¼@k<(Né@dmÆ¸œ ;g  
+kE•èb@"Cø>é£Eì¯N@z‘   ø      À  ø      À  @TDnËÏ„™:GÊÎ@{oB
+¹íİ:
+B¼B#û<)@dnn	^ ;™“  
+lE•ÿÅ@"”ìCjß>·EìÆ	@g   ø      À  ø      À  @TDx2ùú&:Gäé@{oB¾}Œ:
+U°¼IØ<%q²@doƒáÆ ;£½  
+mE–	‡@"–÷C(|>Í&EìØE@{i   ø      À  ø      À  @TDe˜¶r:G¹w@{oEÄÕL:
+.ä¼J<<'¢@do¼é„~ ;­ç  
+nE•å£@"rCôæ>½¥Eì™@tÁ   ø      À  ø      À  @TDˆ—7	::Gâ4@{oDÂ~A~:
+UN¼KDq<.´¼@dpdO' ;¸  
+oE•ş5@"—C<°>EìÀò@d   ø      À  ø      À  @TDze+çU:GĞ×@{oF›ÿ'ö:
+K7¼T¸ó</Û›@dq´“ı ;Â9  
+pE•é @"–C)S>ŞÇEì£@ZÊ   ø      À  ø      À  @TDxg8i:GÏM@{oD‹®h:
+Eœ¼R</,Ä@dq³l ;Ì`  
+qE– ^@"–C6Ş>ŞrEì¿@€¹   ø      À  ø      À  @TDez®)ö:Hğ@{oKİS :
+fõ¼Rr¹<;Æ3@drZ€\ ;Ö‡  
+rE•¼@"…&C<š>ÓzEìY†@[s   ø      À  ø      À  @TDz)>6:Gß°@{oI²½²7:
+N¯¼MÁO<:€U@dså{ ;à®  
+sE–@"•®C…> wEì¿@NĞ   ø      À  ø      À  @TDhç¤ìÔ:Gæ=@{oHÙ¶:
+Gö¼Z;Ó<9ºw@ds©K ;êÓ  
+tE–p@"ÕCæ>è[Eìğ@x|   ø      À  ø      À  @TDˆX[@:G¶@{oHŸÑ:
+5,¼S­2<@ƒ@dtP°ôã ;ôø  
+uE•Şß@"iC6˜>ÄNEì„2@UN   ø      À  ø      À  @TDZnƒ‡°:GÃµ@{oGõP Z:
+>…¼\%<?¬,@dtøaK ;ÿ  
+vE•äğ@"7C`_>=Eì£@_ã   ø      À  ø      À  @TD_¡C‚:Gå‹@{oEèƒ¼4:
+Cå¼\Èu<D„@duŸ|# ;	@  
+wE•Ø@"ŒàCS_>—Eì}Ğ@Or   ø      À  ø      À  @TD{˜!õÁ:G´Ñ@{oGWÚ¯:
+3b¼_Mı<?^1@dvFáÚª ;c  
+xE•ôù@"”CçÇ>ªEì ­@9X   ø      À  ø      À  @TDlTÓO+:Gëê@{oI--ª{:
+NW¼gE7<C/'@dvîGF² ;…  
+yE–›@"—ÆCs>¿FEìÀ®@G   ø      À  ø      À  @TDvÆŒ ¤:GÉ/@{oEıŒ:î:
+9D¼c²Ï<<n,@dw•¬èj ;'§  
+zE•à¢@"gC i>ñQEìyD@/”   ø      À  ø      À  @TDEœ	1:H9=@{oHd¿'©:
+rç¼l¢+<DÏÃ@dx=‰á ;1Ç  
+{E•ğ&@"ËC!>>“TEìš|@Zs   ø      À  ø      À  @TDI"·ôF:H.û@{oI…íe:
+gÑ¼a˜R<Fğê@dxäx+Y ;;ç  
+|E–Z@"œ:C53>ÜÍEìİh@<`   ø      À  ø      À  @TD\©ÁY¬:GÍ@{oLJ˜‚:
+2¼e-Â<Gp@dy‹İÌÑ ;F  
+}E•ëÒ@"‘eC>1ğEì@Xv   ø      À  ø      À  @TDU°š™å:GËÍ@{oK×Aúm:
+0j¼dP§<K0[@dz3Cn ;P%  
+~E–7@"£ÕCùª>õoEí@R»   ø      À  ø      À  @TDN ºÉÜ:Gy™@{oI;%:	ñ(¼c<Q’<@dzÚ©Dğ ;ZC  
+E–{@"˜ıCşm>¶õEìÂ@Iµ   ø      À  ø      À  @TDR\¬:Hö@{oJU~×B:
+P¼fbÒ<HÁ¸@d{‚°X ;d`  
+€E•Ş;@"CB>¬µEì}š@Nê   ø      À  ø      À  @TDK`™ :Gö@{oGàõì‰:
+E¼cÔZ<GĞñ@d|)tQo ;n}  
+E•ó£@"“.Cœ>ëEì“‘@Cå   ø      À  ø      À  @TDYMæ<¬:Hß@{oP §â:
+^Z¼i%M<OË@d|ĞÙ¼· ;x™  
+‚E•şµ@"“$C<^>ÍuEì²	@b;   ø      À  ø      À  @TDr[mEs:G¶@{oMï\ç:
+6¼^c<C·@d}x?“? ;‚´  
+ƒE–Å@"–ÚCû+>¹ÒEìÄ±@Nà   ø      À  ø      À  @TDV—¥Ël:Gé–@{oG‰·`:
+B³¼_s÷<CÖ×@d~¥3ö ;ŒÎ  
+„E•÷@"“ÏCZ>ÄóEì£E@Ga   ø      À  ø      À  @TDD ©­‡:HM@{oK“{\0:
+S¼cQ<B/÷@d~Ç
+Ô® ;–è  
+…E•İt@"YCjs>ŞEì¬@Eã   ø      À  ø      À  @TDi5Ğ¥Ò:G·@{oIYœìÙ:
+* ¼[~µ<@®]@dnpuF ;¡  
+†E•÷O@"”«Cñ`>ğVEìÖ@Sz   ø      À  ø      À  @TDgïÑ::GÛò@{oEEa :
+D™¼a¥<B0…@d€Ö½ ;«  
+‡E•şÕ@"–¹C”>äóEì­@E·   ø      À  ø      À  @TDcghŒ²:Gõ>@{oB£Ò!:
+SY¼_¤2<Cñ¤@d€½;¶5 ;µ1  
+ˆE•ùt@"”“Cím>ÇEì›Ì@P‘   ø      À  ø      À  @TDq¢Û¼R:GÓÕ@{oK°dzÌ:
+9è¼aÍ$<JÅ@dd¡ İ ;¿H  
+‰E•âÖ@"¯Cêt>ÇªEì|@Hí   ø      À  ø      À  @TDU¤à	:H–@{oH—Êdl:
+a©¼aóÇ<Jº]@d‚öÄ ;É^  
+ŠE•ôö@"•SC$È>>YEì›@Y³   ø      À  ø      À  @TDjŸqú:GäT@{oJÍÜv:
+FG¼^¦±<L%×@d‚³l–ü ;Ót  
+‹E•öæ@"•0Cl>Ë¦Eì›ç@Lò   ø      À  ø      À  @TDYÛÒŞj:GÊ4@{oL¬K‹:
+.`¼dß‚<OÉˆ@dƒZÒ6ô ;İˆ  
+ŒE–U@"–ßC
+>2QEì´	@4¸   ø      À  ø      À  @TDgéÑ$:G¦#@{oFĞÇ´:
+Å¼cÏf<I°g@d„7¡; ;çœ  
+E–V@"›C!®>§EìÁ@@ä   ø      À  ø      À  @TDn`×P¬:G×@{oLzşk‚:
+?‹¼dãá<OŠA@d„©vã ;ñ°  
+E•Ş@"Œ˜CëŸ>ÿåEìp¢@)3   ø      À  ø      À  @TDdM(WÅ:Gó @{oEœš%¤:
+Qz¼e­µ<H.À@d…Qá ;ûÃ  
+E–â@"™hCñ–>Û«Eì´õ@/â   ø      À  ø      À  @TDuÄ¯û:G°ş@{oP@A*:
+&,¼gæ<TÛ@d…øh€Â ;Õ  
+E–!Š@"œ~Cå¦> wEìİÎ@3ñ   ø      À  ø      À  @TDuıÿ²”:G‹î@{oL(ª…V:
+­¼^	Ä<R|=@d†ŸÎV
+ ;æ  
+‘E–"@"bCÄ|>ÃREì×)@(I   ø      À  ø      À  @TDm‰.`:GÀ²@{oM:fÓ4:
+0~¼db/<P{Ÿ@d‡G3õ‚ ;ö  
+’À  À  À  À  À  À    €0ø      À  ø      À  ø      À  ø      À  À  À  @d‡î™_I ;$  
+“E–b@"˜£C+>·Eì«@-    ø      À  ø      À  @TDx’EĞª:Góß@{oOëZh:
+Um¼f·<Yß•@dˆ•şş¡ ;.  
+”E–W@"œÁC œ>úTEì¼ğ@!F    ø      À  ø      À  @TDZY»
+:Hc@{oPş¶:
+RÓ¼m‰<bPV@d‰=dù ;8$  
+•E–d@"¡ÆC&>ÎÇEìÓı@    ø      À  ø      À  @TDe»àZg:GßO@{oPKÅ*:
+;j¼aõ:<bP‚@d‰äÊ= ;B1  
+–E–@"˜¬Cç>â¤Eì _@;ú    ø      À  ø      À  @TDM½Œˆj:H+W@{oRˆf:
+c0¼dÊ²<`PÛ@dŠŒ/Ü( ;L>  
+—E–|@"›†CÚ‰>
+.Eì¹9@€ıb    ø      À  ø      À  @TDZ˜	1:Gúã@{oNësò:
+IW¼a›O<`¦@d‹3•°ğ ;VK  
+˜E•şö@"—ÍC¼ >øEì¤“@	    ø      À  ø      À  @TDKn±‡:Gö–@{oH_Ç=
+:
+B¨¼f0<Wü@d‹ÚûOÇ ;`V  
+™E–G@"ÉCä>ï¸EìÔ@0H    ø      À  ø      À  @TD[rÜËV:Gó @{oPpØt:
+A=¼d±“<TÑ>@dŒ‚`¸ï ;ja  
+šE•áU@"’C£>'Eì|Ú@$“    ø      À  ø      À  @TDL`e:H@{oOÇSİè:
+Tñ¼c’7<TgÍ@d)ÆW§ ;tk  
+›E–
+
+@"›CC>“‹Eì´‡@î    ø      À  ø      À  @TDjrÇ[j:H
+'@{oLÁtà:
+_ò¼dô¢<Y¾ï@dÑ+ö^ ;~u  
+œE–$Z@" »CŞP>»qEìâñ@AÊ    ø      À  ø      À  @TD_—1™:H¥@{oMÄ«ş:
+a°¼c õ<Y4@dx‘”ö ;ˆ~  
+E–›@"CÂ>õ=EìÊz@"D    ø      À  ø      À  @TDR«b×ò:GÛÆ@{oPyàx:
+3]¼dÂM<[?@d÷3n ;’†  
+E•ÿ@"—{Cÿ>éEì<@x    ø      À  ø      À  @TDQËiù:H_@{oHÿ(Ï}:
+ˆ£¼f³Ù<Z·@dÇ]u ;œ  
+ŸE–€@"œMCë7>Ö.EìÅÏ@,    ø      À  ø      À  @TDVîçHß:Gâ“@{oPYğÜP:
+4Ÿ¼c¼j<Ws
+@dnÂp ;¦”  
+ E–!@"ŸCÕ¥>ÛËEìÍ,@4—    ø      À  ø      À  @TDOù^6º:GÉÌ@{oPr¶qt:
+*Š¼gÑ<R5@d‘(5 ;°™  
+¡E•ï;@"‘¯Cñk>œrEì‚Ù@ ~    ø      À  ø      À  @TDZ¥üÚô:GÙÙ@{oDå“2:
+9¼gD<NÍè@d‘½¬l ;ºŸ  
+¢E–#Ã@" ¶CAÎ>İ{EìĞÃ@Bò    ø      À  ø      À  @TDbqè¤¸:Gâƒ@{oK¨±wN:
+<^¼aÂR<U<@d’dóJd ;Ä£  
+£E•ı@"”C²%>Ù²Eì–¢@¾    ø      À  ø      À  @TDO·ÓÎ:Gäu@{oMeÁª:
+9)¼i±<RZú@d“Xè\ ;Î§  
+¤E•÷Ê@"“ôC¤}>¬ÅEìH@(Ê    ø      À  ø      À  @TDBr1€ß:H$ó@{oH´éô0:
+[·¼k–/<RD)@d“³¾†3 ;Øª  
+¥E–@"—OCÔÀ>ñEì¢@@¶    ø      À  ø      À  @TDOÓÚÀQ:Gè²@{oJı½ët:
+9r¼mè<QU>@d”[#î; ;â¬  
+¦E•ùä@"”\CF>ŞvEì–N@L    ø      À  ø      À  @TD<ÀçÒ:HQî@{oOĞœæ:
+r?¼e<N\ş@d•‰Á£ ;ì®  
+§E–÷@"ª«CŞI>Ù‘EìÆI@º   €ø      À  ø      À  @TD;%IfK:Géa@{oO0çòˆ:
+*¼f:<Xœ@d•©ï_: ;ö¯  
+¨E•ş.@"•·C¢>+ùEì–ğ@=¤    ø      À  ø      À  @TDWšÂ³:GÜ<@{oLÅcP:
+1‹¼a„<Q)l@d–QTü² ; ¯  
+©E–E@"•üCÏŒ>ƒoEì›¼@&‰    ø      À  ø      À  @TDTsô!â:H@{oPƒHŞ:
+Pï¼mKY<We:@d–øºš
+ ;
+®  
+ªE•ıœ@"•—Cï>>şEìJ@ß    ø      À  ø      À  @TDMŠH¿:H¢@{oMÂ“tù:
+Q¼lô(<T;b@d—  7a ;­  
+«E–*@"ŸCA>®EìÚÀ@C    ø      À  ø      À  @TDSrÿ‚:G˜p@{oPÂÛ:
+&¼næí<Z‘2@d˜G…Ô™ ;«  
+¬E–ó3@#†C³l>•æEîe@›²  €ø      À  ø      À  @TDX4m¿»:Gè@{oM/mÍÀ:	Ÿ†¼tÓ<]ì@d˜îë<! ;(©  
+­E– ‹@"”BC§ì>¼8Eì‘˜@'×    ø      À  ø      À  @TDQNÀ¬:GëI@{oQß…mÚ:
+3…¼m|è<TaM@d™–QÈ ;2¥  
+®E–/‚@"¡ÔC¶P>KEìÑ¥@"B    ø      À  ø      À  @TDY½®÷µ:GÈØ@{oKoäF’:
+$è¼k<W·O@dš=¶«À ;<¡  
+¯E–{@"˜#C8Ú>Ì¶Eì‘W@Jv    ø      À  ø      À  @TDRx´A²:Gã)@{oMü˜ş4:
+6â¼ks·<W%@dšåè ;Fœ  
+°E•ñQ@"‘CŞĞ>ÙìEìp’@ò    ø      À  ø      À  @TD5Ş>Ô:HMè@{oOíõ»ğ:
+m1¼q‡<V¢@d›Œåo ;P—  
+±E•õÌ@"“C¼H>åóEìyî@I    ø      À  ø      À  @TDKAŞd.:GØæ@{oJğZµ2:
+2š¼n6<TÕ@dœ3ç‚' ;Z‘  
+²E•û@"“ğCÆL>¸ÖEì†%@€ñ’    ø      À  ø      À  @TDVˆªT:H@{oMírA:
+Q4¼j$d<S|t@dœÛLé ;dŠ  
+³E–“@"™{C™>ş÷Eì˜Ÿ@x    ø      À  ø      À  @TDV Í8:Hß@{oMÌÒNÊ:
+Xr¼kÙ<OÉ@d‚²…† ;n‚  
+´E–(@"•UC³£>ãéEìšm@;    ø      À  ø      À  @TDYKJÔì:Gö„@{oOÿ+Ü!:
+FÃ¼]$<N^ @d*W® ;xz  
+µE–]@"˜CÙa>„{Eì @/&    ø      À  ø      À  @TDl™ùd:G²‚@{oI\"æ:
+!Î¼h;f<Lj@dÑ}¾6 ;‚p  
+¶E•øe@"’'C×>Ş8Eì|t@)G    ø      À  ø      À  @TDF‹w+B:H y@{oEï¿–:
+Ly¼iü<CÎ¶@dŸxãZ ;Œg  
+·E–6@"˜œCĞ`> °Eì´]@Eã    ø      À  ø      À  @TDV¤(1@:GÂø@{oI6—¶ :
+$‡¼aôH<GÉJ                                                                                                                                                                                                                                                                    XTENSION= 'IMAGE   '           / marks the beginning of a new HDU               BITPIX  =                   32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                    5 / length of first array dimension                NAXIS2  =                    4 / length of second array dimension               PCOUNT  =                    0 / group parameter count (not used)               GCOUNT  =                    1 / group count (not used)                         INHERIT =                    T / inherit the primary header                     EXTNAME = 'APERTURE'           / name of extension                              EXTVER  =                    1 / extension version number (not format version)  TELESCOP= 'Kepler  '           / telescope                                      INSTRUME= 'Kepler Photometer'  / detector type                                  OBJECT  = 'KIC 9832379'        / string version of target id                    KEPLERID=              9832379 / unique Kepler target identifier                RADESYS = 'ICRS    '           / reference frame of celestial coordinates       RA_OBJ  =           292.388190 / [deg] right ascension                          DEC_OBJ =            46.615100 / [deg] declination                              EQUINOX =               2000.0 / equinox of celestial coordinate system         WCSAXES =                    2 / number of WCS axes                             CTYPE1  = 'RA---TAN'           / right ascension coordinate type                CTYPE2  = 'DEC--TAN'           / declination coordinate type                    CRPIX1  =   3.0330111252537506 / [pixel] reference pixel along image axis 1     CRPIX2  =    2.960060456332883 / [pixel] reference pixel along image axis 2     CRVAL1  =            292.38819 / [deg] right ascension at reference pixel       CRVAL2  =              46.6151 / [deg] declination at reference pixel           CUNIT1  = 'deg     '           / physical unit in column dimension              CUNIT2  = 'deg     '           / physical unit in row dimension                 CDELT1  =   -0.001108204583630 / [deg] pixel scale in RA dimension              CDELT2  =    0.001108204583630 / [deg] pixel scale in Dec dimension             PC1_1   =  -0.5289680052970105 / linear transformation element cos(th)          PC1_2   =  -0.8527235734475567 / linear transformation element -sin(th)         PC2_1   =  -0.8464543417423608 / linear transformation element sin(th)          PC2_2   =   0.5259456643186642 / linear transformation element cos(th)          WCSNAMEP= 'PHYSICAL'           / name of world coordinate system alternate P    WCSAXESP=                    2 / number of WCS physical axes                    CTYPE1P = 'RAWX    '           / physical WCS axis 1 type CCD col               CUNIT1P = 'PIXEL   '           / physical WCS axis 1 unit                       CRPIX1P =                    1 / reference CCD column                           CRVAL1P =                   79 / value at reference CCD column                  CDELT1P =                  1.0 / physical WCS axis 1 step                       CTYPE2P = 'RAWY    '           / physical WCS axis 2 type CCD row               CUNIT2P = 'PIXEL   '           / physical WCS axis 2 units                      CRPIX2P =                    1 / reference CCD row                              CRVAL2P =                  437 / value at reference CCD row                     CDELT2P =                  1.0 / physical WCS axis 2 step                       NPIXSAP =                    2 / Number of pixels in optimal aperture           NPIXMISS=                    0 / Number of op. aperture pixels not collected    CHECKSUM= 'YY3faW1ZSW1dYW1Z'   / HDU checksum updated 2015-09-01T15:29:12Z      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

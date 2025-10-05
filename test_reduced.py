@@ -355,7 +355,7 @@ if __name__ == "__main__":
     #     p_k, p_t, p_k2, final_proba = predict_from_manual(
     #         web_input_strong_candidate, models_tuple, features_tuple
     #     )
-        res = predict(type='raw', inputs={"file_path": "./test.fits"})
+        res = predict(type='raw', inputs={"file_path": "./false.fits"})
         
         print("-" * 50)
         print("MANUAL INPUT PREDICTION (REDUCED STACKED ENSEMBLE)")
