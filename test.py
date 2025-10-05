@@ -191,7 +191,7 @@ if __name__ == "__main__":
                 'Base_Model_Probability': results['base_prediction_prob'],
                 'Final_Stacked_Probability': results['final_stacked_prob']
             })
-            print(output_df)
+            print(results['final_stacked_prob'][2])
             print("="*50)
 
         except FileNotFoundError:
