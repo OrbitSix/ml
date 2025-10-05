@@ -5,6 +5,7 @@ import os
 import logging
 from typing import Literal
 import lightkurve as lk
+from math import sqrt
 
 logging.basicConfig(level=logging.INFO)
 
@@ -145,89 +146,119 @@ def predict_from_manual(user_inputs, models, features):
     return p_k, p_t, p_k2, final_stacked_proba
 
 
+def load_lightcurve_any(file_path: str):
+    """
+    Universal loader for Kepler, K2, or TESS light curves.
+    Returns a LightCurve object regardless of file type or format.
+    """
+    logging.info(f"Opening FITS light curve file: {file_path}")
+    lcfile = lk.open(file_path)
+
+    # Handle multi-sector or multi-quarter collections
+    if isinstance(lcfile, lk.LightCurveCollection):
+        lc = lcfile.stitch()
+        logging.info(f"Loaded LightCurveCollection with {len(lcfile)} segments.")
+        return lc
+
+    # Handle container-style objects
+    for attr in ["PDCSAP_FLUX", "SAP_FLUX", "LC"]:
+        if hasattr(lcfile, attr):
+            lc = getattr(lcfile, attr)
+            logging.info(f"Loaded {attr} from {type(lcfile).__name__}")
+            return lc
+
+    # Direct LightCurve object
+    if isinstance(lcfile, lk.LightCurve):
+        logging.info("Loaded direct LightCurve object.")
+        return lcfile
+
+    raise TypeError(f"Unsupported light curve format for file: {file_path}")
+
+
 def extract_features_from_lightcurve(file_path: str) -> dict:
     """
-    Loads a light curve file, searches for a transit signal, and extracts
-    the necessary features for the prediction model.
-
-    Args:
-        file_path: The path to the light curve file (e.g., a .fits file).
-
-    Returns:
-        A dictionary of extracted features, or None if an error occurs
-        or no significant signal is found.
+    Extracts mission-agnostic transit and stellar features usable for ML exoplanet detection.
+    Works for TESS, Kepler, or K2 lightcurves.
     """
     try:
-        logging.info(f"Loading light curve from: {file_path}")
-        # 1. Load the light curve data using lightkurve
-        # The `open` command can intelligently handle Kepler, K2, and TESS FITS files.
-        lc = lk.open(file_path).get_lightcurve()
-        
-        # 2. Basic data processing
-        # Remove any NaN (Not a Number) values and normalize the flux.
-        processed_lc = lc.remove_nans().normalize()
-        
-        # 3. Flatten the light curve to remove long-term stellar variability.
-        # This helps isolate the transit signals.
-        flat_lc = processed_lc.flatten(window_length=801) # window_length should be odd and longer than the transit
-        
-        # 4. Search for a periodic signal using the Box Least Squares (BLS) algorithm.
-        logging.info("Searching for periodic transit signal using BLS...")
-        periodogram = flat_lc.to_periodogram("bls", minimum_period=0.5, maximum_period=30)
-        
-        # Find the most significant signal in the periodogram
-        best_fit = periodogram.compute_stats(period=periodogram.period_at_max_power)
+        lc = load_lightcurve_any(file_path)
 
-        # 5. Extract the key transit parameters from the BLS results.
-        # BLS provides the most likely period, duration, depth, and transit midpoint.
-        period = best_fit['period'][0].value
-        duration_days = best_fit['duration'][0].value
-        depth = best_fit['depth'][0]
-        transit_midpoint = best_fit['transit_time'][0].value
-        
-        # Check if the signal is significant. A depth of 0 means nothing was found.
-        if depth == 0 or not np.isfinite(period):
-            logging.warning("No significant periodic signal found in the light curve.")
+        # ✅ Basic preprocessing
+        processed_lc = lc.remove_nans().normalize()
+        flat_lc = processed_lc.flatten(window_length=801)
+
+        # ✅ BLS Transit Search
+        logging.info("Running BLS periodogram for transit search...")
+        bls = flat_lc.to_periodogram(method="bls", minimum_period=0.5, maximum_period=30)
+
+        period = bls.period_at_max_power.value
+        duration = bls.duration_at_max_power.value
+        depth_fractional = bls.depth_at_max_power.value
+        transit_time = bls.transit_time_at_max_power.value
+        snr = getattr(bls, "max_power", np.nan)
+        snr = snr.value if hasattr(snr, "value") else snr
+
+        if not np.isfinite(period) or depth_fractional <= 0:
+            logging.warning("No significant periodic transit found.")
             return None
 
-        logging.info(f"Signal found! Period: {period:.4f} days, Duration: {duration_days*24:.2f} hours")
+        # ✅ Metadata extraction
+        meta = getattr(lc, "meta", {})
+        mission = meta.get("MISSION", "Unknown")
 
-        # 6. Extract stellar parameters from the FITS file's metadata header.
-        # Lightkurve conveniently stores this in the .meta attribute.
-        meta = processed_lc.meta
-        
-        # Use .get() for safety in case a key is missing
-        stellar_temp = meta.get('TEFF')
-        stellar_radius = meta.get('RADIUS', meta.get('ST_RAD')) # Check for common alternative keys
-        stellar_logg = meta.get('LOGG')
-        
-        # We can't easily get all features (e.g., impact_parameter, insolation),
-        # but our reduced model is trained to handle these missing values.
+        # Stellar parameters (fallbacks for different missions)
+        stellar_temp = meta.get("TEFF") or meta.get("TSTAR") or meta.get("ST_TEFF")
+        stellar_radius = meta.get("RADIUS") or meta.get("RSTAR") or meta.get("ST_RAD")
+        stellar_mass = meta.get("MASS") or meta.get("MSTAR") or meta.get("ST_MASS")
+        stellar_logg = meta.get("LOGG") or meta.get("ST_LOGG")
+        stellar_density = meta.get("DENSITY") or meta.get("ST_DENSITY")
+        stellar_mag_tess = meta.get("TESSMAG") or meta.get("KPMAG") or meta.get("KEPMAG")
 
-        # 7. Assemble the final feature dictionary in the format our model expects.
-        # CRITICAL: Convert units to match what the model was trained on.
+        # ✅ Derived parameters
+        radius_ratio = sqrt(depth_fractional) if depth_fractional > 0 else None
+        transit_depth_ppm = depth_fractional * 1_000_000.0
+        transit_duration_hr = duration * 24.0
+
+        planetary_radius = None
+        if stellar_radius and radius_ratio:
+            planetary_radius = stellar_radius * radius_ratio  # in stellar radii
+            # convert to Earth radii (1 R☉ = 109.2 R⊕)
+            planetary_radius *= 109.2
+
+        # Basic insolation flux approximation (optional)
+        insolation_flux = None
+        if stellar_temp and stellar_radius and period:
+            # simplified luminosity-to-flux scaling (arbitrary normalization)
+            insolation_flux = (stellar_radius ** 2) * (stellar_temp / 5778.0) ** 4 / (period ** (4 / 3))
+
+        # Impact parameter is not directly extractable from BLS; set None
+        # Same for eccentricity and transit_depth_err
         extracted_features = {
+            'radius_ratio': radius_ratio,
+            'planetary_radius': planetary_radius,
             'orbital_period': period,
-            'transit_duration': duration_days * 24.0,  # Convert duration from days to hours
-            'transit_depth': depth * 1_000_000.0, # Convert fractional depth to PPM
+            'insolation_flux': insolation_flux,
+            'transit_depth': transit_depth_ppm,
+            'transit_duration': transit_duration_hr,
+            'impact_parameter': None,
+            'transit_midpoint': transit_time,
             'stellar_temp': stellar_temp,
             'stellar_radius': stellar_radius,
+            'stellar_density': stellar_density,
+            'model_snr': snr,
+            'stellar_mag_tess': stellar_mag_tess,
+            'orbital_eccentricity': None,
+            'stellar_mass': stellar_mass,
             'stellar_logg': stellar_logg,
-            'planetary_radius': None, # We estimate this later if needed, but can't get from BLS alone
-            'model_snr': periodogram.max_power.value, # Use the BLS power as a proxy for SNR
-            # The following will be missing, which is expected by the reduced model:
-            'insolation_flux': None,
-            'impact_parameter': None,
-            'stellar_mass': None,
-            'transit_depth_err': None
+            'stellar_metallicity': meta.get("FEH") or meta.get("ST_METFE") or None,
+            'transit_depth_err': None,
         }
 
-        logging.info("Successfully extracted features from light curve:")
-        print(extracted_features)
+        logging.info(f"[{mission}] Extracted features: {extracted_features}")
         return extracted_features
 
     except Exception as e:
-        logging.error(f"An error occurred during light curve processing: {e}")
+        logging.error(f"Feature extraction failed for {file_path}: {e}")
         return None
     
 # =========================
@@ -301,37 +332,39 @@ if __name__ == "__main__":
         print("\nPrediction halted. Could not load all models or feature lists.")
     else:
         # Example Input: False Positive
-        web_input_strong_candidate = {
-            'radius_ratio': 0.40,                   # Very large ratio, more like a star than a planet
-            'planetary_radius': 45.0,               # Implausibly large for a planet (45 Earth radii)
-            'orbital_period': 1.2,                  # Very short period is common for close binaries
-            'insolation_flux': 1200.0,              # High flux
-            'transit_depth': 150000,                # 15% depth, physically impossible for a planet
-            'transit_duration': 2.0,                # Short duration
-            'impact_parameter': 0.9,                # Grazing transit, suggests a V-shaped light curve
-            'transit_midpoint': 2455100.2,
-            'stellar_temp': 4500.0,                 # Cooler M-dwarf or secondary star
-            'stellar_radius': 0.8,                  # Smaller primary star
-            'stellar_density': 2.5,                 # Higher density
-            'model_snr': 500.0,                     # Signal is very strong, but un-planet-like
-            'stellar_mag_tess': 12.0,
-            'orbital_eccentricity': 0.0,            # Circular orbit
-            'stellar_mass': 0.75,                   # Less massive star
-            'stellar_logg': 4.6,                    # Higher surface gravity
-            'stellar_metallicity': -0.1,
-            'transit_depth_err': 200.0              # Low error, so the huge depth is reliable
-        }
-        p_k, p_t, p_k2, final_proba = predict_from_manual(
-            web_input_strong_candidate, models_tuple, features_tuple
-        )
+    #     web_input_strong_candidate = {
+    # 'radius_ratio': 0.009,                 
+    # 'planetary_radius': 1.0,               
+    # 'orbital_period': 365.0,               
+    # 'insolation_flux': 1.0,                
+    # 'transit_depth': 84,                   
+    # 'transit_duration': 13.0,              
+    # 'impact_parameter': 0.1,               
+    # 'transit_midpoint': 2459000.0,
+    # 'stellar_temp': 5778.0,                
+    # 'stellar_radius': 1.0,                 
+    # 'stellar_density': 1.0,                
+    # 'model_snr': 15.0,                     
+    # 'stellar_mag_tess': 9.0,
+    # 'orbital_eccentricity': 0.0167,        
+    # 'stellar_mass': 1.0,                   
+    # 'stellar_logg': 4.44,                  
+    # 'stellar_metallicity': 0.0,
+    # 'transit_depth_err': 10.0 
+    #     }
+    #     p_k, p_t, p_k2, final_proba = predict_from_manual(
+    #         web_input_strong_candidate, models_tuple, features_tuple
+    #     )
+        res = predict(type='raw', inputs={"file_path": "./test.fits"})
         
         print("-" * 50)
         print("MANUAL INPUT PREDICTION (REDUCED STACKED ENSEMBLE)")
         print("-" * 50)
         print("\nBase Model Probabilities (P(Confirmed)):")
-        print(f"  Kepler Reduced: {p_k:.4f}")
-        print(f"  TESS Reduced:   {p_t:.4f}")
-        print(f"  K2 Reduced:     {p_k2:.4f}")
-        print("\nFinal Stacked Output:")
-        print(f"  Meta-Model Final Probability: {final_proba:.4f}")
+        print(res)
+        # print(f"  Kepler Reduced: {p_k:.4f}")
+        # print(f"  TESS Reduced:   {p_t:.4f}")
+        # print(f"  K2 Reduced:     {p_k2:.4f}")
+        # print("\nFinal Stacked Output:")
+        # print(f"  Meta-Model Final Probability: {final_proba:.4f}")
         print("-" * 50)
